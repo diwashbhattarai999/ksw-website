@@ -1,15 +1,19 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import HomePage from './pages/HomePage';
+import Service from './pages/Service';
+import Pricing from './pages/Pricing';
 import Career from './pages/Career';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
-import Service from './pages/Service';
-import './components/HomeComponent/blob.css';
-import AboutCompany from './components/About/AboutCompany';
 import OurTeamPage from './pages/OurTeamPage';
+
+import AboutCompany from './components/About/AboutCompany';
 import WhyChooseUs from './components/About/WhyChooseUs';
 import { OurPlatform } from './components';
-import Pricing from './pages/Pricing';
+
+import './components/HomeComponent/blob.css';
+
 export default function App() {
   return (
     <BrowserRouter>
