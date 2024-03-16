@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import './NavBar.css'; // Importing CSS file for NavBar styling
 import { BiDownArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import DropDown from '../DropDown';
+import Container from '../Container';
 // import { FaCaretDown } from "react-icons/fa";
 
 export default function NavBar() {
@@ -10,12 +11,6 @@ export default function NavBar() {
   const [showPricing, setShowPricing] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
   const location = useLocation();
-
-  // const [isOpen, setIsOpen] = useState(false);
-
-  // const toggleDropdown = () => {
-  //   setIsOpen(!isOpen);
-  // };
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -32,7 +27,7 @@ export default function NavBar() {
   ];
 
   return (
-    <div className="relative md:">
+    <div className="relative">
       <Link
         to="/"
         className="z-10 justify-center ml-24 text-xl font-bold text-center text-gray-800 md:hidden lg:hidden mb-7"
@@ -162,87 +157,99 @@ export default function NavBar() {
           </div>
         </div>
       </div>
+
       {/* Menu items for large screens */}
-      <div className="hidden md:w-[90%] md:ml-20 md:flex md:flex-row items-center justify-between h-16 px-4 md:px-8 my-8 mx-40">
-        <div>
-          <Link
-            to="/"
-            className={`text-xl font-bold text-gray-800 md:-ml-10  `}
-          >
-            KSW TechZone
-          </Link>
-        </div>
-        <div className="flex flex-wrap justify-center text-sm md:flex-nowrap md:justify-between">
-          <button
-            onClick={() => {
-              setShowAbout((e) => !e);
-              setShowPricing(false);
-            }}
-            className={`mx-2 my-1 md:ml-4 md:my-0 hover-underline-animation ${
+      <Container>
+        <div className="items-center justify-between hidden h-16 my-8 md:flex md:flex-row">
+          <div>
+            <Link
+              to="/"
+              className={`text-xl font-bold text-gray-800`}
+            >
+              KSW TechZone
+            </Link>
+          </div>
+          <div className="flex flex-wrap justify-center text-sm md:flex-nowrap md:justify-between">
+            <button
+              onClick={() => {
+                setShowAbout((e) => !e);
+                setShowPricing(false);
+              }}
+              className={`mx-2 my-1 md:ml-4 md:my-0 hover-underline-animation ${
+                location.pathname === '/pricing' ? 'active' : ''
+              }`}
+            >
+              <div className="flex items-center justify-center">
+                About{!showAbout ? <BiRightArrowAlt /> : <BiDownArrowAlt />}
+              </div>
+
+              <DropDown data={about} show={showAbout} setShow={setShowAbout} />
+            </button>
+
+            <button
+              onClick={() => {
+                setShowPricing((e) => !e);
+                setShowAbout(false);
+              }}
+              className={`mx-2 my-1 md:ml-4 md:my-0 hover-underline-animation relative ${
+                location.pathname === '/pricing' ? 'active' : ''
+              }`}
+            >
+              <div className="flex items-center justify-center">
+                Pricing{!showPricing ? <BiRightArrowAlt /> : <BiDownArrowAlt />}
+              </div>
+
+              <DropDown
+                data={pricing}
+                show={showPricing}
+                setShow={setShowPricing}
+              />
+            </button>
+
+            {/* <Link
+            to="/pricing"
+            className={`mx-2 my-1 md:my-0 hover-underline-animation ${
               location.pathname === '/pricing' ? 'active' : ''
             }`}
           >
-            <div className="flex items-center justify-center">
-              About{!showAbout ? <BiRightArrowAlt /> : <BiDownArrowAlt />}
-            </div>
+            Pricing
+          </Link> */}
 
-            <DropDown data={about} show={showAbout} setShow={setShowPricing} />
-          </button>
-
-          <button
-            onClick={() => {
-              setShowPricing((e) => !e);
-              setShowAbout(false);
-            }}
-            className={`mx-2 my-1 md:ml-4 md:my-0 hover-underline-animation ${
-              location.pathname === '/pricing' ? 'active' : ''
-            }`}
-          >
-            <div className="flex items-center justify-center">
-              Pricing{!showPricing ? <BiRightArrowAlt /> : <BiDownArrowAlt />}
-            </div>
-
-            <DropDown
-              data={pricing}
-              show={showPricing}
-              setShow={setShowPricing}
-            />
-          </button>
-
-          <Link
-            to="/services"
-            className={`mx-2 my-1 md:my-0 hover-underline-animation ${
-              location.pathname === '/services' ? 'active' : ''
-            }`}
-          >
-            Services
-          </Link>
-          <Link
-            to="/career"
-            className={`mx-2 my-1 md:my-0 hover-underline-animation ${
-              location.pathname === '/career' ? 'active' : ''
-            }`}
-          >
-            Career
-          </Link>
-          <Link
-            to="/blogs"
-            className={`mx-2 my-1 md:my-0 hover-underline-animation ${
-              location.pathname === '/blogs' ? 'active' : ''
-            }`}
-          >
-            Blogs
-          </Link>
-          <Link
-            to="/contact"
-            className={`mx-2 my-1 md:ml-4 md:my-0 hover-underline-animation ${
-              location.pathname === '/contact' ? 'active' : ''
-            }`}
-          >
-            Contact Us
-          </Link>
+            <Link
+              to="/services"
+              className={`mx-2 my-1 md:my-0 hover-underline-animation ${
+                location.pathname === '/services' ? 'active' : ''
+              }`}
+            >
+              Services
+            </Link>
+            <Link
+              to="/career"
+              className={`mx-2 my-1 md:my-0 hover-underline-animation ${
+                location.pathname === '/career' ? 'active' : ''
+              }`}
+            >
+              Career
+            </Link>
+            <Link
+              to="/blogs"
+              className={`mx-2 my-1 md:my-0 hover-underline-animation ${
+                location.pathname === '/blogs' ? 'active' : ''
+              }`}
+            >
+              Blogs
+            </Link>
+            <Link
+              to="/contact"
+              className={`mx-2 my-1 md:ml-4 md:my-0 hover-underline-animation ${
+                location.pathname === '/contact' ? 'active' : ''
+              }`}
+            >
+              Contact Us
+            </Link>
+          </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

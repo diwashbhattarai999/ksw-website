@@ -1,69 +1,91 @@
-import React from "react";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import contactSvg from "../../assets/contact.svg";
-import { FaXTwitter } from "react-icons/fa6";
+import React from 'react';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import contactSvg from '../../assets/contact.svg';
+import { FaXTwitter } from 'react-icons/fa6';
+import Container from '../Container';
 
 const ContactMain: React.FC = () => {
   return (
-    <>
-      <div className=" sm:h-[80%] w-[90%] sm:w-[80%] m-auto mt-5">
+    <Container>
+      <div className="sm:h-[80%] m-auto mt-5">
         <div className="toppart ">
-          <h1 className="text-[1.3rem] sm:text-[2.2rem] z-10 font-bold">
+          <h1 className="text-[1.3rem] sm:text-[2.2rem] z-10 font-bold border-b-2 border-black w-fit pr-2">
             Contact Us
           </h1>
-          <h2 className="text-[1.2rem] sm:text-[2rem] font-medium">
-            Let's Connect
-          </h2>
-          <p className="text-[0.8rem] sm:text-[1rem] text-justify">
-            Whether you have a project in mind or just want to explore how KSW
-            TechZone can elevate your digital presence, we're here to help.
-            Reach out to us, and let's start a conversation.
-          </p>
-        </div>
-        <div className="contact-information h-auto my-3">
-          {/* <h2 className="text-[1.6rem]">Contact Information</h2> */}
-          <p className="text-[0.8rem] sm:text-[1rem]">
-            Address: Imadol,Lalitpur<br></br>
-            Phone: +977-9863198323<br></br>
-            Email:kswtechzone@gmail.com<br></br>contact@kswtechzone.com
-          </p>
-        </div>
-        <div className="">
-          <h2 className="text-[1.2rem] sm:text-[2rem] font-medium">
-            Connect With Us
-          </h2>
-          <p className="text-[0.8rem] sm:text-[1rem] text-justify">
-            Stay updated on the latest tech trends, industry insights, and KSW
-            TechZone news by connecting with us on social media.
-          </p>
-          <div className="mt-5 flex justify-center sm:justify-start">
-            <Link to={"/"}>
-              <FaFacebook className="w-9 h-9 text-blue-500 font-bold" />
-            </Link>
-            <Link to={"/"}>
-              <FaLinkedin className="w-9 h-9 text-blue-700 font-bold" />
-            </Link>
-            <Link to={"/"}>
-              <FaInstagram className="w-9 h-9 text-red-300 font-bold" />
-            </Link>
-            <Link to={"/"}>
-              <FaXTwitter className="w-9 h-9 text-black font-bold" />
-            </Link>
+          <div className="flex items-start justify-between gap-10 max-lg:flex-col">
+            <div className="w-full lg:max-w-xl">
+              <h2 className="py-2 text-[1.2rem] sm:text-[1.7rem] font-medium">
+                Let's Connect
+              </h2>
+              <p className="text-[0.8rem] sm:text-[1rem] text-justify py-2 text-gray-700">
+                Whether you have a project in mind or just want to explore how
+                KSW TechZone can elevate your digital presence, we're here to
+                help. Reach out to us, and let's start a conversation.
+              </p>
+
+              <div className="h-auto my-3 contact-information">
+                {/* <h2 className="text-[1.6rem]">Contact Information</h2> */}
+                <div className="text-[0.8rem] sm:text-[1rem] text-gray-700">
+                  <h2>
+                    <span className="font-semibold">Address:</span>{' '}
+                    Imadol,Lalitpur<br></br>
+                  </h2>
+                  <h2>
+                    <span className="font-semibold">Phone:</span>{' '}
+                    +977-9863198323<br></br>
+                  </h2>
+                  <h2>
+                    <span className="font-semibold">Email:</span>
+                    <span>
+                      kswtechzone@gmail.com
+                      <br />
+                    </span>
+                    <span className="ml-[52px]">contact@kswtechzone.com</span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full lg:max-w-xl">
+              <h2 className="py-2 text-[1.2rem] sm:text-[1.7rem] font-medium">
+                Connect With Us
+              </h2>
+              <p className="text-[0.8rem] sm:text-[1rem] text-justify text-gray-700">
+                Stay updated on the latest tech trends, industry insights, and
+                KSW TechZone news by connecting with us on social media.
+              </p>
+              <div className="flex items-start gap-4 mt-5 sm:justify-start">
+                <Link to={'/'}>
+                  <FaFacebook className="font-bold text-blue-500 w-9 h-9" />
+                </Link>
+                <Link to={'/'}>
+                  <FaLinkedin className="font-bold text-blue-700 w-9 h-9" />
+                </Link>
+                <Link to={'/'}>
+                  <FaInstagram className="font-bold text-red-300 w-9 h-9" />
+                </Link>
+                <Link to={'/'}>
+                  <FaXTwitter className="font-bold text-black w-9 h-9" />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="text-justify mt-10">
-          <h2 className="text-[1.5rem] sm:text-[2rem] font-medium pb-2 ">
+
+        <div className="mt-10 text-justify">
+          <h2 className="text-[1.5rem] sm:text-[1.7rem] font-medium pb-2 ">
             We're Here for You
           </h2>
-          <p className="text-[0.8rem] sm:text-[1rem]">
+          <p className="text-[0.8rem] sm:text-[1rem] text-gray-700">
             At KSW TechZone, your inquiries matter. Whether you're ready to
             start a project or have questions about our services, we're here to
             assist you every step of the way. Let's build something incredible
             together!
           </p>
         </div>
-        <div className="lg:flex mt-10">
+
+        <div className="mt-10 lg:flex">
           <div className="map h-[100%] m-auto pb-2 sm:pt-3  w-[100%]  ">
             {/* <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.8741294666534!2d85.34508437632786!3d27.65936577621009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb173bf68b2d87%3A0x22a42fe8a2872c8a!2sKSW%20TECHZONE!5e0!3m2!1sen!2snp!4v1710143276574!5m2!1sen!2snp"
@@ -102,14 +124,14 @@ const ContactMain: React.FC = () => {
                 <div className="lg:min-w-[610px] flex flex-col pb-2">
                   <input
                     type="number"
-                    className="border border-gray-400 p-2"
+                    className="p-2 border border-gray-400"
                     placeholder="Phone *"
                   />
                 </div>
                 <div className="lg:min-w-[610px] flex flex-col pb-2">
                   <input
                     type="text"
-                    className="border border-gray-400 p-2"
+                    className="p-2 border border-gray-400"
                     placeholder="Subject"
                   />
                 </div>
@@ -122,7 +144,7 @@ const ContactMain: React.FC = () => {
                 <div className="lg:min-w-[610px] ">
                   <input
                     type="submit"
-                    value={"Submit"}
+                    value={'Submit'}
                     className="bg-yellow-200 p-2 my-2 w-[100%] font-semibold rounded-md hover:cursor-pointer hover:bg-yellow-300"
                     placeholder="Subject"
                   />
@@ -131,6 +153,7 @@ const ContactMain: React.FC = () => {
             </div>
           </div>
         </div>
+
         <div className="my-3">
           <h2 className="text-[1.2rem] sm:text-[2rem] font-medium">Visit Us</h2>
           <p className="text-[0.8rem] sm:text-[1rem] text-justify">
@@ -148,7 +171,7 @@ const ContactMain: React.FC = () => {
           </div>
         </div>
       </div>
-    </>
+    </Container>
   );
 };
 

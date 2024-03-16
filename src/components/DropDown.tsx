@@ -17,10 +17,8 @@ const DropDown: React.FC<DropDownProps> = ({ show, data }) => {
     <>
       <div
         className={`mt-2  ${
-          show
-            ? 'absolute -top-[15px] left-[100px] md:top-0 mg:left-0 lg:top-5 lg:left-0 '
-            : 'hidden'
-        } bg-white rounded-[20px] p-2 w-[120px] z-10`}
+          show ? 'absolute right-0 top-5  md:top-5 md:-left-16' : 'hidden'
+        } bg-slate-100 rounded-md p-2 w-[120px] z-50 duration-300`}
       >
         {data.map((ele, index: number) => {
           return (
