@@ -1,4 +1,8 @@
+import Slider from 'react-slick';
+
 import WhyChooseUsVetcor from './WhyChooseUsVetcor';
+import Container from '../Container';
+
 import Expert from '../../assets/WhyChooseUsImage/Expert.png';
 import Agility from '../../assets/WhyChooseUsImage/Agility.png';
 import Collaboration from '../../assets/WhyChooseUsImage/Collaboration.png';
@@ -11,7 +15,16 @@ import Global from '../../assets/WhyChooseUsImage/Global.png';
 import Improvement from '../../assets/WhyChooseUsImage/Improvement.png';
 import Driven from '../../assets/WhyChooseUsImage/Driven.png';
 import Solution from '../../assets/WhyChooseUsImage/solution.png';
-import Container from '../Container';
+
+const settings = {
+  dots: true,
+  speed: 500,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+};
 
 const CARDS = [
   {
@@ -106,16 +119,16 @@ export default function WhyChooseUs() {
             Why to <span className="text-blue-700">Choose US?</span>
           </h2>
 
-          <ul className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+          <Slider {...settings}>
             {CARDS.map((card, index) => {
               return (
                 <li key={index} className="w-full lg:w-auto">
-                  <div className="flex flex-col items-center mt-20 text-center border border-gray-100 rounded-md shadow-md w-full h-96 md:h-[36rem]">
-                    <div className="w-full overflow-hidden h-[20rem]">
+                  <div className="flex flex-col items-center mt-20 mx-10 text-center border border-gray-100 rounded-md shadow-md w-full lg:w-[36rem] h-[36rem]">
+                    <div className="w-full overflow-hidden h-[24rem]">
                       <img
                         src={card.image}
                         alt="gem"
-                        className="inline-block object-contain w-full h-full max-w-full rounded-md"
+                        className="inline-block w-full h-full bg-contain rounded"
                       />
                     </div>
 
@@ -132,7 +145,7 @@ export default function WhyChooseUs() {
                 </li>
               );
             })}
-          </ul>
+          </Slider>
         </div>
       </Container>
     </div>
