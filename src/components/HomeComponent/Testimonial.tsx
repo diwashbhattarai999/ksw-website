@@ -64,7 +64,7 @@ const Testimonial: React.FC = () => {
 
   return (
     <>
-      <div className="w-full pb-10 mt-10 sm:mt-20">
+      <div className="w-full pb-5 md:pb-10 mt-10 sm:mt-20">
         <h1 className=" text-[1.2rem] sm:text-[2rem] font-bold text-center">
           Client Testimonials
         </h1>
@@ -107,7 +107,7 @@ const Testimonial: React.FC = () => {
                     <img
                       src={imageUrl.url}
                       alt="image"
-                      className="sm:h-[9rem] p-5 rounded-full "
+                      className="lg:px-4 p-5 rounded-full "
                     />
                     {console.log(index)}
                   </>
@@ -122,7 +122,7 @@ const Testimonial: React.FC = () => {
                 unparalleled.
               </p>
               <Link to="/contact" className="mt-10">
-                <button className="py-2 px-3 bg-[#EFF569] rounded-md font-semibold hover:bg-yellow-300">
+                <button className="py-2 px-3 bg-[#004AAD] rounded-md font-semibold text-white hover:bg-[#004AAD]/70">
                   Contact us
                 </button>
               </Link>

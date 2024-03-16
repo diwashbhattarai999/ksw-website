@@ -100,7 +100,7 @@ export default function WeProvides() {
       </div>
 
       <div
-        className="grid w-full grid-cols-1 p-10 bg-center bg-no-repeat bg-contain md:grid-cols-2 place-items-center gap-28 sm:mt-16"
+        className="grid w-full grid-cols-1 md:p-10 bg-center bg-no-repeat bg-contain md:grid-cols-2 place-items-center md:gap-y-20 content-center md:gap-x-8 sm:mt-16"
         style={{
           backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(
             kBackground,
@@ -108,7 +108,7 @@ export default function WeProvides() {
         }}
       >
         <div className="order-2 desktop:order-1">
-          <div className="relative w-72 h-72 top-4 ">
+          <div className="relative w-72 h-72 top-4 hidden md:block">
             <div>
               <div className="w-16 h-16 bg-blue-300 rounded-full absolute left-[40%] p-3">
                 <Link to="#">
@@ -132,9 +132,9 @@ export default function WeProvides() {
             </div>
           </div>
         </div>
-        <div className="order-1 p-8 md:order-2 ">
+        <div className="order-1 md:order-2 overflow-hidden ">
           <div
-            className="sm:w-96 sm:h-72 w-[80vw] h-52 p-6  flex justify-center flex-col   sm:items-start small:items-center   bg-contain bg-right bg-no-repeat"
+            className="sm:w-96 sm:h-72 w-[80vw] h-52  flex justify-center flex-col   sm:items-start small:items-center   bg-contain bg-right bg-no-repeat"
             style={{
               backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(
                 svgBackground,
@@ -165,7 +165,7 @@ export default function WeProvides() {
           </div>
         </div>
 
-        <div className="order-4">
+        <div className="order-4 overflow-hidden">
           <div className="relative w-72 h-72">
             <div className="flex justify-around pt-6 border-2 w-72 h-44 ">
               <div>
@@ -233,7 +233,7 @@ export default function WeProvides() {
         </div>
 
         <div className="order-6 md:order-5">
-          <div className="relative w-80 h-72">
+          <div className="relative w-80 h-60 md:h-72">
             <div>
               <div className="w-16 h-16 bg-blue-300 rounded-full absolute left-[40%] p-4">
                 <Link to="#">

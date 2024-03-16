@@ -41,7 +41,7 @@ const OurPartner: React.FC = () => {
   };
 
   return (
-    <div className="w-[90%] m-auto mt-10 sm:mt-20">
+    <div className="w-4/5 m-auto mt-10 sm:mt-20">
       <div>
         <h2 className="text-[1.2rem] sm:text-[2rem] font-bold text-center mb-5">
           Our Partners
