@@ -1,4 +1,4 @@
-import SeoPackageCard from '../Card/SeoPackageCard'
+import SeoPackageCard from '../Card/SeoPackageCard';
 
 interface PlanItem {
   text: string;
@@ -16,10 +16,9 @@ interface CartContent {
   monthlyReportContent: PlanItem[];
 }
 export default function SeoPackages() {
-
   const cardContent: CartContent[] = [
     {
-      heading: "Basic Plan",
+      heading: 'Basic Plan',
       button: 'Select Plan',
       initial: [
         { text: 'Upto 10 Keyword Ranking', isActive: true },
@@ -33,7 +32,10 @@ export default function SeoPackages() {
       setup: [
         { text: 'Keyword Research', isActive: true },
         { text: 'Keyword Mapping', isActive: false },
-        { text: 'Few Major Pages Meta And Heading Tag Optimization', isActive: true },
+        {
+          text: 'Few Major Pages Meta And Heading Tag Optimization',
+          isActive: true,
+        },
         { text: 'URL Optimization', isActive: true },
         { text: 'Image Optimization', isActive: true },
         { text: '2 SEO Optimized Blog Articles', isActive: true },
@@ -84,7 +86,7 @@ export default function SeoPackages() {
       ],
     },
     {
-      heading: "Standard Plan",
+      heading: 'Standard Plan',
       button: 'Select Plan',
       initial: [
         { text: 'Upto 10 Keyword Ranking', isActive: true },
@@ -98,7 +100,10 @@ export default function SeoPackages() {
       setup: [
         { text: 'Keyword Research', isActive: true },
         { text: 'Keyword Mapping', isActive: true },
-        { text: 'Few Major Pages Meta And Heading Tag Optimization', isActive: true },
+        {
+          text: 'Few Major Pages Meta And Heading Tag Optimization',
+          isActive: true,
+        },
         { text: 'URL Optimization', isActive: true },
         { text: 'Image Optimization', isActive: true },
         { text: '2 SEO Optimized Blog Articles', isActive: true },
@@ -149,7 +154,7 @@ export default function SeoPackages() {
       ],
     },
     {
-      heading: "Premium Plan",
+      heading: 'Premium Plan',
       button: 'Select Plan',
       initial: [
         { text: 'Upto 10 Keyword Ranking', isActive: true },
@@ -163,7 +168,10 @@ export default function SeoPackages() {
       setup: [
         { text: 'Keyword Research', isActive: true },
         { text: 'Keyword Mapping', isActive: true },
-        { text: 'Few Major Pages Meta And Heading Tag Optimization', isActive: true },
+        {
+          text: 'Few Major Pages Meta And Heading Tag Optimization',
+          isActive: true,
+        },
         { text: 'URL Optimization', isActive: false },
         { text: 'Image Optimization', isActive: true },
         { text: '2 SEO Optimized Blog Articles', isActive: true },
@@ -214,7 +222,7 @@ export default function SeoPackages() {
       ],
     },
     {
-      heading: "Premium Plus Plan",
+      heading: 'Premium Plus Plan',
       button: 'Contact Sales',
       initial: [
         { text: 'Upto 10 Keyword Ranking', isActive: true },
@@ -228,7 +236,10 @@ export default function SeoPackages() {
       setup: [
         { text: 'Keyword Research', isActive: true },
         { text: 'Keyword Mapping', isActive: true },
-        { text: 'Few Major Pages Meta And Heading Tag Optimization', isActive: true },
+        {
+          text: 'Few Major Pages Meta And Heading Tag Optimization',
+          isActive: true,
+        },
         { text: 'URL Optimization', isActive: true },
         { text: 'Image Optimization', isActive: true },
         { text: '2 SEO Optimized Blog Articles', isActive: true },
@@ -280,40 +291,50 @@ export default function SeoPackages() {
     },
   ];
 
-
-
   return (
     <>
-      <div className='relative flex flex-col items-center w-full gap-4 mt-12'>
-        <div className='flex items-center justify-center w-full gap-2 p-2'>
-          <div className='w-[3rem] border-b-2 border-blue-500'></div>
-          <h2 className="text-black text-[0.8rem] sm:text-[1rem] font-semibold z-10">SUBSCRIPTION PLAN</h2>
-          <div className='w-[3rem] border-b-2 border-blue-500'></div>
+      <div className="relative flex flex-col items-center w-full gap-4 mt-12">
+        <div className="flex items-center justify-center w-full gap-2 p-2">
+          <div className="w-[3rem] border-b-2 border-blue-500"></div>
+          <h2 className="text-black text-[0.8rem] sm:text-[1rem] font-semibold z-10">
+            SUBSCRIPTION PLAN
+          </h2>
+          <div className="w-[3rem] border-b-2 border-blue-500"></div>
         </div>
 
         <div>
-        <p className="text-[1.2rem] sm:text-[2rem] font-bold z-10 ">
-              Seo <span className="z-10 text-blue-700">Packages</span>
-            </p>        </div>
-
-        <div className='text-[#5a5a5a] pl-4'>
-        <p className="z-10 m-5 text-sm sm:text-md">
-        Choose plans from our simple, transparent pricing
-              </p>
+          <p className="text-[1.2rem] sm:text-[2rem] font-bold z-10 ">
+            Seo <span className="z-10 text-blue-700">Packages</span>
+          </p>{' '}
         </div>
 
+        <div className="text-[#5a5a5a] pl-4">
+          <p className="z-10 m-5 text-sm sm:text-md">
+            Choose plans from our simple, transparent pricing
+          </p>
+        </div>
 
-        <button className='py-3 px-6 bg-[#EFF569] hover:bg-yellow-300 rounded-2xl h  text-black font-semibold lg:absolute lg:top-6 lg:right-24'>Download Brouchure</button>
+        <button className="py-3 px-6 bg-[#EFF569] hover:bg-yellow-300 rounded-md h  text-black font-semibold lg:absolute lg:top-6 lg:right-24">
+          Download Brouchure
+        </button>
       </div>
 
-      <div className='w-full gap-4 p-4 place-items-center md:grid md:grid-cols-2 lg:grid-cols-4 '>
+      <div className="w-full gap-4 p-4 place-items-center md:grid md:grid-cols-2 lg:grid-cols-4 ">
         {cardContent.map((item, index) => (
-          <div key={index} >
-            <SeoPackageCard heading={item.heading} btn={item.button} initial={item.initial} setup={item.setup} technical={item.technical} offPageSEOContent={item.offPageSEOContent} localSEOContent={item.localSEOContent} monthlyReportContent={item.monthlyReportContent} />
+          <div key={index}>
+            <SeoPackageCard
+              heading={item.heading}
+              btn={item.button}
+              initial={item.initial}
+              setup={item.setup}
+              technical={item.technical}
+              offPageSEOContent={item.offPageSEOContent}
+              localSEOContent={item.localSEOContent}
+              monthlyReportContent={item.monthlyReportContent}
+            />
           </div>
         ))}
       </div>
-
     </>
-  )
+  );
 }

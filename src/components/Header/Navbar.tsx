@@ -6,6 +6,18 @@ import DropDown from '../DropDown';
 import Container from '../Container';
 // import { FaCaretDown } from "react-icons/fa";
 
+const pricing = [
+  { title: 'Seo Package', link: 'seopackages' },
+  { title: 'Web Package', link: 'webpackages' },
+  { title: 'Social Media Package', link: 'socialmediapackages' },
+];
+
+const about = [
+  { title: 'About Us', link: 'about' },
+  { title: 'Why Choose Us', link: 'whychooseus' },
+  { title: 'Teams', link: 'ourteam' },
+];
+
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showPricing, setShowPricing] = useState(false);
@@ -15,16 +27,6 @@ export default function NavBar() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-  const pricing = [
-    { title: 'Seo Package', link: 'seopackages' },
-    { title: 'Web Package', link: 'webpackages' },
-    { title: 'Social Media Package', link: 'socialmediapackages' },
-  ];
-  const about = [
-    { title: 'About Us', link: 'about' },
-    { title: 'Why Choose Us', link: 'whychooseus' },
-    { title: 'Teams', link: 'ourteam' },
-  ];
 
   return (
     <div className="relative">
@@ -162,29 +164,19 @@ export default function NavBar() {
       <Container>
         <div className="items-center justify-between hidden h-16 my-8 md:flex md:flex-row">
           <div>
-            <Link
-              to="/"
-              className={`text-xl font-bold text-gray-800`}
-            >
+            <Link to="/" className={`text-xl font-bold text-gray-800`}>
               KSW TechZone
             </Link>
           </div>
           <div className="flex flex-wrap justify-center text-sm md:flex-nowrap md:justify-between">
-            <button
-              onClick={() => {
-                setShowAbout((e) => !e);
-                setShowPricing(false);
-              }}
-              className={`mx-2 my-1 md:ml-4 md:my-0 hover-underline-animation ${
-                location.pathname === '/pricing' ? 'active' : ''
+            <Link
+              to="/about"
+              className={`mx-2 my-1 md:my-0 hover-underline-animation ${
+                location.pathname === '/about' ? 'active' : ''
               }`}
             >
-              <div className="flex items-center justify-center">
-                About{!showAbout ? <BiRightArrowAlt /> : <BiDownArrowAlt />}
-              </div>
-
-              <DropDown data={about} show={showAbout} setShow={setShowAbout} />
-            </button>
+              About
+            </Link>
 
             <button
               onClick={() => {
@@ -207,13 +199,13 @@ export default function NavBar() {
             </button>
 
             {/* <Link
-            to="/pricing"
-            className={`mx-2 my-1 md:my-0 hover-underline-animation ${
-              location.pathname === '/pricing' ? 'active' : ''
-            }`}
-          >
-            Pricing
-          </Link> */}
+              to="/pricing"
+              className={`mx-2 my-1 md:my-0 hover-underline-animation ${
+                location.pathname === '/pricing' ? 'active' : ''
+              }`}
+            >
+              Pricing
+            </Link> */}
 
             <Link
               to="/services"
