@@ -27,7 +27,7 @@ const Pricing = () => {
               </div>
 
               <div className="relative flex flex-col items-center w-full gap-4 mt-12">
-                <button className="py-3 px-6 bg-[#EFF569] hover:bg-yellow-300 rounded-md text-black font-semibold lg:absolute -top-24 right-0">
+                <button className="py-3 px-6 bg-[#004AAD] hover:bg-[#004AAD]/70 rounded-md text-gray-50 font-semibold lg:absolute -top-24 right-0">
                   Download Brouchure
                 </button>
               </div>
@@ -62,24 +62,24 @@ const Pricing = () => {
 
               <div className="flex gap-4">
                 <button
-                  className={`py-3 px-6 bg-[#EFF569] hover:bg-yellow-300 rounded-md h text-black font-semibold  ${
-                    selectedCategory === 'SEO' && 'bg-yellow-300'
+                  className={`py-3 px-6 bg-[#004AAD]  hover:bg-[#004AAD]/70  rounded-md h text-gray-50 font-semibold  ${
+                    selectedCategory === 'SEO' && 'bg-[#004AAD]/70'
                   }`}
                   onClick={() => setSelectedCategory('SEO')}
                 >
                   SEO Package
                 </button>
                 <button
-                  className={`py-3 px-6 bg-[#EFF569] hover:bg-yellow-300 rounded-md h text-black font-semibold  ${
-                    selectedCategory === 'SocialMedia' && 'bg-yellow-300'
+                  className={`py-3 px-6 bg-[#004AAD]  hover:bg-[#004AAD]/70 rounded-md h text-gray-50 font-semibold  ${
+                    selectedCategory === 'SocialMedia' && 'bg-[#004AAD]/70'
                   }`}
                   onClick={() => setSelectedCategory('SocialMedia')}
                 >
                   Social Media Package
                 </button>
                 <button
-                  className={`py-3 px-6 bg-[#EFF569] hover:bg-yellow-300 rounded-md h text-black font-semibold  ${
-                    selectedCategory === 'Web' && 'bg-yellow-300'
+                  className={`py-3 px-6 bg-[#004AAD]  hover:bg-[#004AAD]/70 rounded-md h text-gray-50 font-semibold  ${
+                    selectedCategory === 'Web' && 'bg-[#004AAD]/70'
                   }`}
                   onClick={() => setSelectedCategory('Web')}
                 >

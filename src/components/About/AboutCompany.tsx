@@ -206,8 +206,7 @@ const AboutCompany: React.FC = () => {
         >
           <Button
             width="w-56"
-            bgColor="bg-[#EFF569]"
-            textColor="text-gray-900"
+            textColor="text-gray-50"
             hoverEffect=""
             buttonName="See our Teams"
             props="font-bold w-[195px] rounded-lg md:text-lg "
@@ -235,8 +234,7 @@ const AboutCompany: React.FC = () => {
             <Link to="/contact">
               <Button
                 width="w-56"
-                bgColor="bg-[#EFF569]"
-                textColor="text-gray-900"
+                textColor="text-gray-50"
                 hoverEffect=""
                 buttonName="Get in Touch"
                 props="font-bold w-[195px] rounded-lg md:text-lg "
