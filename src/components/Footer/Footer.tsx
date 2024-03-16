@@ -126,7 +126,7 @@ const Footer: React.FC = () => {
               </form>
             </div>
           </div>
-          <hr className="bg-black" />
+          <hr className="bg-black h-[1.25px] opacity-50" />
           <div className="flex flex-row justify-center md:mx-10 lg:mx-44 space-x-2 sm:space-x-4 text-sm mt-4 mb-4">
             <Link to="/" className="underline ">
               Privacy Policy
