@@ -43,9 +43,6 @@ const AboutCompany: React.FC = () => {
       <div className="bg-[#e5f8fb] sm:rounded-t-full my-10 p-2">
         <Container>
           <div className="grid lg:grid-cols-2">
-            <div className="z-0 flex items-center justify-center p-1 sm:p-2">
-              <img src={company} className="w-full max-w-[500px]" alt="svg" />
-            </div>
             <div className="z-0 flex flex-col justify-center p-2 sm:p-10">
               {/* About Title */}
               <div className="flex items-center justify-start pb-2 ">
@@ -118,6 +115,9 @@ const AboutCompany: React.FC = () => {
                   business practices.
                 </p>
               </div>
+            </div>
+            <div className="z-0 flex items-center justify-center p-1 sm:p-2">
+              <img src={company} className="w-full max-w-[500px]" alt="svg" />
             </div>
           </div>
           <div className="grid grid-cols-1 gap-16 md:grid-cols-2 sm:p-2">

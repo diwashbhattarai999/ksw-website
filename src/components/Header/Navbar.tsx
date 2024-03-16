@@ -4,6 +4,7 @@ import './NavBar.css'; // Importing CSS file for NavBar styling
 import { BiDownArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import DropDown from '../DropDown';
 import Container from '../Container';
+import Logotext from '../../assets/KSW.png'
 // import { FaCaretDown } from "react-icons/fa";
 
 const pricing = [
@@ -34,7 +35,7 @@ export default function NavBar() {
         to="/"
         className="z-10 justify-center ml-24 text-xl font-bold text-center text-gray-800 md:hidden lg:hidden mb-7"
       >
-        KSW TechZone
+        <img className="w-[20rem]" src={Logotext} alt="Logo" />
       </Link>
       {/* Hamburger menu button */}
       <div className="absolute right-0 z-50 mb-20 mr-4 -mt-1 md:hidden top-2">
@@ -165,10 +166,10 @@ export default function NavBar() {
         <div className="items-center justify-between hidden h-16 my-8 md:flex md:flex-row">
           <div>
             <Link to="/" className={`text-xl font-bold text-gray-800`}>
-              KSW TechZone
+            <img className="w-[14rem]" src={Logotext} alt="Logo" />
             </Link>
           </div>
-          <div className="flex flex-wrap justify-center text-sm md:flex-nowrap md:justify-between">
+          <div className="flex flex-wrap justify-center font-medium text-sm md:flex-nowrap md:justify-between">
             <Link
               to="/about"
               className={`mx-2 my-1 md:my-0 hover-underline-animation ${
@@ -209,7 +210,7 @@ export default function NavBar() {
 
             <Link
               to="/services"
-              className={`mx-2 my-1 md:my-0 hover-underline-animation ${
+              className={`mx-2 my-1 md:my-0 font-medium hover-underline-animation ${
                 location.pathname === '/services' ? 'active' : ''
               }`}
             >
@@ -217,7 +218,7 @@ export default function NavBar() {
             </Link>
             <Link
               to="/career"
-              className={`mx-2 my-1 md:my-0 hover-underline-animation ${
+              className={`mx-2 my-1 md:my-0 font-medium hover-underline-animation ${
                 location.pathname === '/career' ? 'active' : ''
               }`}
             >
@@ -225,7 +226,7 @@ export default function NavBar() {
             </Link>
             <Link
               to="/blogs"
-              className={`mx-2 my-1 md:my-0 hover-underline-animation ${
+              className={`mx-2 my-1 md:my-0 font-medium hover-underline-animation ${
                 location.pathname === '/blogs' ? 'active' : ''
               }`}
             >
@@ -233,7 +234,7 @@ export default function NavBar() {
             </Link>
             <Link
               to="/contact"
-              className={`mx-2 my-1 md:ml-4 md:my-0 hover-underline-animation ${
+              className={`mx-2 my-1 md:ml-4 font-medium md:my-0 hover-underline-animation ${
                 location.pathname === '/contact' ? 'active' : ''
               }`}
             >
