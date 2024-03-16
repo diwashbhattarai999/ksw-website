@@ -1,91 +1,107 @@
-import { Link, useLocation } from 'react-router-dom';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import Logo from '../../assets/Ellipse 1.png';
-import './Footer.css';
-import Container from '../Container';
-
-const FOOTER_LINKS = [
-  {
-    title: 'Home',
-    link: '/',
-  },
-  {
-    title: 'About Us',
-    link: '/about',
-  },
-  {
-    title: 'Services',
-    link: '/services',
-  },
-  {
-    title: 'Careers',
-    link: '/career',
-  },
-  {
-    title: 'Blogs',
-    link: '/blogs',
-  },
-  {
-    title: 'Contact Us',
-    link: '/contact',
-  },
-];
-
+import { Link, useLocation } from "react-router-dom";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import Logo from "../../assets/Ellipse 1.png";
+import "./Footer.css";
 const Footer: React.FC = () => {
   const location = useLocation();
   return (
-    <div className="mt-10 bg-[#FFFFF9]">
-      <Container className="h-auto w-full sm:w-[90%] flex flex-col sm:m-auto">
-        <div className="flex flex-col justify-between mb-4 md:flex-row">
-          <div className="flex flex-col items-center gap-4 mb-5">
-            <Link to="/">
-              <img src={Logo} alt="Logo" />
-            </Link>
-
-            <p style={{ color: '#515360' }}>We are KSW TechZone</p>
-
-            <div className="flex flex-row space-x-2 sm:space-x-4">
-              <Link to="/facebook">
-                <FaFacebook
-                  className="changeBg"
-                  style={{ fontSize: '30px', color: '#16549f' }}
-                />
+    <>
+      <div className="my-10">
+        <div
+          className="h-auto w-full sm:w-[90%] flex flex-col sm:m-auto"
+          style={{ background: "#FFFFF9" }}
+        >
+          <div className="flex flex-col md:flex-row justify-between md:mx-10 lg:mx-44 mb-4">
+            <div className="flex flex-col items-center mb-5">
+              <div className="mb-2">
+                <Link to="/">
+                  <img src={Logo} alt="Logo" />
+                </Link>
+              </div>
+              <div className="mb-2">
+                <p style={{ color: "#515360" }}>We are KSW TechZone</p>
+              </div>
+              <div className="flex flex-row space-x-2 sm:space-x-4">
+                <Link to="/facebook">
+                  <FaFacebook
+                    className="changeBg"
+                    style={{ fontSize: "30px", color: "#FF8595" }}
+                  />
+                </Link>
+                <Link to="/twitter">
+                  <FaTwitter style={{ fontSize: "30px", color: "#FF8595" }} />
+                </Link>
+                <Link to="/instagram">
+                  <FaInstagram style={{ fontSize: "30px", color: "#FF8595" }} />
+                </Link>
+                <Link to="/linkedin">
+                  <FaLinkedin style={{ fontSize: "30px", color: "#FF8595" }} />
+                </Link>
+              </div>
+            </div>
+            <div
+              className=" flex flex-col items-start ml-5 border-gradient pl-5 h-[194px]"
+              style={{ color: "#515360" }}
+            >
+              <Link
+                to="/home"
+                className={` hover-underline-animation ${
+                  location.pathname === "/home" ? "active" : ""
+                }mx-2 mb-2`}
+              >
+                <span>Home</span>
               </Link>
-              <Link to="/twitter">
-                <FaTwitter style={{ fontSize: '30px', color: '#77beda' }} />
+              <Link
+                to="/about"
+                className={` hover-underline-animation ${
+                  location.pathname === "/about" ? "active" : ""
+                } mx-2 mb-2`}
+              >
+                <span>About Us</span>
               </Link>
-              <Link to="/instagram">
-                <FaInstagram style={{ fontSize: '30px', color: '#f1a2ad' }} />
+              <Link
+                to="/services"
+                className={` hover-underline-animation ${
+                  location.pathname === "/services" ? "active" : ""
+                } mx-2 mb-2`}
+              >
+                <span>Services</span>
               </Link>
-              <Link to="/linkedin">
-                <FaLinkedin style={{ fontSize: '30px', color: '#39447a' }} />
+              <Link
+                to="/career"
+                className={` hover-underline-animation ${
+                  location.pathname === "/career" ? "active" : ""
+                } mx-2 mb-2`}
+              >
+                <span>Careers</span>
+              </Link>
+              <Link
+                to="/blogs"
+                className={` hover-underline-animation ${
+                  location.pathname === "/blogs" ? "active" : ""
+                } mx-2 mb-2`}
+              >
+                <span>Blogs</span>
+              </Link>
+              <Link
+                to="/contact"
+                className={` hover-underline-animation ${
+                  location.pathname === "/contact" ? "active" : ""
+                } mx-2 mb-2`}
+              >
+                <span>Contact Us</span>
               </Link>
             </div>
           </div>
-          <ul
-            className="flex flex-wrap items-center justify-center gap-2 py-2 border-0 md:items-start md:justify-start md:pl-5 md:flex-col h-fit border-gradient md:border-l"
-            style={{ color: '#515360' }}
-          >
-            {FOOTER_LINKS.map((link) => (
-              <li className="text-left">
-                <Link
-                  to={link.link}
-                  className={` hover-underline-animation text-lg ${
-                    location.pathname === link.link ? 'active' : ''
-                  }`}
-                >
-                  {link.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className="flex flex-row justify-center sm:justify-start md:mx-10 lg:mx-44 space-x-2 sm:space-x-4 text-sm">
+            <Link to="/" className="underline ">
+              Privacy Policy
+            </Link>
+            <p> Copyright 2024, KSW Techzone Inc.</p>
+          </div>
         </div>
-        <div className="flex flex-row justify-between py-10 sm:space-x-4">
-          <Link to="/">Privacy Policy</Link>
-          <p> Copyright 2024, KSW Techzone Inc.</p>
-        </div>
-      </Container>
-    </div>
+      </div>
+    </>
   );
 };
 export default Footer;
