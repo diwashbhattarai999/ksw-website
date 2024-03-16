@@ -20,7 +20,7 @@ function Button({
   return (
     <>
       <div
-        className={`flex ${width} ${bgColor} hover:bg-yellow-300 h-12 justify-start items-center px-3 py-2 w-48 duration-300`}
+        className={`flex ${width} ${bgColor} hover:bg-yellow-300 h-12 justify-start rounded-md items-center px-3 py-2 w-48 duration-300`}
       >
         <button
           type="button"

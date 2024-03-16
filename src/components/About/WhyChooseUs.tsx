@@ -12,6 +12,20 @@ import Improvement from '../../assets/WhyChooseUsImage/Improvement.png';
 import Driven from '../../assets/WhyChooseUsImage/Driven.png';
 import Solution from '../../assets/WhyChooseUsImage/solution.png';
 
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+const settings = {
+  dots: true,
+  speed: 500,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+};
+
 const CARDS = [
   {
     image: Expert,
@@ -103,8 +117,7 @@ export default function WhyChooseUs() {
         <h2 className="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl ">
           Why to <span className="text-blue-700">Choose US?</span>
         </h2>
-
-        <ul className="flex flex-col items-center justify-center gap-8 md:flex-row md:flex-wrap">
+        <Slider {...settings}>
           {CARDS.map((card, index) => {
             return (
               <li key={index} className="w-full lg:w-auto">
@@ -130,7 +143,7 @@ export default function WhyChooseUs() {
               </li>
             );
           })}
-        </ul>
+        </Slider>
       </div>
     </div>
   );

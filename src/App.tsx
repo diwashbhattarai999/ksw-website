@@ -1,17 +1,18 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import Career from "./pages/Career";
-import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
-import Service from "./pages/Service";
-import SeoPackagePage from "./pages/SeoPackagePage";
-import WebPackages from "./components/Pricing/WebPackages";
-import SocialMediaPackages from "./components/Pricing/SocialMediaPackages";
-import "./components/HomeComponent/blob.css";
-import AboutCompany from "./components/About/AboutCompany";
-import OurTeamPage from "./pages/OurTeamPage";
-import WhyChooseUs from "./components/About/WhyChooseUs";
-import { OurPlatform } from "./components";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import Career from './pages/Career';
+import Blog from './pages/Blog';
+import Contact from './pages/Contact';
+import Service from './pages/Service';
+import SeoPackagePage from './pages/SeoPackagePage';
+import WebPackages from './components/Pricing/WebPackages';
+import SocialMediaPackages from './components/Pricing/SocialMediaPackages';
+import './components/HomeComponent/blob.css';
+import AboutCompany from './components/About/AboutCompany';
+import OurTeamPage from './pages/OurTeamPage';
+import WhyChooseUs from './components/About/WhyChooseUs';
+import { OurPlatform } from './components';
+
 export default function App() {
   return (
     <BrowserRouter>
