@@ -1,20 +1,25 @@
-import React from "react";
-import { BiDownArrowAlt, BiRightArrowAlt } from "react-icons/bi";
-import { Link } from "react-router-dom";
+import React from 'react';
+// import { BiDownArrowAlt, BiRightArrowAlt } from "react-icons/bi";
+import { Link } from 'react-router-dom';
+
+type Data = {
+  title: string;
+  link: string;
+}[];
 
 interface DropDownProps {
   show: boolean;
   setShow: React.Dispatch<React.SetStateAction<boolean>>;
-  data: any;
+  data: Data;
 }
-const DropDown: React.FC<DropDownProps> = ({ show, setShow, data }) => {
+const DropDown: React.FC<DropDownProps> = ({ show, data }) => {
   return (
     <>
       <div
         className={`mt-2  ${
           show
-            ? "absolute -top-[15px] left-[100px] md:top-0 mg:left-0 lg:top-5 lg:left-0 "
-            : "hidden"
+            ? 'absolute -top-[15px] left-[100px] md:top-0 mg:left-0 lg:top-5 lg:left-0 '
+            : 'hidden'
         } bg-white rounded-[20px] p-2 w-[120px] z-10`}
       >
         {data.map((ele, index: number) => {
