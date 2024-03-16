@@ -1,17 +1,18 @@
-import { Link } from "react-router-dom";
-import { Button } from "..";
-import "./our.css";
+import { Link } from 'react-router-dom';
+import { Button } from '..';
+import './our.css';
 export default function Our() {
   const WBackground = `<svg width="1094" height="646" viewBox="0 0 1094 646" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M797.912 490.281C791.28 505.419 779.164 516.472 760.204 517.407C739.138 518.446 722.684 506.188 721.637 485.328L704.283 139.405C700.402 62.0487 645.164 13.3676 540.886 18.5085C446.087 23.182 401.834 67.1838 377.805 135.461L223.856 518.581C218.275 533.668 204.055 544.825 186.147 545.708C165.082 546.746 149.684 534.436 148.638 513.577L125.354 49.4505L0.00574019 55.6301L23.5518 524.971C27.3889 601.456 82.6279 650.14 187.961 644.947C282.757 640.273 325.959 596.321 349.988 528.046L503.936 144.926C509.514 129.839 523.781 119.551 542.741 118.616C563.807 117.578 579.207 129.888 580.21 149.879L597.608 496.67C601.445 573.155 656.684 621.839 762.015 616.646C856.813 611.973 900.013 568.02 924.042 499.745L1119.68 0.430686L986.962 6.9736L797.912 490.281Z" fill="#FCB9B9" fill-opacity="0.1"/>
   </svg>`;
 
   return (
-    <div className="w-full mt-10 sm:mt-20 pb-12 relative">
-      <h2 className="text-[1.2rem] sm:text-[2rem] font-bold text-center">Our Platform</h2>
+    <div className="relative w-full pb-12 mt-10 sm:mt-20">
+      <h2 className="text-[1.2rem] sm:text-[2rem] font-bold text-center">
+        Our Platform
+      </h2>
       <div className="section_approach bg-night bg-blue-50 rounded-lg lg:w-[90%] lg:ml-[5%] md:ml-[4%]  sm:ml-[2%]">
-        <div
-          className="treatment_top-angle ">
+        <div className="treatment_top-angle ">
           <svg
             width={1440}
             height={144}
@@ -28,21 +29,21 @@ export default function Our() {
               </clipPath>
             </defs>
           </svg>
-
         </div>
-        <div className="py-50 relative w-[95%] m-auto bg-center bg-no-repeat flex justify-center items-center text-center "
+        <div
+          className="py-50 relative w-[95%] m-auto bg-center bg-no-repeat flex justify-center items-center text-center "
           style={{
             backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(
-              WBackground
+              WBackground,
             )}")`,
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "contain"
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'contain',
           }}
         >
           <div className="container-medium ">
             <div className="approach_wrapper">
-              <div className="w-layout-grid approach_grid text-black">
+              <div className="text-black w-layout-grid approach_grid">
                 <div
                   id="w-node-_20d81665-3cbd-3659-ba6b-ec3fee4361a8-4e2a7bc4"
                   className="approach_grid-card"
@@ -51,14 +52,15 @@ export default function Our() {
                     <div className="text-2xl">Hourly Place</div>
                     <div className="approach_grid-stroke" />
                     <p className="text-[0.8rem] sm:text-[1rem]">
-                      Discover diverse spaces on Hourly Place –
-                      your platform for booking co-working spaces,
-                      video shooting rooms, private libraries,
-                      cafes, hotels, and more on an hourly basis.
-                      Elevate your work environment or leisure experience with seamless, flexible bookings.
+                      Discover diverse spaces on Hourly Place – your platform
+                      for booking co-working spaces, video shooting rooms,
+                      private libraries, cafes, hotels, and more on an hourly
+                      basis. Elevate your work environment or leisure experience
+                      with seamless, flexible bookings.
                     </p>
-                    <button className="bg-[#82929E] text-white font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-s-sm shadow-md transition duration-300 ease-in-out">Visit Now</button>
-
+                    <button className="bg-[#82929E] text-white font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-s-sm shadow-md transition duration-300 ease-in-out">
+                      Visit Now
+                    </button>
                   </div>
                 </div>
                 <div
@@ -69,10 +71,14 @@ export default function Our() {
                     <div className="text-2xl">The hostel Nepal</div>
                     <div className="approach_grid-stroke is-teal" />
                     <p className="text-[0.8rem] sm:text-[1rem]">
-                      "Discover transparent hostel options for boys, girls, and travelers across Nepal with The Hostel Nepal. Book online hassle-free, offering newcomers the freedom to choose accommodations of their choice."
+                      "Discover transparent hostel options for boys, girls, and
+                      travelers across Nepal with The Hostel Nepal. Book online
+                      hassle-free, offering newcomers the freedom to choose
+                      accommodations of their choice."
                     </p>
-                    <button className="bg-[#82929E] text-white font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-s-sm shadow-md transition duration-300 ease-in-out">Visit Now</button>
-
+                    <button className="bg-[#82929E] text-white font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-s-sm shadow-md transition duration-300 ease-in-out">
+                      Visit Now
+                    </button>
                   </div>
                 </div>
                 <div
@@ -83,10 +89,15 @@ export default function Our() {
                     <div className="text-2xl">Ghantaghar.com</div>
                     <div className="approach_grid-stroke is-yellow" />
                     <p className="text-[0.8rem] sm:text-[1rem]">
-                      At Ghantaghar.com, users can seamlessly book diverse services such as cafes, hotels, homestays, and daycations on an hourly basis. Experience convenience and flexibility in your bookings, tailored to your specific time requirements.
+                      At Ghantaghar.com, users can seamlessly book diverse
+                      services such as cafes, hotels, homestays, and daycations
+                      on an hourly basis. Experience convenience and flexibility
+                      in your bookings, tailored to your specific time
+                      requirements.
                     </p>
-                    <button className="bg-[#82929E] text-white font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-s-sm shadow-md transition duration-300 ease-in-out">Visit Now</button>
-
+                    <button className="bg-[#82929E] text-white font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-s-sm shadow-md transition duration-300 ease-in-out">
+                      Visit Now
+                    </button>
                   </div>
                 </div>
                 <div
@@ -97,12 +108,13 @@ export default function Our() {
                     <div className="text-2xl">KSW Blogs</div>
                     <div className="approach_grid-stroke is-purple" />
                     <p className="text-[0.8rem] sm:text-[1rem]">
-                      KSW Blogs
-                      "Discover tech, education, and business insights on KSW Blogs
-                      by KSW Techzone – your go-to platform for concise and valuable articles."
+                      KSW Blogs "Discover tech, education, and business insights
+                      on KSW Blogs by KSW Techzone – your go-to platform for
+                      concise and valuable articles."
                     </p>
-                    <button className="bg-[#82929E] text-white font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-s-sm shadow-md transition duration-300 ease-in-out">Visit Now</button>
-
+                    <button className="bg-[#82929E] text-white font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-s-sm shadow-md transition duration-300 ease-in-out">
+                      Visit Now
+                    </button>
                   </div>
                 </div>
               </div>
@@ -110,8 +122,6 @@ export default function Our() {
                 <Link to="/platforms">
                   <Button
                     width="w-56"
-                    bgColor="bg-[#EFF569]"
-                    textColor="text-black"
                     hoverEffect="hover:bg-yellow-300"
                     buttonName="SEE OUR PLATFORMS"
                     props=" font-bold w-[230px] rounded-md"
@@ -128,10 +138,10 @@ export default function Our() {
           alt=""
           className="appoach_m"
           style={{
-            willChange: "transform",
+            willChange: 'transform',
             transform:
-              "translate3d(9.9301%, 0.03495%, 0px) scale3d(1.00035, 1.00035, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-            transformStyle: "preserve-3d"
+              'translate3d(9.9301%, 0.03495%, 0px) scale3d(1.00035, 1.00035, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
+            transformStyle: 'preserve-3d',
           }}
         />
 
@@ -141,9 +151,9 @@ export default function Our() {
             className="blob is-home6"
             style={{
               transform:
-                "translate3d(22.9446%, -7.6482%, 0px) scale3d(0.952964, 0.952964, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transformStyle: "preserve-3d",
-              willChange: "transform"
+                'translate3d(22.9446%, -7.6482%, 0px) scale3d(0.952964, 0.952964, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
+              transformStyle: 'preserve-3d',
+              willChange: 'transform',
             }}
           />
         </div>
@@ -153,9 +163,9 @@ export default function Our() {
             className="blob is-home5"
             style={{
               transform:
-                "translate3d(-3.1075%, 7.2975%, 0px) scale3d(0.897835, 0.897835, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transformStyle: "preserve-3d",
-              willChange: "transform"
+                'translate3d(-3.1075%, 7.2975%, 0px) scale3d(0.897835, 0.897835, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
+              transformStyle: 'preserve-3d',
+              willChange: 'transform',
             }}
           />
         </div>

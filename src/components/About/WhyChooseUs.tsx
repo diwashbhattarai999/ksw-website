@@ -1,4 +1,8 @@
+import Slider from 'react-slick';
+
 import WhyChooseUsVetcor from './WhyChooseUsVetcor';
+import Container from '../Container';
+
 import Expert from '../../assets/WhyChooseUsImage/Expert.png';
 import Agility from '../../assets/WhyChooseUsImage/Agility.png';
 import Collaboration from '../../assets/WhyChooseUsImage/Collaboration.png';
@@ -11,10 +15,6 @@ import Global from '../../assets/WhyChooseUsImage/Global.png';
 import Improvement from '../../assets/WhyChooseUsImage/Improvement.png';
 import Driven from '../../assets/WhyChooseUsImage/Driven.png';
 import Solution from '../../assets/WhyChooseUsImage/solution.png';
-
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
 const settings = {
   dots: true,
@@ -113,38 +113,41 @@ export default function WhyChooseUs() {
       <WhyChooseUsVetcor />
 
       {/* why to chose us components  */}
-      <div className="p-8 mt-4 text-center md:mt-2 ">
-        <h2 className="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl ">
-          Why to <span className="text-blue-700">Choose US?</span>
-        </h2>
-        <Slider {...settings}>
-          {CARDS.map((card, index) => {
-            return (
-              <li key={index} className="w-full lg:w-auto">
-                <div className="flex flex-col items-center mt-20 text-center border border-gray-100 rounded-md shadow-md w-full lg:w-[36rem] h-[36rem]">
-                  <div className="w-full overflow-hidden h-[24rem]">
-                    <img
-                      src={card.image}
-                      alt="gem"
-                      className="inline-block w-full h-full bg-contain rounded"
-                    />
-                  </div>
+      <Container>
+        <div className="py-8 mt-4 text-center md:mt-2 ">
+          <h2 className="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl ">
+            Why to <span className="text-blue-700">Choose US?</span>
+          </h2>
 
-                  <div className="flex flex-col items-start justify-start w-full gap-4 px-4 py-8 text-left border-t border-gray-100">
-                    <h3 className="font-bold text-[1.2rem] sm:text-[2rem]">
-                      {card.title}
-                      <span className="text-blue-700">{card.spanTitle}</span>
-                    </h3>
-                    <p className="text-[0.8rem] sm:text-[1rem]">
-                      {card.description}
-                    </p>
+          <Slider {...settings}>
+            {CARDS.map((card, index) => {
+              return (
+                <li key={index} className="w-full lg:w-auto">
+                  <div className="flex flex-col items-center mt-20 mx-10 text-center border border-gray-100 rounded-md shadow-md w-full lg:w-[36rem] h-[36rem]">
+                    <div className="w-full overflow-hidden h-[24rem]">
+                      <img
+                        src={card.image}
+                        alt="gem"
+                        className="inline-block w-full h-full bg-contain rounded"
+                      />
+                    </div>
+
+                    <div className="flex flex-col items-start justify-start w-full gap-4 px-4 py-8 text-left border-t border-gray-100">
+                      <h3 className="font-bold text-[1.2rem] sm:text-[2rem]">
+                        {card.title}
+                        <span className="text-blue-700">{card.spanTitle}</span>
+                      </h3>
+                      <p className="text-[0.8rem] sm:text-[1rem]">
+                        {card.description}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </li>
-            );
-          })}
-        </Slider>
-      </div>
+                </li>
+              );
+            })}
+          </Slider>
+        </div>
+      </Container>
     </div>
   );
 }

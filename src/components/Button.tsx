@@ -1,26 +1,26 @@
 interface ButtonProps {
-  bgColor?: string;
   textColor?: string;
   hoverEffect?: string;
   buttonName?: string;
   props?: string;
   width?: string;
   svg?: boolean;
+  transparent?: boolean;
 }
 
 function Button({
-  bgColor,
   textColor,
   hoverEffect,
   buttonName,
   props,
   width,
   svg,
+  transparent,
 }: ButtonProps) {
   return (
     <>
       <div
-        className={`flex ${width} ${bgColor} hover:bg-yellow-300 h-12 justify-start rounded-md items-center px-3 py-2 w-48 duration-300`}
+        className={`flex ${width} ${transparent ? 'bg-transparent' : 'bg-[#004AAD] '} hover:bg-[#004AAD]/70  h-12 justify-start items-center px-3 py-2 w-48 duration-300 rounded-md`}
       >
         <button
           type="button"
@@ -39,7 +39,7 @@ function Button({
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="md:h-[29px] md:w-[29px]  h-[20px] w-[20px]"
+            className="md:h-[29px] md:w-[29px]  h-[20px] w-[20px] text-white"
           >
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 19"></polyline>

@@ -293,33 +293,7 @@ export default function SeoPackages() {
 
   return (
     <>
-      <div className="relative flex flex-col items-center w-full gap-4 mt-12">
-        <div className="flex items-center justify-center w-full gap-2 p-2">
-          <div className="w-[3rem] border-b-2 border-blue-500"></div>
-          <h2 className="text-black text-[0.8rem] sm:text-[1rem] font-semibold z-10">
-            SUBSCRIPTION PLAN
-          </h2>
-          <div className="w-[3rem] border-b-2 border-blue-500"></div>
-        </div>
-
-        <div>
-          <p className="text-[1.2rem] sm:text-[2rem] font-bold z-10 ">
-            Seo <span className="z-10 text-blue-700">Packages</span>
-          </p>{' '}
-        </div>
-
-        <div className="text-[#5a5a5a] pl-4">
-          <p className="z-10 m-5 text-sm sm:text-md">
-            Choose plans from our simple, transparent pricing
-          </p>
-        </div>
-
-        <button className="py-3 px-6 bg-[#EFF569] hover:bg-yellow-300 rounded-md h  text-black font-semibold lg:absolute lg:top-6 lg:right-24">
-          Download Brouchure
-        </button>
-      </div>
-
-      <div className="w-full gap-4 p-4 place-items-center md:grid md:grid-cols-2 lg:grid-cols-4 ">
+      <div className="w-full gap-12 place-items-center md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {cardContent.map((item, index) => (
           <div key={index}>
             <SeoPackageCard
