@@ -178,7 +178,7 @@ export default function NavBar() {
               About
             </Link>
 
-            <button
+            {/* <button
               onClick={() => {
                 setShowPricing((e) => !e);
                 setShowAbout(false);
@@ -196,16 +196,16 @@ export default function NavBar() {
                 show={showPricing}
                 setShow={setShowPricing}
               />
-            </button>
+            </button> */}
 
-            {/* <Link
+            <Link
               to="/pricing"
               className={`mx-2 my-1 md:my-0 hover-underline-animation ${
                 location.pathname === '/pricing' ? 'active' : ''
               }`}
             >
               Pricing
-            </Link> */}
+            </Link>
 
             <Link
               to="/services"

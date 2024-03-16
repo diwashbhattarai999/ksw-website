@@ -188,33 +188,33 @@ const AboutCompany: React.FC = () => {
             })}
           </ul>
         </div>
-
-        <WhyChooseUs />
-
-        {/* See our teams */}
-        <div className="flex items-center justify-center w-full my-20">
-          <Link
-            to="/ourteam"
-            onClick={() => {
-              window.scrollTo({
-                top: 0,
-                left: 0,
-                behavior: 'smooth',
-              });
-            }}
-          >
-            <Button
-              width="w-56"
-              bgColor="bg-[#EFF569]"
-              textColor="text-gray-900"
-              hoverEffect=""
-              buttonName="See our Teams"
-              props="font-bold w-[195px] rounded-lg md:text-lg "
-              svg
-            />
-          </Link>
-        </div>
       </Container>
+
+      <WhyChooseUs />
+
+      {/* See our teams */}
+      <div className="flex items-center justify-center w-full my-20">
+        <Link
+          to="/ourteam"
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: 'smooth',
+            });
+          }}
+        >
+          <Button
+            width="w-56"
+            bgColor="bg-[#EFF569]"
+            textColor="text-gray-900"
+            hoverEffect=""
+            buttonName="See our Teams"
+            props="font-bold w-[195px] rounded-lg md:text-lg "
+            svg
+          />
+        </Link>
+      </div>
 
       {/* Join us today */}
       <div className="py-20 my-20 bg-gray-50">
