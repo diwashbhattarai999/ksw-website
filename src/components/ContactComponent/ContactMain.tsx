@@ -36,12 +36,12 @@ const ContactMain: React.FC = () => {
                     +977-9863198323<br></br>
                   </h2>
                   <h2>
-                    <span className="font-semibold">Email:</span>
-                    <span>
+                    <span className="font-semibold">Email: </span>
+                    <Link to="mailto:">
                       kswtechzone@gmail.com
                       <br />
-                    </span>
-                    <span className="ml-[52px]">contact@kswtechzone.com</span>
+                    </Link>
+                    <span className="ml-[52px]"> contact@kswtechzone.com</span>
                   </h2>
                 </div>
               </div>
@@ -145,7 +145,7 @@ const ContactMain: React.FC = () => {
                   <input
                     type="submit"
                     value={'Submit'}
-                    className="bg-yellow-200 p-2 my-2 w-[100%] font-semibold rounded-md hover:cursor-pointer hover:bg-yellow-300"
+                    className="bg-[#004AAD] text-white p-2 my-2 w-[100%] font-semibold rounded-md hover:cursor-pointer hover:bg-[#004AAD]/70"
                     placeholder="Subject"
                   />
                 </div>
