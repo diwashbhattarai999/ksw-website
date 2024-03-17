@@ -89,7 +89,7 @@ const Pricing = () => {
             </div>
           </Container>
 
-          <div className="py-20 mt-20 mb-40 bg-gray-50">
+          <div className="mt-20 mb-40 bg-gray-50">
             <Container>
               {selectedCategory === 'SEO' && <SeoPackages />}
               {selectedCategory === 'SocialMedia' && <SocialMediaPackages />}

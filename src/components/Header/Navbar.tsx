@@ -1,28 +1,11 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './NavBar.css'; // Importing CSS file for NavBar styling
-import { BiDownArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
-import DropDown from '../DropDown';
 import Container from '../Container';
-import Logotext from '../../assets/KSW.png'
-// import { FaCaretDown } from "react-icons/fa";
-
-const pricing = [
-  { title: 'Seo Package', link: 'seopackages' },
-  { title: 'Web Package', link: 'webpackages' },
-  { title: 'Social Media Package', link: 'socialmediapackages' },
-];
-
-const about = [
-  { title: 'About Us', link: 'about' },
-  { title: 'Why Choose Us', link: 'whychooseus' },
-  { title: 'Teams', link: 'ourteam' },
-];
+import Logotext from '../../assets/KSW.png';
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [showPricing, setShowPricing] = useState(false);
-  const [showAbout, setShowAbout] = useState(false);
   const location = useLocation();
 
   const toggleMenu = () => {
@@ -31,17 +14,14 @@ export default function NavBar() {
 
   return (
     <div className="relative">
-      <Link
-        to="/"
-        className="z-10 justify-center ml-24 text-xl font-bold text-center text-gray-800 md:hidden lg:hidden mb-7"
-      >
-        <img className="w-[20rem]" src={Logotext} alt="Logo" />
+      <Link to="/" className="z-10 md:hidden">
+        <img className="w-52" src={Logotext} alt="Logo" />
       </Link>
       {/* Hamburger menu button */}
       <div className="absolute right-0 z-50 mb-20 mr-4 -mt-1 md:hidden top-2">
         <button onClick={toggleMenu} className="focus:outline-none">
           <svg
-            className="w-6 h-6"
+            className="w-8 h-8"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -83,28 +63,14 @@ export default function NavBar() {
             >
               About us
             </Link>
-
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                setShowAbout((e) => !e);
-                setShowPricing(false);
-              }}
+            <Link
+              to="/pricing"
               className={`text-xl font-bold text-gray-800 hover-underline-animation ${
                 location.pathname === '/pricing' ? 'active' : ''
               }`}
             >
-              <div className="flex items-center justify-center">
-                About{!showAbout ? <BiRightArrowAlt /> : <BiDownArrowAlt />}
-              </div>
-
-              <DropDown
-                data={about}
-                show={showAbout}
-                setShow={setShowPricing}
-              />
-            </button>
-
+              Pricing
+            </Link>
             <Link
               to="/services"
               className={`text-xl font-bold text-gray-800 hover-underline-animation ${
@@ -129,26 +95,7 @@ export default function NavBar() {
             >
               Blogs
             </Link>
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                setShowPricing((e) => !e);
-                setShowAbout(false);
-              }}
-              className={`text-xl font-bold text-gray-800 hover-underline-animation ${
-                location.pathname === '/pricing' ? 'active' : ''
-              }`}
-            >
-              <div className="flex items-center justify-center">
-                Pricing{!showPricing ? <BiRightArrowAlt /> : <BiDownArrowAlt />}
-              </div>
 
-              <DropDown
-                data={pricing}
-                show={showPricing}
-                setShow={setShowPricing}
-              />
-            </button>
             <Link
               to="/contact"
               className={`text-xl font-bold text-gray-800 hover-underline-animation ${
@@ -166,7 +113,7 @@ export default function NavBar() {
         <div className="items-center justify-between hidden h-16 my-8 md:flex md:flex-row">
           <div>
             <Link to="/" className={`text-xl font-bold text-gray-800`}>
-            <img className="w-[14rem]" src={Logotext} alt="Logo" />
+              <img className="w-[14rem]" src={Logotext} alt="Logo" />
             </Link>
           </div>
           <div className="flex flex-wrap justify-center font-medium text-sm md:flex-nowrap md:justify-between">
@@ -178,26 +125,6 @@ export default function NavBar() {
             >
               About
             </Link>
-
-            {/* <button
-              onClick={() => {
-                setShowPricing((e) => !e);
-                setShowAbout(false);
-              }}
-              className={`mx-2 my-1 md:ml-4 md:my-0 hover-underline-animation relative ${
-                location.pathname === '/pricing' ? 'active' : ''
-              }`}
-            >
-              <div className="flex items-center justify-center">
-                Pricing{!showPricing ? <BiRightArrowAlt /> : <BiDownArrowAlt />}
-              </div>
-
-              <DropDown
-                data={pricing}
-                show={showPricing}
-                setShow={setShowPricing}
-              />
-            </button> */}
 
             <Link
               to="/pricing"

@@ -11,8 +11,8 @@ export default function Our() {
       <h2 className="text-[1.2rem] sm:text-[2rem] font-bold text-center">
         Our Platform
       </h2>
-      <div className="section_approach bg-night bg-blue-50 rounded-lg lg:w-[90%] lg:ml-[5%] md:ml-[4%]  sm:ml-[2%]">
-        <div className="treatment_top-angle ">
+      <div className="section_approach bg-night md:pt-[3.3125rem] bg-blue-50 rounded-lg lg:w-[90%] lg:ml-[5%] md:ml-[4%]  sm:ml-[2%]">
+        <div className="treatment_top-angle hidden md:block">
           <svg
             width={1440}
             height={144}
@@ -42,11 +42,11 @@ export default function Our() {
           }}
         >
           <div className="container-medium ">
-            <div className="approach_wrapper">
+            <div className="approach_wrapper pb-10">
               <div className="text-black w-layout-grid approach_grid">
                 <div
                   id="w-node-_20d81665-3cbd-3659-ba6b-ec3fee4361a8-4e2a7bc4"
-                  className="approach_grid-card"
+                  className="approach_grid-card pt-0"
                 >
                   <div className="grid_content-wrapper">
                     <div className="text-2xl">Hourly Place</div>
@@ -122,7 +122,6 @@ export default function Our() {
                 <Link to="/platforms">
                   <Button
                     width="w-56"
-                    hoverEffect="hover:bg-yellow-300"
                     buttonName="SEE OUR PLATFORMS"
                     props=" font-bold w-[230px] rounded-md"
                   />
@@ -145,7 +144,7 @@ export default function Our() {
           }}
         />
 
-        <div className="blob_parent is-home6">
+        <div className="blob_parent is-home6 hidden md:block">
           <div
             data-w-id="5819eb20-ccbe-ac53-1823-59b8d621bca3"
             className="blob is-home6"
@@ -157,7 +156,7 @@ export default function Our() {
             }}
           />
         </div>
-        <div className="blob_parent is-home5">
+        <div className="blob_parent is-home5 hidden md:block">
           <div
             data-w-id="fee261b6-3626-d5da-6738-4b7bfa275384"
             className="blob is-home5"
@@ -169,7 +168,7 @@ export default function Our() {
             }}
           />
         </div>
-        <div className="angle-bottom w-embed">
+        <div className="angle-bottom w-embed hidden md:block">
           <svg
             width="100%"
             height="auto"

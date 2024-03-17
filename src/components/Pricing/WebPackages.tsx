@@ -165,7 +165,7 @@ const WebPackages: React.FC = () => {
         <Link to="/#" className="flex items-center justify-center w-full">
           <button
             type="button"
-            className=" rounded-md w-52 bg-[#EFF569] hover:bg-yellow-300 px-4 sm:px-6 sm:py-4 text-sm font-bold text-black"
+            className=" rounded-md w-52 bg-[#004AAD] hover:bg-[#1356ae] pt-4 sm:px-6 sm:py-4 text-sm font-bold text-white"
           >
             Quick Enquiry
           </button>
