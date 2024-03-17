@@ -2,7 +2,6 @@ import {
   FirstTestTube,
   NavBar,
   VectorAnimatedImage,
-  Footer,
   WeProvides,
   Testimonial,
   Our,
@@ -26,7 +25,6 @@ function HomePage() {
       <Testimonial />
       <OurPartner />
       <Our />
-      <Footer />
     </>
   );
 }

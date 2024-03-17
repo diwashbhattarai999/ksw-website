@@ -6,7 +6,7 @@ import './about.css';
 import Container from '../Container';
 import AboutVector from './AboutVector';
 import Company from '../../assets/company.svg';
-import { Button, Footer, NavBar, WhyChooseUs } from '..';
+import { Button, NavBar, WhyChooseUs } from '..';
 
 const WHAT_SET_US_APART = [
   {
@@ -236,8 +236,6 @@ const AboutCompany: React.FC = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { Footer, NavBar, Button } from '../components';
+import { NavBar, Button } from '../components';
 import { Link } from 'react-router-dom';
 import { Reward24Regular } from '@fluentui/react-icons';
 import { BiBlock, BiHappy } from 'react-icons/bi';
@@ -178,8 +178,6 @@ export default function Career() {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { Footer, NavBar, Card } from '../components';
+import { NavBar, Card } from '../components';
 import web from '../assets/ServiceImage/web.png';
 import Mobile from '../assets/ServiceImage/Mobile.png';
 import SoftwareDevelopement from '../assets/ServiceImage/SoftwareDevelopment.png';
@@ -168,12 +168,12 @@ const Service = () => {
   return (
     <>
       <div
-        className="h-[100vh] relative overflow-x-hidden"
+        className="relative overflow-x-hidden"
         style={{ minHeight: '-webkit-fill-available' }}
       >
         <ServiceVector />
         <NavBar />
-        <div className="w-[90%] h-[100vh] m-auto">
+        <div className="w-[90%] m-auto">
           <div className="mt-6 text-center md:mt-0 xl:mb-10">
             <h1 className="md:text-[2rem] text-[1.4rem]   font-extrabold">
               Serv<span className="text-blue-700">ices</span>
@@ -202,7 +202,6 @@ const Service = () => {
               img={ele.image}
             />
           ))}
-          <Footer />
         </div>
       </div>
     </>

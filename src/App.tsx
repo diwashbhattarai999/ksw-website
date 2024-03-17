@@ -10,7 +10,7 @@ import OurTeamPage from './pages/OurTeamPage';
 
 import AboutCompany from './components/About/AboutCompany';
 import WhyChooseUs from './components/About/WhyChooseUs';
-import { OurPlatform } from './components';
+import { Footer, OurPlatform } from './components';
 
 import './components/HomeComponent/blob.css';
 
@@ -29,6 +29,7 @@ export default function App() {
         <Route path="/whychooseus" element={<WhyChooseUs />} />
         <Route path="/platforms" element={<OurPlatform />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

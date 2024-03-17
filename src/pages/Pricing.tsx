@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Footer, NavBar } from '../components';
+import { NavBar } from '../components';
 import SeoPackagesVector from '../components/Pricing/SeoPackagesVector';
 import SocialMediaPackages from '../components/Pricing/SocialMediaPackages';
 import SeoPackages from '../components/Pricing/SeoPackages';
@@ -96,8 +96,6 @@ const Pricing = () => {
               {selectedCategory === 'Web' && <WebPackages />}
             </Container>
           </div>
-
-          <Footer />
         </div>
       </div>
     </>
