@@ -16,20 +16,63 @@ import Improvement from '../../assets/WhyChooseUsImage/Improvement.png';
 import Driven from '../../assets/WhyChooseUsImage/Driven.png';
 import Solution from '../../assets/WhyChooseUsImage/solution.png';
 
+// const settings = {
+//   dots: true,
+//   speed: 500,
+//   infinite: true,
+//   autoplay: true,
+//   autoplaySpeed: 2000,
+//   responsive: [
+//     {
+//       breakpoint: 600,
+//       settings: {
+//         slidesToShow: 2,
+//         slidesToScroll: 2,
+//         initialSlide: 2,
+//       },
+//     },
+//     {
+//       breakpoint: 320,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//       },
+//     },
+//   ],
+// };
+
 const settings = {
   dots: true,
+  infinite: true,
   speed: 500,
+  // autoplay: true,
+  // autoplaySpeed: 2000,
   slidesToShow: 2,
   slidesToScroll: 2,
-  infinite: true,
-  autoplay: true,
-  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 320,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+      },
+    },
+  ],
 };
 
 const CARDS = [
   {
     image: Expert,
-    title: 'Expertise in',
+    title: 'Expertise in ',
     spanTitle: 'Technical Field',
     description: 'Proven professionals delivering exceptional results.',
   },
@@ -78,26 +121,26 @@ const CARDS = [
   },
   {
     image: Global,
-    title: 'Global Perspective,',
+    title: 'Global Perspective, ',
     spanTitle: 'Local Understanding',
     description: 'Diverse experiences with a local touch.',
   },
   {
     image: Improvement,
-    title: 'Continuous',
+    title: 'Continuous ',
     spanTitle: 'Improvement',
     description: 'A commitment to evolving with industry standards.',
   },
   {
     image: Driven,
-    title: 'Results-Driven',
+    title: 'Results-Driven ',
     spanTitle: 'Approach',
     description:
       'Focused on delivering tangible outcomes that align with your goals.',
   },
   {
     image: Solution,
-    title: 'Cost-Effective',
+    title: 'Cost-Effective ',
     spanTitle: 'Solutions',
     description:
       'Optimal value with efficient use of resources for budget-conscious strategies.',
@@ -107,7 +150,7 @@ const CARDS = [
 export default function WhyChooseUs() {
   return (
     <div
-      className="relative mt-20 overflow-x-hidden"
+      className="relative mt-20"
       style={{ minHeight: '-webkit-fill-available' }}
     >
       <WhyChooseUsVetcor />
@@ -122,13 +165,16 @@ export default function WhyChooseUs() {
           <Slider {...settings}>
             {CARDS.map((card, index) => {
               return (
-                <li key={index} className="w-full lg:w-auto">
-                  <div className="flex flex-col items-center mt-20 mx-10 text-center border border-gray-100 rounded-md shadow-md w-full lg:w-[36rem] h-[36rem]">
-                    <div className="w-full overflow-hidden h-[24rem]">
+                <li
+                  key={index}
+                  className="w-full lg:w-auto bg-white mt-5 md:px-5"
+                >
+                  <div className="flex flex-col items-center md:mt-20 text-center border border-gray-100 rounded-md shadow-md w-full md:h-[30rem]">
+                    <div className="w-full h-52  lg:h-96 overflow-hidden">
                       <img
                         src={card.image}
                         alt="gem"
-                        className="inline-block w-full h-full bg-contain rounded"
+                        className="inline-block w-full h-full md:h-60 lg:h-96 bg-contain object-cover rounded"
                       />
                     </div>
 
