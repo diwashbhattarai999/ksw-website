@@ -127,16 +127,16 @@ const WebPackages: React.FC = () => {
     <Container>
       <div className="relative z-50 w-full py-10 m-auto mb-20 overflow-hidden bg-white">
         <div className="z-50 flex py-5 mb-10 bg-white border-b border-b-gray-200">
-          <div className="w-[28%] z-50 sm:w-[40%] text-md sm:text-xl text-center items-center text-black-600 font-bold p-1 sm:p-4">
+          <div className="w-[28%] z-50 sm:w-[40%] text-base sm:text-xl text-center items-center text-black-600 font-bold p-1 sm:p-4">
             Features
           </div>
-          <div className="w-[24%] sm:w-[20%] text-sm sm:text-xl text-center items-center text-blue-700 font-bold p-1 sm:p-4">
+          <div className="w-[24%] sm:w-[20%] text-xs sm:text-xl text-center items-center text-blue-700 font-bold p-1 sm:p-4">
             Basic
           </div>
-          <div className="w-[24%] sm:w-[20%] text-sm sm:text-xl text-center items-center text-blue-700 font-bold p-1 sm:p-4">
+          <div className="w-[24%] sm:w-[20%] text-xs sm:text-xl text-center items-center text-blue-700 font-bold p-1 sm:p-4">
             Advance
           </div>
-          <div className="w-[24%] sm:w-[20%] text-sm sm:text-xl text-center items-center text-blue-700 font-bold p-1 sm:p-4">
+          <div className="w-[24%] sm:w-[20%] text-xs sm:text-xl text-center items-center text-blue-700 font-bold p-1 sm:p-4">
             Premium
           </div>
         </div>
@@ -165,7 +165,7 @@ const WebPackages: React.FC = () => {
         <Link to="/#" className="flex items-center justify-center w-full">
           <button
             type="button"
-            className=" rounded-md w-52 bg-[#EFF569] hover:bg-yellow-300 px-4 sm:px-6 sm:py-4 text-sm font-bold text-black"
+            className=" rounded-md w-52 bg-[#004AAD] hover:bg-[#004AAD]/70 p-4 sm:px-6 sm:py-4 text-sm font-bold text-white"
           >
             Quick Enquiry
           </button>
