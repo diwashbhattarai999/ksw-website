@@ -19,11 +19,11 @@ const Card: React.FC<CardProps> = ({
   showButton = true,
 }) => {
   return (
-    <div className="flex flex-col pt-10 md:flex-row md:justify-between">
+    <div className="flex flex-col pt-10 md:flex-row md:justify-between ml-5 m-auto">
       {showImageFirst ? (
         <>
           <div className="w-full sm:w-full md:w-[60%] lg:w-[60%] md:items-start">
-            <div className="w-[100%] lg:w-[60%]">
+            <div className="w-[100%] lg:w-[80%]">
               <div className="mb-4 md:mb-8">
                 <div className="md:text-[2rem] text-[1.2rem] sm:text-[2rem] font-bold text-center md:text-left">
                   <p>
@@ -43,7 +43,7 @@ const Card: React.FC<CardProps> = ({
                         buttonName="FIND OUT MORE"
                         textColor="text-gray-50"
                         hoverEffect="hover:text-gray-600"
-                        props="underline decoration-1 md:text-xl md:font-bold text-sm mr-[-0.65rem]"
+                        props="md:text-xl md:font-bold text-sm mr-[-0.65rem]"
                       />
                     )}
                   </a>
@@ -53,7 +53,7 @@ const Card: React.FC<CardProps> = ({
           </div>
           <div className="w-[100%] md:w-[40%] lg:w-[40%] flex justify-end ">
             <img
-              className="rounded-br-[4rem] p-5 md:h-[16rem] lg:h-[25rem] m-auto"
+              className="rounded-br-[4rem] p-5 md:h-[16rem] lg:h-[25rem] object-cover m-auto"
               src={img}
               alt="People Working in Office"
             />
@@ -63,13 +63,13 @@ const Card: React.FC<CardProps> = ({
         <>
           <div className="w-[100%] md:w-[40%] lg:w-[40%] flex justify-start">
             <img
-              className="rounded-br-[4rem] p-5 md:h-[16rem] lg:h-[25rem]"
+              className="rounded-br-[4rem] p-5 md:h-[16rem] object-cover lg:h-[25rem]"
               src={img}
               alt="People Working in Office"
             />
           </div>
-          <div className="w-full sm:w-full md:w-[60%] lg:w-[40%] md:items-start">
-            <div className="w-[100%] lg:w-[90%] m-auto text-justify">
+          <div className="w-full sm:w-full md:w-[60%] lg:w-[50%] md:items-start">
+            <div className="w-[100%] m-auto text-justify">
               <div className="mb-4 md:mb-8">
                 <div className="md:text-[2rem] text-[1.2rem] sm:text-[2rem] font-bold text-center md:text-left">
                   <p>
@@ -89,7 +89,7 @@ const Card: React.FC<CardProps> = ({
                         buttonName="FIND OUT MORE"
                         textColor="text-gray-50"
                         hoverEffect="hover:text-gray-600"
-                        props="underline decoration-1 md:text-xl md:font-bold text-sm mr-[-0.65rem] md:justify-start justify-center"
+                        props="md:text-xl md:font-bold text-sm mr-[-0.65rem] md:justify-start justify-center"
                       />
                     )}
                   </a>

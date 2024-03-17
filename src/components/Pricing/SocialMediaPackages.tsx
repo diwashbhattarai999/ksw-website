@@ -115,11 +115,11 @@ const SocialMediaPackages: React.FC = () => {
       <div className="relative overflow-x-hidden">
         <div className="mb:10 md:mb-20">
           <div className="h-auto w-full lg:w-[80%] m-auto  z-10">
-            <div className="z-10 flex flex-col p-4 sm:flex-row sm:p-0">
+            <div className="z-10 flex flex-col justify-around p-4 sm:flex-row sm:p-0">
               {plans.map((plan) => (
                 <div
                   key={plan.name}
-                  className="z-10 flex flex-col justify-between h-auto bg-white rounded-md p-4 w-full sm:w-[25%] mb-4 sm:m-1 lg:m-4"
+                  className="z-10 flex flex-col justify-between h-auto bg-white rounded-md p-4 w-full md:w-[25%] mb-4 sm:m-1 lg:m-4"
                 >
                   <div>
                     <p className="text-xl font-bold text-center">{plan.name}</p>
@@ -142,7 +142,7 @@ const SocialMediaPackages: React.FC = () => {
                   </div>
 
                   <div className="flex justify-center w-full mt-8">
-                    <button className="w-full bg-[#EFF569] hover:bg-yellow-300 pt-3 pb-3 text-black font-semibold  mb-2 rounded-lg mt-3 ease-in duration-900]">
+                    <button className="w-full bg-[#004AAD] hover:bg-[#004AAD]/70 pt-3 pb-3 text-white font-semibold  mb-2 rounded-lg mt-3 ease-in duration-900]">
                       Select Plan
                     </button>
                   </div>
