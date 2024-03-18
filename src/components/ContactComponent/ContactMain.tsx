@@ -49,7 +49,7 @@ const ContactMain: React.FC = () => {
           ></iframe>
         </div>
       </div>
-    </>
+    </Container>
   );
 };
 
