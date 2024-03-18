@@ -125,18 +125,18 @@ const plans: PricingPlan[] = [
 const WebPackages: React.FC = () => {
   return (
     <Container>
-      <div className="relative z-50 w-full py-10 m-auto mb-20 overflow-hidden bg-white">
-        <div className="z-50 flex py-5 mb-10 bg-white border-b border-b-gray-200">
-          <div className="w-[28%] z-50 sm:w-[40%] text-base sm:text-xl text-center items-center text-black-600 font-bold p-1 sm:p-4">
+      <div className="relative z-50 w-full py-5 m-auto mb-20 overflow-hidden bg-white border rounded-md shadow-sm border-gray-50">
+        <div className="z-50 flex pb-4 mb-2 bg-white border-b border-b-gray-200">
+          <div className="w-[28%] z-50 sm:w-[40%] text-base sm:text-xl text-left items-center text-black-600 font-bold p-1 pl-[2rem] sm:py-2">
             Features
           </div>
-          <div className="w-[24%] sm:w-[20%] text-xs sm:text-xl text-center items-center text-blue-700 font-bold p-1 sm:p-4">
+          <div className="w-[24%] sm:w-[20%] text-xs sm:text-xl text-center items-center text-blue-700 font-bold p-1 sm:p-2">
             Basic
           </div>
-          <div className="w-[24%] sm:w-[20%] text-xs sm:text-xl text-center items-center text-blue-700 font-bold p-1 sm:p-4">
+          <div className="w-[24%] sm:w-[20%] text-xs sm:text-xl text-center items-center text-blue-700 font-bold p-1 sm:p-2">
             Advance
           </div>
-          <div className="w-[24%] sm:w-[20%] text-xs sm:text-xl text-center items-center text-blue-700 font-bold p-1 sm:p-4">
+          <div className="w-[24%] sm:w-[20%] text-xs sm:text-xl text-center items-center text-blue-700 font-bold p-1 sm:p-2">
             Premium
           </div>
         </div>
@@ -144,9 +144,9 @@ const WebPackages: React.FC = () => {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className="flex items-center justify-center mb-4 text-left "
+              className="flex items-center justify-center text-left "
             >
-              <div className="w-[28%] text-left z-50 sm:w-[40%] items-center text-sm sm:text-md font-bold p-2 sm:p-8">
+              <div className="w-[28%] text-left z-50 sm:w-[40%] items-center text-sm sm:text-md font-bold sm:pl-8">
                 {plan.name}
               </div>
               <div className="w-[24%] sm:w-[20%] flex justify-center items-center text-xl sm:text-3xl p-2 sm:p-4">

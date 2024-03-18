@@ -36,7 +36,7 @@ const SeoPackageCard: React.FC<cardProps> = ({
         <h3 className="font-bold text-[0.8rem] sm:text-[1rem] mt-1 mb-1">
           Initail website Analysis
         </h3>
-        <ul className="pl-3">
+        <ul className="mb-4">
           {initial.map((item, index) => {
             return (
               <div key={index} className="flex gap-2 ">
@@ -62,7 +62,7 @@ const SeoPackageCard: React.FC<cardProps> = ({
         <h3 className="font-bold text-[0.8rem] sm:text-[1rem] mt-1 mb-1">
           On page setup
         </h3>
-        <ul className="pl-3">
+        <ul className="mb-4">
           {setup.map((item, index) => {
             return (
               <div key={index} className="flex items-start gap-2">
@@ -88,7 +88,7 @@ const SeoPackageCard: React.FC<cardProps> = ({
         <h3 className="font-bold text-[0.8rem] sm:text-[1rem] mt-1 mb-1">
           Technical Seo
         </h3>
-        <ul className="pl-3">
+        <ul className="mb-4">
           {technical.map((item, index) => {
             return (
               <div key={index} className="flex items-start gap-2">
@@ -114,7 +114,7 @@ const SeoPackageCard: React.FC<cardProps> = ({
         <h3 className="font-bold text-[0.8rem] sm:text-[1rem] mt-1 mb-1">
           Off Page Seo
         </h3>
-        <ul className="pl-3">
+        <ul className="mb-4">
           {offPageSEOContent.map((item, index) => {
             return (
               <div key={index} className="flex items-start gap-2">
@@ -140,7 +140,7 @@ const SeoPackageCard: React.FC<cardProps> = ({
         <h3 className="font-bold text-[0.8rem] sm:text-[1rem] mt-1 mb-1">
           Local seo
         </h3>
-        <ul className="pl-3">
+        <ul className="mb-4">
           {localSEOContent.map((item, index) => {
             return (
               <div key={index} className="flex items-start gap-2">
@@ -166,7 +166,7 @@ const SeoPackageCard: React.FC<cardProps> = ({
         <h3 className="font-bold text-[0.8rem] sm:text-[1rem] mt-1 mb-1">
           Monthly Report
         </h3>
-        <ul className="pl-3">
+        <ul className="mb-4">
           {monthlyReportContent.map((item, index) => {
             return (
               <div key={index} className="flex items-start gap-2">
