@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <>
       <div
-        className="relative overflow-x-hidden  "
+        className="relative overflow-hidden"
         style={{ minHeight: '-webkit-fill-available' }}
       >
         <VectorImage />

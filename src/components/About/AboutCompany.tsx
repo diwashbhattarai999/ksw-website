@@ -144,6 +144,7 @@ const AboutCompany: React.FC = () => {
         >
           <Button
             width="w-56"
+            textColor='white'
             hoverEffect=""
             buttonName="See our Teams"
             props="font-bold w-[195px] rounded-lg md:text-lg "

@@ -9,6 +9,11 @@ export default function OurTeam() {
   }
   const leader: TeamMember[] = [
     {
+      img:'rahull.jpg',
+      name: 'Rahul Maharjan',
+      role:'CEO',
+    },
+    {
       img: '/picture/Buddharam.jpg',
       name: 'Buddharam Mahato',
       role: 'Legal and Local Advisor',
