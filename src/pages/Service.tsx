@@ -173,24 +173,7 @@ const Service = () => {
       >
         <ServiceVector />
         <NavBar />
-        <div className="w-[90%] m-auto">
-          <div className="mt-6 text-center md:mt-0 xl:mb-10">
-            <h1 className="md:text-[2rem] text-[1.4rem]   font-extrabold">
-              Serv<span className="text-blue-700">ices</span>
-            </h1>
-            <p className="m-auto w-[80%] md:w-[50%] font-bold md:text-[1rem]  text-[0.8rem] md:mt-0 mt-2 text-justify">
-              In the new world, the companies that build, learn, and evolve the
-              fastest will win.
-            </p>
-            <p className="m-auto w-[80%] md:w-[50%] md:mt-2 mt-2 text-justify">
-              Our people and processes are built for speed of iteration and
-              innovation. We use world-class product engineering and lean
-              methodologies to transform businesses, launch startups, leverage
-              AI, and produce new paradigms of Healthcare, Design and Data and
-              AI.
-            </p>
-          </div>
-
+        <div className="w-4/5 mt-20 m-auto">
           {services.map((ele, index) => (
             <Card
               showButton={true}

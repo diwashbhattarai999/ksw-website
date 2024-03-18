@@ -13,7 +13,6 @@ export default function Career() {
     >
       <CareerVector />
       <NavBar />
-      <h2>HELLO</h2>
       <div className="w-[88%] m-auto">
         <div className="flex flex-col pt-10 md:flex-row md:justify-between ">
           <div className="w-full sm:w-full md:w-[60%] lg:w-[60%] md:items-start">

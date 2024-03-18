@@ -1,4 +1,5 @@
 import CEO from '../../assets/sanjay.jpg';
+import TeamCard from '../Card/TeamCard';
 
 export default function OurTeam() {
   interface TeamMember {
@@ -87,14 +88,14 @@ export default function OurTeam() {
   ];
   return (
     <>
-      <div className="z-50 mt-16 ">
+      <div className="z-50 mt-16 md:mt-20 lg:mt-28 xl:mt-36">
         <h1 className="font-semibold text-[0.8rem] sm:text-[1rem] text-center px-3 sm:w-1/2 sm:m-auto">
           KSW TechZone: A diverse team with varied expertise collaborating to
           explore innovative solutions through unique approaches.
         </h1>
 
-        <div className="flex flex-col items-center w-full gap-8 px-4 mt-16 md:flex-row md:justify-between md:items-center lg:justify-center">
-          <div className=" w-full sm:w-[40%]">
+        <div className="flex flex-col items-center w-4/5 m-auto gap-8 px-4 mt-16 md:flex-row md:justify-between md:items-center lg:justify-center">
+          <div className=" w-full lg:w-3/5 m-auto">
             <h1 className="font-bold text-[1.2rem] sm:text-[2rem]s sm:text-center md:text-left">
               Sanjay Kumar Singh
             </h1>
@@ -115,75 +116,31 @@ export default function OurTeam() {
             <img
               src={CEO}
               alt=""
-              className="w-[20rem] h-[19rem] rounded-md border-red-300"
+              className="w-[20rem] h-[19rem] rounded-md border-red-300 object-contain"
             />
           </div>
         </div>
 
         <div>
-          <p className="p-4 mt-24 text-xl font-medium text-center">
+          <p className="p-4 md:w-4/5 md:m-auto lg:mt-24 text-xl font-medium text-center">
             Cheers to our amazing team for pushing boundaries and contributing
             to Nepal's tech landscape!
           </p>
         </div>
 
-        <div className="grid w-full gap-4 mt-10 place-items-center sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 ">
-          {leader.map((item, index) => {
-            return (
-              <>
-                <div
-                  key={index}
-                  className="w-[18rem] h-[20rem] flex flex-col items-center relative mt-6"
-                >
-                  <div className="w-[17rem] h-[18rem] ">
-                    <img
-                      src={item.img}
-                      alt=""
-                      className="w-[17rem] h-[18rem] rounded-md "
-                    />
-                    <img src="" alt="" />
-                  </div>
-                  <div className="w-[14rem] h-[5rem] bg-gray-200 absolute bottom-1 p-1 text-center rounded-xl">
-                    <h1 className="text-xl font-medium text-center">
-                      {item.name}
-                    </h1>
-                    <p>{item.role}</p>
-                  </div>
-                </div>
-              </>
-            );
-          })}
+        <div className="grid w-4/5 m-auto gap-y-10  mt-10 place-items-center sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
+          {leader.map((item, index) => (
+            <TeamCard item={item} key={index} />
+          ))}
         </div>
 
         <h1 className="text-center mt-16 font-bold text-[1.2rem] sm:text-[2rem]">
           Our team
         </h1>
 
-        <div className="grid w-full gap-4 mt-10 place-items-center sm:grid-cols-2 lg:grid-cols-3 ">
+        <div className="grid w-4/5 m-auto gap-y-10 mt-10 place-items-center sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
           {team.map((item, index) => {
-            return (
-              <>
-                <div
-                  key={index}
-                  className="w-[18rem] h-[20rem]  flex flex-col items-center  relative mt-6 z-40"
-                >
-                  <div className="w-[17rem] h-[18rem] ">
-                    <img
-                      src={item.img}
-                      alt=""
-                      className="w-[17rem] h-[18rem] rounded-md "
-                    />
-                    <img src="" alt="" />
-                  </div>
-                  <div className="w-[14rem] h-[5rem] bg-gray-200 absolute bottom-1 text-center p-1 rounded-xl">
-                    <h1 className="text-xl font-medium text-center">
-                      {item.name}
-                    </h1>
-                    <p>{item.role}</p>
-                  </div>
-                </div>
-              </>
-            );
+            return <TeamCard item={item} key={index} />;
           })}
         </div>
       </div>

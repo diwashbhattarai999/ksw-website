@@ -142,7 +142,7 @@ const SocialMediaPackages: React.FC = () => {
                   </div>
 
                   <div className="flex justify-center w-full mt-8">
-                    <button className="w-full bg-[#004AAD] hover:bg-[#004AAD]/70 pt-3 pb-3 text-white font-semibold  mb-2 rounded-lg mt-3 ease-in duration-900]">
+                    <button className="w-full bg-[#004AAD] hover:bg-[rgb(0,50,120)] pt-3 pb-3 text-white font-semibold  mb-2 rounded-lg mt-3 ease-in duration-900]">
                       Select Plan
                     </button>
                   </div>

@@ -78,21 +78,6 @@ export default function WeProvides() {
 
   return (
     <>
-      <div className="w-[90%]  m-auto">
-        <div className="mt-10 text-center">
-          <p className="m-auto w-[80%] md:w-[40%]  text-[0.8rem] sm:text-[1rem]">
-            We help businesses imagine and create the digital experiences of
-            tomorrow. We succeed together, through the fusion of startup
-            agility, enterprise standards, and world-class engineering.
-          </p>
-          <p className="m-auto w-[80%] md:w-[40%] pt-10  justify-center text-[0.8rem] sm:text-[1rem]">
-            Our people and processes are built for speed of iteration and
-            innovation. We use world-class product engineering and lean
-            methodologies to transform businesses, launch startups, leverage AI,
-            and produce new paradigms of Healthcare, Design and Data and AI.
-          </p>
-        </div>
-      </div>
       <div className="w-full mt-10 sm:mt-20">
         <h1 className=" text-[1.2rem] sm:text-[2rem] font-bold text-center">
           We Provides
@@ -153,87 +138,21 @@ export default function WeProvides() {
           </div>
         </div>
 
-        <div className="order-3 md:pl-8 lg:pl-0">
-          <div className="sm:w-96 sm:h-72 w-[80vw] h-52  md:pl-6 lg:pl-0   flex justify-center flex-col  sm:items-start small:items-center">
+        <div className="order-6 md:order-5  ">
+          <div className="sm:w-96 sm:h-72 w-[80vw] h-52  flex justify-center  flex-col ">
             <h1 className="text-[1.2rem] sm:text-[1.5rem] font-medium">
-              Combining models of the Lorem Ipsum system
+              Reprogramming microglia to treat patients
             </h1>
             <p className="text-[0.8rem] sm:text-[1rem]">
-              Various versions have evolved over the years, sometimes by
-              accident, sometimes on purpose (injected humour and the like).
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour,
             </p>
           </div>
         </div>
 
-        <div className="order-4 overflow-hidden">
-          <div className="relative w-72 h-72">
-            <div className="flex justify-around pt-6 border-2 w-72 h-44 ">
-              <div>
-                <div className="w-12 h-12 p-4 bg-blue-300 rounded-full ">
-                  <Link to="#">
-                    <img src="/weProvidesIcon/instagram.png" alt="icon" />
-                  </Link>
-                </div>
-              </div>
-              <div>
-                <div className="w-12 h-12 p-4 bg-blue-300 rounded-full ">
-                  <Link to="#">
-                    <img src="/weProvidesIcon/facebook.png" alt="icon" />
-                  </Link>
-                </div>
-              </div>
-              <div>
-                <div className="w-12 h-12 p-4 bg-blue-300 rounded-full ">
-                  <Link to="#">
-                    <img src="/weProvidesIcon/twitter.png" alt="icon" />
-                  </Link>
-                </div>
-              </div>
-              <div>
-                <div className="w-12 h-12 p-4 bg-blue-300 rounded-full ">
-                  <Link to="#">
-                    <img src="/weProvidesIcon/facebook.png" alt="icon" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="w-56 h-20  border-2 border-black  flex justify-around items-center absolute top-[6rem] left-[12%] ">
-              <div>
-                <div className="w-12 h-12 p-4 bg-blue-300 rounded-full ">
-                  <Link to="#">
-                    <img src="/weProvidesIcon/facebook.png" alt="icon" />
-                  </Link>
-                </div>
-              </div>
-              <div>
-                <div className="w-12 h-12 p-4 bg-blue-300 rounded-full ">
-                  <Link to="#">
-                    <img src="/weProvidesIcon/facebook.png" alt="icon" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="w-56 h-20 border-2  flex justify-around items-center absolute left-[12%] ">
-              <div>
-                <div className="w-12 h-12 p-4 bg-blue-300 rounded-full ">
-                  <Link to="#">
-                    <img src="/weProvidesIcon/facebook.png" alt="icon" />
-                  </Link>
-                </div>
-              </div>
-              <div>
-                <div className="w-12 h-12 p-4 bg-blue-300 rounded-full">
-                  <Link to="#">
-                    <img src="/weProvidesIcon/facebook.png" alt="icon" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="order-6 md:order-5">
-          <div className="relative w-80 h-60 md:h-72">
+        <div className="order-5 md:order-6">
+          <div className="relative w-80 h-60 md:h-72 mt-5">
             <div>
               <div className="w-16 h-16 bg-blue-300 rounded-full absolute left-[40%] p-4">
                 <Link to="#">
@@ -325,23 +244,10 @@ export default function WeProvides() {
             </div>
           </div>
         </div>
-
-        <div className="order-5 md:order-6">
-          <div className="sm:w-96 sm:h-72 w-[80vw] h-52  flex justify-center  flex-col ">
-            <h1 className="text-[1.2rem] sm:text-[1.5rem] font-medium">
-              Reprogramming microglia to treat patients
-            </h1>
-            <p className="text-[0.8rem] sm:text-[1rem]">
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour,
-            </p>
-          </div>
-        </div>
       </div>
 
       <Link to="/services" className="grid w-full place-items-center">
-        <button className="p-4 w-48 bg-[#004AAD] hover:bg-[#004AAD]/70 text-gray-50 font-semibold rounded-md cursor-pointer">
+        <button className="p-4 w-48 bg-[#004AAD] hover:bg-[rgb(0,50,120)] text-gray-50 font-semibold rounded-md cursor-pointer">
           All Services
         </button>
       </Link>

@@ -127,7 +127,7 @@ const WebPackages: React.FC = () => {
     <Container>
       <div className="relative z-50 w-full py-5 m-auto mb-20 overflow-hidden bg-white border rounded-md shadow-sm border-gray-50">
         <div className="z-50 flex pb-4 mb-2 bg-white border-b border-b-gray-200">
-          <div className="w-[28%] z-50 sm:w-[40%] text-base sm:text-xl text-left items-center text-black-600 font-bold p-1 pl-[2rem] sm:py-2">
+          <div className="w-[28%] z-50 sm:w-[40%] text-xs sm:text-xl text-black-600 font-bold p-1 sm:py-2 text-center">
             Features
           </div>
           <div className="w-[24%] sm:w-[20%] text-xs sm:text-xl text-center items-center text-blue-700 font-bold p-1 sm:p-2">
@@ -142,30 +142,30 @@ const WebPackages: React.FC = () => {
         </div>
         <div>
           {plans.map((plan, index) => (
-            <div
-              key={index}
-              className="flex items-center justify-center text-left "
-            >
-              <div className="w-[28%] text-left z-50 sm:w-[40%] items-center text-sm sm:text-md font-bold sm:pl-8">
-                {plan.name}
+            <>
+              <div key={index} className="flex items-center justify-center ">
+                <div className="w-[28%] text-left z-50 sm:w-[40%] items-center text-[.6rem] sm:text-base font-bold sm:pl-8">
+                  {plan.name}
+                </div>
+                <div className="w-[24%] sm:w-[20%] flex justify-center items-center text-xl sm:text-3xl p-2 sm:p-4">
+                  {plan.icon1}
+                </div>
+                <div className="w-[24%] sm:w-[20%] flex justify-center items-center text-xl sm:text-3xl p-2 sm:p-4">
+                  {plan.icon2}
+                </div>
+                <div className="w-[24%] sm:w-[20%] flex justify-center items-center text-xl sm:text-3xl p-2 sm:p-4">
+                  {plan.icon3}
+                </div>
               </div>
-              <div className="w-[24%] sm:w-[20%] flex justify-center items-center text-xl sm:text-3xl p-2 sm:p-4">
-                {plan.icon1}
-              </div>
-              <div className="w-[24%] sm:w-[20%] flex justify-center items-center text-xl sm:text-3xl p-2 sm:p-4">
-                {plan.icon2}
-              </div>
-              <div className="w-[24%] sm:w-[20%] flex justify-center items-center text-xl sm:text-3xl p-2 sm:p-4">
-                {plan.icon3}
-              </div>
-            </div>
+              <hr />
+            </>
           ))}
         </div>
 
-        <Link to="/#" className="flex items-center justify-center w-full">
+        <Link to="/#" className="flex items-center justify-center w-full mt-4">
           <button
             type="button"
-            className=" rounded-md w-52 bg-[#004AAD] hover:bg-[#004AAD]/70 p-4 sm:px-6 sm:py-4 text-sm font-bold text-white"
+            className=" rounded-md w-52 bg-[#004AAD] hover:bg-[rgb(0,50,120)] p-2 sm:px-6 sm:py-4 text-xs sm:text-base font-bold text-white"
           >
             Quick Enquiry
           </button>

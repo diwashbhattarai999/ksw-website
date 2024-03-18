@@ -16,7 +16,7 @@ const VectorImage = () => {
       <div className="blob_parent is-contact3">
         <div
           data-w-id="bae7a375-a54a-e62c-20ab-76c72b279167"
-          className="blob is-contact3"
+          className="blob is-contact3 absolute"
         ></div>
       </div>
     </>

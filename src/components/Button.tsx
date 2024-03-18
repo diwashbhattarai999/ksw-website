@@ -20,7 +20,7 @@ function Button({
   return (
     <>
       <div
-        className={`flex ${width} ${transparent ? 'bg-transparent' : 'bg-[#004AAD] '} hover:bg-[#004AAD]/70  h-12 justify-start items-center px-3 py-2 w-48 duration-300 rounded-md`}
+        className={`flex ${width} ${transparent ? 'bg-transparent' : 'bg-[#004AAD] '} hover:bg-[rgb(0,50,120)]  h-12 justify-start items-center px-3 py-2 w-48 duration-300 rounded-md`}
       >
         <button
           type="button"
