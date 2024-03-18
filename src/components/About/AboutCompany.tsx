@@ -108,7 +108,7 @@ const AboutCompany: React.FC = () => {
             What Sets Us <span className="text-blue-700">Apart</span>
           </h2>
 
-          <ul className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <ul className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
             {WHAT_SET_US_APART.map((w) => {
               return (
                 <li className="rounded-md bg-gray-50">
@@ -199,7 +199,7 @@ const AboutCompany: React.FC = () => {
         </div> */}
 
       {/* Join us today */}
-      <div className="py-20 my-20 bg-gray-50">
+      <div className="py-20 bg-gray-50">
         <div className="mb-4">
           <p className="text-[1.2rem] sm:text-[2rem] font-bold text-center">
             Join Us on the

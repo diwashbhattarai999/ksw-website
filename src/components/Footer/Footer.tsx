@@ -5,13 +5,13 @@ import './Footer.css';
 const Footer: React.FC = () => {
   return (
     <>
-      <footer className="mt-10">
+      <footer className="mt-10 lg:mt-20">
         <div
           className="h-auto w-[85%] m-auto flex flex-col sm:m-auto"
           style={{ background: '#FFFFF9' }}
         >
-          <div className="flex flex-col md:flex-row justify-left mb-4">
-            <div className="flex flex-col items-center mb-5 lg:mr-20 md:mr-14 lg:items-start md:items-start">
+          <div className="flex flex-col mb-4 md:flex-row justify-left">
+            <div className="flex flex-col items-center justify-end mb-5 lg:mr-20 md:mr-14 md:items-start ">
               <div className="mb-6">
                 <Link to="/">
                   <img className="w-80" src={Logotext} alt="Logo" />
@@ -102,15 +102,15 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="flex flex-col pb-2">
                   <input
-                    type="number"
-                    className="border border-gray-400 p-2"
+                    type="tel"
+                    className="p-2 border border-gray-400"
                     placeholder="Phone *"
                   />
                 </div>
                 <div className="flex flex-col pb-2">
                   <input
                     type="text"
-                    className="border border-gray-400 p-2"
+                    className="p-2 border border-gray-400"
                     placeholder="Subject"
                   />
                 </div>
@@ -132,15 +132,8 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <hr className="bg-black" />
-          <div className=" text-center md:flex flex-row justify-center md:mx-10 lg:mx-44 sm:space-x-4 text-sm my-4 ">
-            <Link to="/" className="underline">
-              Privacy Policy
-            </Link>
-            <p>
-              Copyright 2024, <strong>KSW Techzone</strong> Inc.
-            </p>
-          </div>
-          <div className="flex flex-row justify-center mt-2 pb-[50px] space-x-2 sm:space-x-4">
+
+          <div className="flex flex-row justify-center mt-2 space-x-2 sm:space-x-4">
             <Link to="https://www.facebook.com/profile.php?id=100093997620977">
               <FaFacebook
                 className="changeBg"
@@ -156,6 +149,14 @@ const Footer: React.FC = () => {
             <Link to="/linkedin">
               <FaLinkedin style={{ fontSize: '30px', color: '#004AAD' }} />
             </Link>
+          </div>
+          <div className=" text-center md:flex flex-row justify-center md:mx-10 lg:mx-44 sm:space-x-4 text-sm my-4 pb-[50px]">
+            <Link to="/" className="underline">
+              Privacy Policy
+            </Link>
+            <p>
+              Copyright 2024, <strong>KSW TechZone</strong>
+            </p>
           </div>
         </div>
       </footer>

@@ -7,7 +7,7 @@ import Container from '../components/Container';
 import WebPackages from '../components/Pricing/WebPackages';
 
 const Pricing = () => {
-  const [selectedCategory, setSelectedCategory] = useState('SEO');
+  const [selectedCategory, setSelectedCategory] = useState('SOCIALMEDIA');
 
   return (
     <>
@@ -27,28 +27,27 @@ const Pricing = () => {
               </div>
 
               <div className="relative flex flex-col items-center w-full gap-4 mt-12">
-                <button className="py-3 px-6 bg-[#004AAD] hover:bg-[#004AAD]/70 rounded-md text-gray-50 font-semibold lg:absolute -top-24 right-0">
+                <button className="py-3 px-6 bg-[#004AAD] hover:bg-[rgb(0,50,120)] rounded-md text-gray-50 font-semibold lg:absolute -top-24 right-0">
                   Download Brouchure
                 </button>
               </div>
 
               <div>
                 <p className="text-[1.2rem] sm:text-[2rem] font-bold z-10 ">
-                  {selectedCategory === 'SEO' && (
-                    <>
-                      Seo <span className="z-10 text-blue-700">Packages</span>
-                    </>
-                  )}
-                  {selectedCategory === 'SocialMedia' && (
+                  {selectedCategory === 'SOCIALMEDIA' && (
                     <>
                       Social Media{' '}
                       <span className="z-10 text-blue-700">Packages</span>
                     </>
                   )}
-                  {selectedCategory === 'Web' && (
+                  {selectedCategory === 'SEO' && (
                     <>
-                      Email Marketing{' '}
-                      <span className="z-10 text-blue-700">Packages</span>
+                      Seo <span className="z-10 text-blue-700">Packages</span>
+                    </>
+                  )}
+                  {selectedCategory === 'WEB' && (
+                    <>
+                      Web <span className="z-10 text-blue-700">Packages</span>
                     </>
                   )}
                 </p>{' '}
@@ -60,28 +59,36 @@ const Pricing = () => {
                 </p>
               </div>
 
-              <div className="flex gap-2 md:gap-4 text-xs">
+              <div className="flex flex-wrap items-center justify-center gap-2 text-xs md:gap-4">
                 <button
-                  className={`md:py-3 md:px-6 bg-[#004AAD]  hover:bg-[#004AAD]/70  rounded-md h text-gray-50 font-semibold  ${
-                    selectedCategory === 'SEO' && 'bg-[#004AAD]/70'
+                  className={`w-48 py-3 md:px-6 hover:bg-[rgb(0,50,120)]   rounded-md h text-gray-50 font-semibold  ${
+                    selectedCategory === 'SOCIALMEDIA'
+                      ? 'bg-[rgb(0,50,120)]'
+                      : 'bg-[#004AAD]'
                   }`}
-                  onClick={() => setSelectedCategory('SEO')}
-                >
-                  SEO Package
-                </button>
-                <button
-                  className={`py-3 md:px-6 bg-[#004AAD]  hover:bg-[#004AAD]/70 rounded-md h text-gray-50 font-semibold  ${
-                    selectedCategory === 'SocialMedia' && 'bg-[#004AAD]/70'
-                  }`}
-                  onClick={() => setSelectedCategory('SocialMedia')}
+                  onClick={() => setSelectedCategory('SOCIALMEDIA')}
                 >
                   Social Media Package
                 </button>
+
                 <button
-                  className={`py-3 md:px-6 bg-[#004AAD]  hover:bg-[#004AAD]/70 rounded-md h text-gray-50 font-semibold  ${
-                    selectedCategory === 'Web' && 'bg-[#004AAD]/70'
+                  className={`w-48 py-3 md:px-6  hover:bg-[rgb(0,50,120)] rounded-md h text-gray-50 font-semibold  ${
+                    selectedCategory === 'SEO'
+                      ? 'bg-[rgb(0,50,120)]'
+                      : 'bg-[#004AAD]'
                   }`}
-                  onClick={() => setSelectedCategory('Web')}
+                  onClick={() => setSelectedCategory('SEO')}
+                >
+                  Seo Package
+                </button>
+
+                <button
+                  className={`w-48 py-3 md:px-6 hover:bg-[rgb(0,50,120)] rounded-md h text-gray-50 font-semibold ${
+                    selectedCategory === 'WEB'
+                      ? 'bg-[rgb(0,50,120)]'
+                      : 'bg-[#004AAD]'
+                  }`}
+                  onClick={() => setSelectedCategory('WEB')}
                 >
                   Web Package
                 </button>
@@ -89,11 +96,11 @@ const Pricing = () => {
             </div>
           </Container>
 
-          <div className="md:py-20 md:mt-20 mb-40 bg-gray-50">
+          <div className="mb-40 md:py-20 md:mt-20 bg-gray-50">
             <Container className="px-0 md:px-4">
               {selectedCategory === 'SEO' && <SeoPackages />}
-              {selectedCategory === 'SocialMedia' && <SocialMediaPackages />}
-              {selectedCategory === 'Web' && <WebPackages />}
+              {selectedCategory === 'SOCIALMEDIA' && <SocialMediaPackages />}
+              {selectedCategory === 'WEB' && <WebPackages />}
             </Container>
           </div>
         </div>

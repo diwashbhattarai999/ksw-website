@@ -1,4 +1,4 @@
-import { NavBar, Footer, PlartformCard } from "../index";
+import { NavBar, PlartformCard } from '../index';
 
 function OurPlatform() {
   return (
@@ -44,7 +44,6 @@ function OurPlatform() {
           />
         </div>
       </div>
-      <Footer />
     </>
   );
 }

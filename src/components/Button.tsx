@@ -20,11 +20,11 @@ function Button({
   return (
     <>
       <div
-        className={`flex ${width} ${transparent ? 'bg-transparent' : 'bg-[#004AAD] '} hover:bg-[#004AAD]/70  h-12 justify-start items-center px-3 py-2 w-48 duration-300 rounded-md`}
+        className={`bg-[#014AAC] px-4 py-2 my-2 w-[100%] font-semibold text-gray-50 rounded-md hover:cursor-pointer hover:bg-[rgb(0,50,120)] ${width} ${transparent ? 'bg-transparent' : 'bg-[#014AAC] w-48 duration-300'}`}
       >
         <button
           type="button"
-          className={`rounded-md   ${props} font-semibold ${textColor} ${hoverEffect}`}
+          className={`rounded-md ${props} font-semibold ${textColor} ${hoverEffect}`}
         >
           {buttonName}
         </button>

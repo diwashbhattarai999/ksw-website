@@ -57,7 +57,7 @@ const ContactMain: React.FC = () => {
             be your strategic partner in the digital realm.
           </p>
           <br></br>
-          <div className="map h-[100%] m-auto pb-2 sm:pt-3 lg:h-[700px] w-[100%]  ">
+          <div className="map h-[100%] m-auto pb-2 sm:pt-3 lg:h-[700px] w-[100%] ">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.8741294666534!2d85.34508437632786!3d27.65936577621009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb173bf68b2d87%3A0x22a42fe8a2872c8a!2sKSW%20TECHZONE!5e0!3m2!1sen!2snp!4v1710143276574!5m2!1sen!2snp"
               loading="lazy"
