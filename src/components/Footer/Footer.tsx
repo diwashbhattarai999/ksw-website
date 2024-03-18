@@ -102,13 +102,8 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="flex flex-col pb-2">
                   <input
-<<<<<<< HEAD
-                    type="number"
-                    className="p-2 border border-gray-400"
-=======
                     type="tel"
                     className="p-2 border border-gray-400"
->>>>>>> c158aca202fd3e30b49998a243bd64894929d7f4
                     placeholder="Phone *"
                   />
                 </div>
@@ -137,20 +132,8 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <hr className="bg-black" />
-<<<<<<< HEAD
-          <div className="flex-row justify-center my-4 text-sm text-center md:flex md:mx-10 lg:mx-44 sm:space-x-4">
-            <Link to="/" className="underline">
-              Privacy Policy
-            </Link>
-            <p>
-              Copyright 2024, <strong>KSW Techzone</strong> Inc.
-            </p>
-          </div>
-          <div className="flex flex-row justify-center mt-2 pb-[50px] space-x-2 sm:space-x-4">
-=======
 
           <div className="flex flex-row justify-center mt-2 space-x-2 sm:space-x-4">
->>>>>>> c158aca202fd3e30b49998a243bd64894929d7f4
             <Link to="https://www.facebook.com/profile.php?id=100093997620977">
               <FaFacebook
                 className="changeBg"
