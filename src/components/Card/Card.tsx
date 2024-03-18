@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({
   showButton = true,
 }) => {
   return (
-    <div className="flex flex-col pt-10 md:flex-row md:justify-between ml-5 m-auto">
+    <div className="flex flex-col pt-10 md:flex-row md:justify-between m-auto">
       {showImageFirst ? (
         <>
           <div className="w-full sm:w-full md:w-[60%] lg:w-[60%] md:items-start">

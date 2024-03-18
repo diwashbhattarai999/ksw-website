@@ -106,7 +106,7 @@ export default function Career() {
           <img
             src={career}
             alt="Career"
-            className="max-w-[478px] md:h-96 lg:h-[500px] hidden sm:block md:absolute top-32 right-0 "
+            className="max-w-[50vw] md:h-[50vh] lg:h-[500px] hidden sm:block md:absolute top-32 right-0 "
           />
         </div>
       </Container>

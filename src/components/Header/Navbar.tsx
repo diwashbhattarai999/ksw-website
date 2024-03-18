@@ -14,12 +14,12 @@ export default function NavBar() {
 
   return (
     <div className="relative">
-      <Link to="/" className="z-10 md:hidden flex items-center justify-center">
-        <img className="w-52" src={Logotext} alt="Logo" />
+      <Link to="/" className="z-10 md:hidden flex items-center justify-start">
+        <img className="w-52 mt-2 ml-2" src={Logotext} alt="Logo" />
       </Link>
       {/* Hamburger menu button */}
       <div className="absolute right-0 z-50 mb-20 mr-4 -mt-1 md:hidden top-2">
-        <button onClick={toggleMenu} className="focus:outline-none">
+        <button onClick={toggleMenu} className="focus:outline-none mt-2 ml-2">
           <svg
             className="w-8 h-8"
             fill="none"

@@ -8,8 +8,8 @@ const ContactMain: React.FC = () => {
     <Container>
       <div className="h-screen flex flex-col md:flex-row items-center justify-center">
         <div className=" lg:max-w-xl">
-          <h2 className="py-5 text-[1.2rem] sm:text-[1.7rem] font-bold">
-            Let's Connect
+          <h2 className="py-5 text-[1.2rem] sm:text-[2rem] font-bold">
+            Let's <span className='text-[#004AAD]'>Connect</span>
           </h2>
           <p className="text-[0.8rem] sm:text-[1rem] text-justify py-2 text-gray-700">
             Whether you have a project in mind or just want to explore how KSW
