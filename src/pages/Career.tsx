@@ -2,7 +2,6 @@ import { NavBar, Button } from '../components';
 import { Link } from 'react-router-dom';
 
 import career from '../assets/career.png';
-import CareerVector from './CareerVector';
 import Container from '../components/Container';
 
 import { GoChevronDown } from 'react-icons/go';
