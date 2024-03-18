@@ -123,12 +123,12 @@ export default function WhyChooseUs() {
             {CARDS.map((card, index) => {
               return (
                 <li key={index} className="w-full lg:w-auto">
-                  <div className="flex flex-col items-center mt-20 mx-10 text-center border border-gray-100 rounded-md shadow-md w-full lg:w-[36rem] h-[36rem]">
+                  <div className="flex flex-col items-center mt-20 text-center border border-gray-100 rounded-md shadow-md w-full lg:w-[36rem] h-[36rem]">
                     <div className="w-full overflow-hidden h-[24rem]">
                       <img
                         src={card.image}
                         alt="gem"
-                        className="inline-block w-full h-full bg-contain rounded"
+                        className="inline-block w-1/2 h-1/2 bg-cover rounded"
                       />
                     </div>
 

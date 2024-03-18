@@ -131,7 +131,7 @@ const AboutCompany: React.FC = () => {
       <WhyChooseUs />
 
       {/* See our teams */}
-      <div className="flex items-center justify-center w-full my-20">
+      <div className="flex items-center justify-center w-full my-20 text-white ">
         <Link
           to="/ourteam"
           onClick={() => {
@@ -144,6 +144,7 @@ const AboutCompany: React.FC = () => {
         >
           <Button
             width="w-56"
+            textColor='white'
             hoverEffect=""
             buttonName="See our Teams"
             props="font-bold w-[195px] rounded-lg md:text-lg "
