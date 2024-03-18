@@ -1,5 +1,4 @@
-import { NavBar, Button } from '../components';
-import { Link } from 'react-router-dom';
+import { NavBar } from '../components';
 
 import career from '../assets/career.png';
 import Container from '../components/Container';
@@ -95,7 +94,7 @@ export default function Career() {
       <NavBar />
 
       <Container>
-        <div className="flex items-center justify-between py-10 max-lg:flex-col">
+        <div className="flex items-center justify-between max-lg:flex-col h-screen">
           <div className="z-20 max-md:mb-20">
             <h1 className="mb-4 lg:-mt-32 text-[2.8rem] md:text-[3.4rem] font-bold max-w-[900px] leading-tight">
               Get involved now and be part of something{' '}
@@ -116,7 +115,7 @@ export default function Career() {
         </div>
       </Container>
 
-      <div className="flex flex-col items-center p-8 text-center">
+      <div className="flex flex-col items-center text-center">
         <h2 className="mb-4 text-5xl font-extrabold">
           <span className="text-black">Let</span>'s get{' '}
           <span className="text-blue-700">you started !</span>
@@ -127,31 +126,15 @@ export default function Career() {
           and are ready to give it all. Come, be a part of the team and help us
           build the future of work.
         </p>
-
-        <Link to="/#">
-          <Button buttonName="VIEW OPENINGS" />
-        </Link>
       </div>
 
-      <div className="p-8 mt-10 text-center ">
-        <h2 className="mb-4 text-5xl font-extrabold">
-          <span className="text-blue-700">Values</span>{' '}
-          <span className="text-black">that shape us</span>
-        </h2>
-        <p className="text-[0.8rem] sm:text-[1rem] mb-6 max-w-[60%] mx-auto">
-          Our values are not just words on paper – they're the beating heart of
-          who we are. They define our vibrant culture and guide us in everything
-          we do.
-        </p>
-      </div>
-
-      <div className="py-8 mt-10 text-center ">
-        <h2 className="mb-4 text-5xl font-extrabold">
+      <div className="py-8 text-center ">
+        <h2 className="mb-4 text-3xl font-extrabold">
           <span className="text-black">Find your seat</span>{' '}
           <span className="text-blue-700">at our table</span>
         </h2>
 
-        <div className="flex justify-center mt-24">
+        <div className="flex justify-center mt-10">
           <div className="flex items-center justify-center gap-4 p-4 duration-300 cursor-pointer w-fit hover:bg-gray-50">
             <h3 className="text-xl font-medium">Job Openings</h3>
             <GoChevronDown className="w-6 h-6 mt-[2px]" />

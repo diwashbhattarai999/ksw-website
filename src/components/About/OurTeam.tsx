@@ -130,7 +130,12 @@ export default function OurTeam() {
 
         <div className="grid w-4/5 m-auto gap-y-10  mt-10 place-items-center sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
           {leader.map((item, index) => (
-            <TeamCard item={item} key={index} />
+            <TeamCard
+              image={item.img}
+              name={item.name}
+              role={item.role}
+              key={index}
+            />
           ))}
         </div>
 
@@ -139,9 +144,14 @@ export default function OurTeam() {
         </h1>
 
         <div className="grid w-4/5 m-auto gap-y-10 mt-10 place-items-center sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
-          {team.map((item, index) => {
-            return <TeamCard item={item} key={index} />;
-          })}
+          {team.map((item, index) => (
+            <TeamCard
+              image={item.img}
+              name={item.name}
+              role={item.role}
+              key={index}
+            />
+          ))}
         </div>
       </div>
     </>

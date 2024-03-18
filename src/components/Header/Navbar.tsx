@@ -119,7 +119,7 @@ export default function NavBar() {
           <div className="flex flex-wrap justify-center font-medium text-sm md:flex-nowrap md:justify-between">
             <Link
               to="/about"
-              className={`mx-2 my-1 md:my-0 hover-underline-animation ${
+              className={`mx-2 lg:mx-4 my-1 md:my-0 hover-underline-animation ${
                 location.pathname === '/about' ? 'active' : ''
               }`}
             >
@@ -128,7 +128,7 @@ export default function NavBar() {
 
             <Link
               to="/pricing"
-              className={`mx-2 my-1 md:my-0 hover-underline-animation ${
+              className={`mx-2 lg:mx-4 my-1 md:my-0 hover-underline-animation ${
                 location.pathname === '/pricing' ? 'active' : ''
               }`}
             >
@@ -137,7 +137,7 @@ export default function NavBar() {
 
             <Link
               to="/services"
-              className={`mx-2 my-1 md:my-0 font-medium hover-underline-animation ${
+              className={`mx-2 lg:mx-4 my-1 md:my-0 font-medium hover-underline-animation ${
                 location.pathname === '/services' ? 'active' : ''
               }`}
             >
@@ -145,7 +145,7 @@ export default function NavBar() {
             </Link>
             <Link
               to="/career"
-              className={`mx-2 my-1 md:my-0 font-medium hover-underline-animation ${
+              className={`mx-2 lg:mx-4 my-1 md:my-0 font-medium hover-underline-animation ${
                 location.pathname === '/career' ? 'active' : ''
               }`}
             >
@@ -153,7 +153,7 @@ export default function NavBar() {
             </Link>
             <Link
               to="/blogs"
-              className={`mx-2 my-1 md:my-0 font-medium hover-underline-animation ${
+              className={`mx-2 lg:mx-4 my-1 md:my-0 font-medium hover-underline-animation ${
                 location.pathname === '/blogs' ? 'active' : ''
               }`}
             >
@@ -161,7 +161,7 @@ export default function NavBar() {
             </Link>
             <Link
               to="/contact"
-              className={`mx-2 my-1 md:ml-4 font-medium md:my-0 hover-underline-animation ${
+              className={`mx-2 lg:mx-4 my-1 md:ml-4 font-medium md:my-0 hover-underline-animation ${
                 location.pathname === '/contact' ? 'active' : ''
               }`}
             >

@@ -90,14 +90,14 @@ const Footer: React.FC = () => {
                   <input
                     type="text"
                     className="border border-gray-400 p-2 w-[100%]"
-                    placeholder="Full Name*"
+                    placeholder="Full Name *"
                   />
                 </div>
                 <div className="flex flex-col pb-2">
                   <input
                     type="email"
                     className="border border-gray-400 p-2 w-[100%]"
-                    placeholder="Email*"
+                    placeholder="Email *"
                   />
                 </div>
                 <div className="flex flex-col pb-2">
@@ -117,7 +117,7 @@ const Footer: React.FC = () => {
                 <div className="">
                   <textarea
                     className="border border-gray-400 p-2 w-[100%]"
-                    placeholder="Mesaage"
+                    placeholder="Message"
                   />
                 </div>
                 <div className="">

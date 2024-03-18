@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Button } from '..';
 import './our.css';
+import { IoIosLink } from 'react-icons/io';
 export default function Our() {
   const WBackground = `<svg width="1094" height="646" viewBox="0 0 1094 646" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M797.912 490.281C791.28 505.419 779.164 516.472 760.204 517.407C739.138 518.446 722.684 506.188 721.637 485.328L704.283 139.405C700.402 62.0487 645.164 13.3676 540.886 18.5085C446.087 23.182 401.834 67.1838 377.805 135.461L223.856 518.581C218.275 533.668 204.055 544.825 186.147 545.708C165.082 546.746 149.684 534.436 148.638 513.577L125.354 49.4505L0.00574019 55.6301L23.5518 524.971C27.3889 601.456 82.6279 650.14 187.961 644.947C282.757 640.273 325.959 596.321 349.988 528.046L503.936 144.926C509.514 129.839 523.781 119.551 542.741 118.616C563.807 117.578 579.207 129.888 580.21 149.879L597.608 496.67C601.445 573.155 656.684 621.839 762.015 616.646C856.813 611.973 900.013 568.02 924.042 499.745L1119.68 0.430686L986.962 6.9736L797.912 490.281Z" fill="#FCB9B9" fill-opacity="0.1"/>
@@ -49,7 +50,12 @@ export default function Our() {
                   className="approach_grid-card"
                 >
                   <div className="grid_content-wrapper">
-                    <div className="text-2xl">Hourly Place</div>
+                    <div className="text-2xl flex items-center">
+                      Hourly Place
+                      <Link to="" className="p-2">
+                        <IoIosLink />
+                      </Link>
+                    </div>
                     <div className="approach_grid-stroke" />
                     <p className="text-[0.8rem] sm:text-[1rem]">
                       Discover diverse spaces on Hourly Place – your platform
@@ -65,7 +71,12 @@ export default function Our() {
                   className="approach_grid-card"
                 >
                   <div className="grid_content-wrapper">
-                    <div className="text-2xl">The hostel Nepal</div>
+                    <div className="text-2xl flex items-center">
+                      The hostel Nepal
+                      <Link to="" className="p-2">
+                        <IoIosLink />
+                      </Link>
+                    </div>
                     <div className="approach_grid-stroke is-teal" />
                     <p className="text-[0.8rem] sm:text-[1rem]">
                       "Discover transparent hostel options for boys, girls, and
@@ -80,7 +91,12 @@ export default function Our() {
                   className="approach_grid-card"
                 >
                   <div className="grid_content-wrapper">
-                    <div className="text-2xl">Ghantaghar.com</div>
+                    <div className="text-2xl flex items-center">
+                      Ghantaghar.com
+                      <Link to="https://www.ghantaaghar.com" className="p-2">
+                        <IoIosLink className="" />
+                      </Link>
+                    </div>
                     <div className="approach_grid-stroke is-yellow" />
                     <p className="text-[0.8rem] sm:text-[1rem]">
                       At Ghantaghar.com, users can seamlessly book diverse
@@ -96,7 +112,12 @@ export default function Our() {
                   className="approach_grid-card"
                 >
                   <div className="grid_content-wrapper">
-                    <div className="text-2xl">KSW Blogs</div>
+                    <div className="text-2xl flex items-center">
+                      KSW Blogs
+                      <Link to="" className="p-2">
+                        <IoIosLink />
+                      </Link>
+                    </div>
                     <div className="approach_grid-stroke " />
                     <p className="text-[0.8rem] sm:text-[1rem]">
                       KSW Blogs "Discover tech, education, and business insights

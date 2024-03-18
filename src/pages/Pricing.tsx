@@ -5,6 +5,7 @@ import SocialMediaPackages from '../components/Pricing/SocialMediaPackages';
 import SeoPackages from '../components/Pricing/SeoPackages';
 import Container from '../components/Container';
 import WebPackages from '../components/Pricing/WebPackages';
+import { Link } from 'react-router-dom';
 
 const Pricing = () => {
   const [selectedCategory, setSelectedCategory] = useState('SOCIALMEDIA');
@@ -26,11 +27,11 @@ const Pricing = () => {
                 <div className="w-[3rem] border-b-2 border-blue-500"></div>
               </div>
 
-              <div className="relative flex flex-col items-center w-full gap-4 mt-12">
+              {/* <div className="relative flex flex-col items-center w-full gap-4 mt-12">
                 <button className="py-3 px-6 bg-[#004AAD] hover:bg-[rgb(0,50,120)] rounded-md text-gray-50 font-semibold lg:absolute -top-24 right-0">
                   Download Brouchure
                 </button>
-              </div>
+              </div> */}
 
               <div>
                 <p className="text-[1.2rem] sm:text-[2rem] font-bold z-10 ">
@@ -55,7 +56,10 @@ const Pricing = () => {
 
               <div className="text-[#5a5a5a] pl-4">
                 <p className="z-10 m-5 text-sm sm:text-md">
-                  Choose plans from our simple, transparent pricing
+                  Choose plans from our simple, transparent pricing. &nbsp;
+                  <Link to="" className="underline hover:text-[rgb(0,50,120)]">
+                    Download Brouchure
+                  </Link>
                 </p>
               </div>
 
