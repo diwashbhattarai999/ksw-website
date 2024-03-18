@@ -122,7 +122,7 @@ const Testimonial: React.FC = () => {
                 unparalleled.
               </p>
               <Link to="/contact" className="mt-10">
-                <button className="py-2 px-3 bg-[#004AAD] rounded-md font-semibold text-white hover:bg-[#004AAD]/70">
+                <button className="py-2 px-3 bg-[#004AAD] rounded-md font-semibold text-white hover:bg-[rgb(0,50,120)]">
                   Contact us
                 </button>
               </Link>

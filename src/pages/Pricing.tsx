@@ -27,7 +27,7 @@ const Pricing = () => {
               </div>
 
               <div className="relative flex flex-col items-center w-full gap-4 mt-12">
-                <button className="py-3 px-6 bg-[#004AAD] hover:bg-[#004AAD]/70 rounded-md text-gray-50 font-semibold lg:absolute -top-24 right-0">
+                <button className="py-3 px-6 bg-[#004AAD] hover:bg-[rgb(0,50,120)] rounded-md text-gray-50 font-semibold lg:absolute -top-24 right-0">
                   Download Brouchure
                 </button>
               </div>
@@ -61,10 +61,10 @@ const Pricing = () => {
 
               <div className="flex flex-wrap items-center justify-center gap-2 text-xs md:gap-4">
                 <button
-                  className={`w-48 py-3 md:px-6 hover:bg-[#004AAD] rounded-md h text-gray-50 font-semibold  ${
+                  className={`w-48 py-3 md:px-6 hover:bg-[rgb(0,50,120)]   rounded-md h text-gray-50 font-semibold  ${
                     selectedCategory === 'SOCIALMEDIA'
-                      ? 'bg-[#004AAD]'
-                      : 'bg-[#004AAD]/70'
+                      ? 'bg-[rgb(0,50,120)]'
+                      : 'bg-[#004AAD]'
                   }`}
                   onClick={() => setSelectedCategory('SOCIALMEDIA')}
                 >
@@ -72,10 +72,10 @@ const Pricing = () => {
                 </button>
 
                 <button
-                  className={`w-48 py-3 md:px-6  hover:bg-[#004AAD] rounded-md h text-gray-50 font-semibold  ${
+                  className={`w-48 py-3 md:px-6  hover:bg-[rgb(0,50,120)] rounded-md h text-gray-50 font-semibold  ${
                     selectedCategory === 'SEO'
-                      ? 'bg-[#004AAD]'
-                      : 'bg-[#004AAD]/70'
+                      ? 'bg-[rgb(0,50,120)]'
+                      : 'bg-[#004AAD]'
                   }`}
                   onClick={() => setSelectedCategory('SEO')}
                 >
@@ -83,10 +83,10 @@ const Pricing = () => {
                 </button>
 
                 <button
-                  className={`w-48 py-3 md:px-6 hover:bg-[#004AAD] rounded-md h text-gray-50 font-semibold ${
+                  className={`w-48 py-3 md:px-6 hover:bg-[rgb(0,50,120)] rounded-md h text-gray-50 font-semibold ${
                     selectedCategory === 'WEB'
-                      ? 'bg-[#004AAD]'
-                      : 'bg-[#004AAD]/70'
+                      ? 'bg-[rgb(0,50,120)]'
+                      : 'bg-[#004AAD]'
                   }`}
                   onClick={() => setSelectedCategory('WEB')}
                 >

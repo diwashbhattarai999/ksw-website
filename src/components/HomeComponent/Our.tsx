@@ -46,7 +46,7 @@ export default function Our() {
               <div className="text-black w-layout-grid approach_grid">
                 <div
                   id="w-node-_20d81665-3cbd-3659-ba6b-ec3fee4361a8-4e2a7bc4"
-                  className="approach_grid-card pt-0"
+                  className="approach_grid-card"
                 >
                   <div className="grid_content-wrapper">
                     <div className="text-2xl">Hourly Place</div>
@@ -58,9 +58,6 @@ export default function Our() {
                       basis. Elevate your work environment or leisure experience
                       with seamless, flexible bookings.
                     </p>
-                    <button className="bg-[#82929E] text-white font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-s-sm shadow-md transition duration-300 ease-in-out">
-                      Visit Now
-                    </button>
                   </div>
                 </div>
                 <div
@@ -76,9 +73,6 @@ export default function Our() {
                       hassle-free, offering newcomers the freedom to choose
                       accommodations of their choice."
                     </p>
-                    <button className="bg-[#82929E] text-white font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-s-sm shadow-md transition duration-300 ease-in-out">
-                      Visit Now
-                    </button>
                   </div>
                 </div>
                 <div
@@ -95,9 +89,6 @@ export default function Our() {
                       in your bookings, tailored to your specific time
                       requirements.
                     </p>
-                    <button className="bg-[#82929E] text-white font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-s-sm shadow-md transition duration-300 ease-in-out">
-                      Visit Now
-                    </button>
                   </div>
                 </div>
                 <div
@@ -106,15 +97,12 @@ export default function Our() {
                 >
                   <div className="grid_content-wrapper">
                     <div className="text-2xl">KSW Blogs</div>
-                    <div className="approach_grid-stroke is-purple" />
+                    <div className="approach_grid-stroke " />
                     <p className="text-[0.8rem] sm:text-[1rem]">
                       KSW Blogs "Discover tech, education, and business insights
                       on KSW Blogs by KSW Techzone – your go-to platform for
                       concise and valuable articles."
                     </p>
-                    <button className="bg-[#82929E] text-white font-bold py-1 px-2 sm:py-2 sm:px-4 rounded-s-sm shadow-md transition duration-300 ease-in-out">
-                      Visit Now
-                    </button>
                   </div>
                 </div>
               </div>
