@@ -42,7 +42,7 @@ const AboutCompany: React.FC = () => {
 
       <div className="bg-[#e5f8fb] sm:rounded-t-full my-10 p-2">
         <Container>
-          <div className="grid lg:grid-cols-2 h-screen">
+          <div className="grid lg:grid-cols-2 min-h-screen">
             <div className="z-0 flex flex-col justify-center p-2 sm:p-10">
               {/* About Description */}
               <div className="pb-2">

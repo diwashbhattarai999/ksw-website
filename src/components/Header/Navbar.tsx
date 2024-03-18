@@ -14,7 +14,7 @@ export default function NavBar() {
 
   return (
     <div className="relative">
-      <Link to="/" className="z-10 md:hidden">
+      <Link to="/" className="z-10 md:hidden flex items-center justify-center">
         <img className="w-52" src={Logotext} alt="Logo" />
       </Link>
       {/* Hamburger menu button */}

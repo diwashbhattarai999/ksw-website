@@ -92,7 +92,7 @@ export default function Career() {
       <NavBar />
 
       <Container className="md:mb-10">
-        <div className="flex items-center justify-between h-screen relative">
+        <div className="flex items-center justify-between min-h-screen relative">
           <div className="z-20 w-full">
             <h1 className="mb-4 md:w-2/3 lg:-mt-32 text-[2.8rem] md:text-[3.4rem] font-bold max-w-[900px] leading-tight">
               Get involved now and be part of something{' '}
@@ -111,7 +111,7 @@ export default function Career() {
         </div>
       </Container>
 
-      <div className="flex flex-col items-center text-center lg:mt-20 xl:mt-36">
+      <div className="flex flex-col items-center text-center lg:mt-20">
         <h2 className="mb-4 text-5xl font-extrabold">
           <span className="text-black">Let</span>'s get{' '}
           <span className="text-blue-700">you started !</span>
