@@ -33,7 +33,7 @@ const OurPartner: React.FC = () => {
     dots: false,
     infinite: true,
     speed: 500, // Faster slide transition
-    slidesToShow: 4, // Display 5 logos at a time
+    slidesToShow: 5, // Display 5 logos at a time
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000, // Faster autoplay speed
@@ -53,7 +53,13 @@ const OurPartner: React.FC = () => {
             <img
               src={logo}
               alt={`Partner Logo ${index}`}
-              style={{ maxWidth: '100%', height: 'auto' }}
+              style={{
+                // maxWidth: '100%',
+                // height: '100px',
+                aspectRatio: '3/2',
+                objectFit: 'contain',
+                mixBlendMode: 'color-burn',
+              }}
             />
           </div>
         ))}

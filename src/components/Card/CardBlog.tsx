@@ -11,7 +11,7 @@ interface CardProps {
 
 const CardBlog: React.FC<CardProps> = ({ image, date, title, description }) => {
   return (
-    <div className="w-full flex flex-col pt-10 md:flex-row md:justify-between">
+    <div className="w-full lg:my-10 flex flex-col pt-10 md:flex-row">
       <div className="w-full md:w-1/2 flex sm:px-6">
         <img
           className=" object-contain"
@@ -23,19 +23,19 @@ const CardBlog: React.FC<CardProps> = ({ image, date, title, description }) => {
         <div className="text-sm md:text-base font-bold text-center md:text-left">
           {date}
         </div>
-        <div className="mb-1 text-base md:text-xl lg:text-4xl font-bold text-center md:text-left">
+        <div className="mb-1 text-base md:text-xl lg:text-2xl font-bold text-center md:text-left">
           <p>{title}</p>
         </div>
-        <div className="mb-1 text-xs font-medium text-center md:text-base lg:text-lg md:text-justify md:mb-2">
+        <div className="mb-1 text-xs font-medium text-center md:text-justify md:text-base lg:text-lg lg: md:mb-2">
           <p className="md:text-[1.1rem]">{description}</p>
         </div>
-        <div className="flex justify-center sm:justify-start">
+        <div className="flex justify-center md:justify-start">
           <Link to="/#">
             <Button
               width="w-56"
               textColor="text-white"
               hoverEffect="hover:text-[#003278]"
-              buttonName="COME JOIN US"
+              buttonName="READ MORE"
               props="font-semibold w-[195px] rounded-md text-xs"
             />
           </Link>

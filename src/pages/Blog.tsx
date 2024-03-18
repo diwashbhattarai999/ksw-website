@@ -33,6 +33,13 @@ const Service = () => {
       description:
         'Picture a chaotic kitchen with pots and pans clanging, ingredients flying in all directions, and chefs feeling stressed as they try to handle the cooking chaos. Now, imagine Kubernetes as the Gordon Ramsey of the digital kitchen, swooping in with his chef',
     },
+    {
+      image: img,
+      date: 'Jan 2024',
+      title: 'EKS Cluster Implementation and Security Considerations',
+      description:
+        'Picture a chaotic kitchen with pots and pans clanging, ingredients flying in all directions, and chefs feeling stressed as they try to handle the cooking chaos. Now, imagine Kubernetes as the Gordon Ramsey of the digital kitchen, swooping in with his chef',
+    },
   ];
 
   return (
@@ -43,7 +50,7 @@ const Service = () => {
       >
         <BlogVector />
         <NavBar />
-        <div className="w-4/5 m-auto flex flex-col md:flex-wrap ">
+        <div className="w-4/5 m-auto flex flex-col  lg:flex-row lg:flex-wrap ">
           {pages.map((ele, index) => (
             <CardBlog
               image={img}

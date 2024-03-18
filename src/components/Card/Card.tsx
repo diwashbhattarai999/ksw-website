@@ -39,10 +39,9 @@ const Card: React.FC<CardProps> = ({
                   <a href="#">
                     {showButton && (
                       <Button
-                        width="w-56 md:justify-start md:ml-0 ml-8 justify-center"
+                        width="w-1/2 md:justify-start md:ml-0 ml-8 justify-center"
                         buttonName="FIND OUT MORE"
                         textColor="text-gray-50"
-                        hoverEffect="hover:text-gray-600"
                         props="md:text-xl md:font-bold text-sm mr-[-0.65rem]"
                       />
                     )}
@@ -85,7 +84,7 @@ const Card: React.FC<CardProps> = ({
                   <a href="#">
                     {showButton && (
                       <Button
-                        width="w-56 md:ml-0 ml-8 justify-center"
+                        width="w-1/2 md:ml-0 ml-8 justify-center"
                         buttonName="FIND OUT MORE"
                         textColor="text-gray-50"
                         props="md:text-xl md:font-bold text-sm mr-[-0.65rem] text-center"

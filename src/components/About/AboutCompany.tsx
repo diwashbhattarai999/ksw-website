@@ -144,11 +144,10 @@ const AboutCompany: React.FC = () => {
         >
           <Button
             width="w-56"
-            textColor='white'
+            textColor="white"
             hoverEffect=""
             buttonName="See our Teams"
             props="font-bold w-[195px] rounded-lg md:text-lg "
-            svg
           />
         </Link>
       </div>
@@ -231,7 +230,6 @@ const AboutCompany: React.FC = () => {
                 hoverEffect=""
                 buttonName="Get in Touch"
                 props="font-bold w-[195px] rounded-lg md:text-lg "
-                svg
               />
             </Link>
           </div>
