@@ -8,7 +8,7 @@ import WebPackages from '../components/Pricing/WebPackages';
 import { Link } from 'react-router-dom';
 
 const Pricing = () => {
-  const [selectedCategory, setSelectedCategory] = useState('SOCIALMEDIA');
+  const [selectedCategory, setSelectedCategory] = useState('WEB');
 
   return (
     <>
@@ -76,17 +76,6 @@ const Pricing = () => {
                 </button>
 
                 <button
-                  className={`w-48 py-3 md:px-6  hover:bg-[rgb(0,50,120)] rounded-md h text-gray-50 font-semibold  ${
-                    selectedCategory === 'SEO'
-                      ? 'bg-[rgb(0,50,120)]'
-                      : 'bg-[#004AAD]'
-                  }`}
-                  onClick={() => setSelectedCategory('SEO')}
-                >
-                  Seo Package
-                </button>
-
-                <button
                   className={`w-48 py-3 md:px-6 hover:bg-[rgb(0,50,120)] rounded-md h text-gray-50 font-semibold ${
                     selectedCategory === 'WEB'
                       ? 'bg-[rgb(0,50,120)]'
@@ -95,6 +84,17 @@ const Pricing = () => {
                   onClick={() => setSelectedCategory('WEB')}
                 >
                   Web Package
+                </button>
+
+                <button
+                  className={`w-48 py-3 md:px-6  hover:bg-[rgb(0,50,120)] rounded-md h text-gray-50 font-semibold  ${
+                    selectedCategory === 'SEO'
+                      ? 'bg-[rgb(0,50,120)]'
+                      : 'bg-[#004AAD]'
+                  }`}
+                  onClick={() => setSelectedCategory('SEO')}
+                >
+                  Seo Package
                 </button>
               </div>
             </div>

@@ -8,7 +8,7 @@ export default function Our() {
   </svg>`;
 
   return (
-    <div className="relative w-full pb-12 mt-10 sm:mt-20">
+    <div className="relative w-full mt-10 sm:mt-20">
       <h2 className="text-[1.2rem] sm:text-[2rem] font-bold text-center">
         Our Platform
       </h2>

@@ -5,7 +5,7 @@ function OurPlatform() {
     <>
       <NavBar />
       <h1 className="text-center md:text-2xl text-xl font-bold md:mt-4 md:mb-12 mt-2 mb-8">
-        Our Plartforms
+        Our Platforms
       </h1>
       <div className="flex flex-wrap justify-center items-center ">
         {/* plartform components */}

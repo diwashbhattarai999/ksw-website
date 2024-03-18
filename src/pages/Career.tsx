@@ -3,8 +3,6 @@ import { NavBar } from '../components';
 import career from '../assets/career.png';
 import Container from '../components/Container';
 
-import { GoChevronDown } from 'react-icons/go';
-
 const JOB_OPENINGS = [
   {
     position: 'Software Engineer',
@@ -93,10 +91,10 @@ export default function Career() {
       {/* <CareerVector /> */}
       <NavBar />
 
-      <Container>
-        <div className="flex items-center justify-between max-lg:flex-col h-screen">
-          <div className="z-20 max-md:mb-20">
-            <h1 className="mb-4 lg:-mt-32 text-[2.8rem] md:text-[3.4rem] font-bold max-w-[900px] leading-tight">
+      <Container className="md:mb-10">
+        <div className="flex items-center justify-between h-screen relative">
+          <div className="z-20 w-full">
+            <h1 className="mb-4 md:w-2/3 lg:-mt-32 text-[2.8rem] md:text-[3.4rem] font-bold max-w-[900px] leading-tight">
               Get involved now and be part of something{' '}
               <span className="text-[#004AAD]">bigger!</span>{' '}
             </h1>
@@ -105,17 +103,15 @@ export default function Career() {
             </p>
           </div>
 
-          <div className="z-10 md:-ml-20">
-            <img
-              src={career}
-              alt="Career"
-              className="max-w-[478px] md:h-[500px] md:mt-14 "
-            />
-          </div>
+          <img
+            src={career}
+            alt="Career"
+            className="max-w-[478px] md:h-96 lg:h-[500px] hidden sm:block md:absolute top-32 right-0 "
+          />
         </div>
       </Container>
 
-      <div className="flex flex-col items-center text-center">
+      <div className="flex flex-col items-center text-center lg:mt-20 xl:mt-36">
         <h2 className="mb-4 text-5xl font-extrabold">
           <span className="text-black">Let</span>'s get{' '}
           <span className="text-blue-700">you started !</span>
@@ -137,7 +133,6 @@ export default function Career() {
         <div className="flex justify-center mt-10">
           <div className="flex items-center justify-center gap-4 p-4 duration-300 cursor-pointer w-fit hover:bg-gray-50">
             <h3 className="text-xl font-medium">Job Openings</h3>
-            <GoChevronDown className="w-6 h-6 mt-[2px]" />
           </div>
         </div>
 
@@ -145,14 +140,14 @@ export default function Career() {
         <div className="my-10 ">
           {/* TITLES */}
           <div className="text-left border-y bg-gray-50">
-            <Container className="flex py-12 lg:justify-between max-lg:flex-col max-lg:gap-6">
-              <h2 className="text-lg lg:basis-[32rem]">
+            <Container className="flex py-3 md:py-5 lg:py-12 lg:justify-between max-lg:flex-col max-lg:gap-6">
+              <h2 className="text-lg lg:basis-[32rem] text-center lg:text-left ">
                 {JOB_OPENINGS.length} Results
               </h2>
 
-              <div className="flex items-center justify-between basis-1/2">
-                <div className="basis-2/3">
-                  <select className="p-2 cursor-pointer">
+              <div className="text-center  md:flex items-center justify-between basis-1/2">
+                <div className="basis-2/3 md:basis-1/2">
+                  <select className="p-2 mb-2 cursor-pointer">
                     <option value="">All Departments</option>
                     {DEPARTMENTS.map((department, index) => (
                       <option key={index} value={department}>
@@ -162,8 +157,8 @@ export default function Career() {
                   </select>
                 </div>
 
-                <div className="basis-1/3">
-                  <select className="p-2 cursor-pointer">
+                <div className="basis-1/3 md:basis-1/2">
+                  <select className="p-2 mt-2 md:mt-0 md:mb-2  cursor-pointer">
                     <option value="">All Locations</option>
                     {LOCATIONS.map((location, index) => (
                       <option key={index} value={location}>
