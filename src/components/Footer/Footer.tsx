@@ -5,12 +5,12 @@ import './Footer.css';
 const Footer: React.FC = () => {
   return (
     <>
-      <footer className="mt-10">
+      <footer className="py-5 mt-10 border-t border-gray-100">
         <div
           className="h-auto w-[85%] m-auto flex flex-col sm:m-auto"
           style={{ background: '#FFFFF9' }}
         >
-          <div className="flex flex-col md:flex-row justify-left mb-4">
+          <div className="flex flex-col mb-4 md:flex-row justify-left">
             <div className="flex flex-col items-center mb-5 lg:mr-20 md:mr-14 lg:items-start md:items-start">
               <div className="mb-6">
                 <Link to="/">
@@ -103,14 +103,14 @@ const Footer: React.FC = () => {
                 <div className="flex flex-col pb-2">
                   <input
                     type="number"
-                    className="border border-gray-400 p-2"
+                    className="p-2 border border-gray-400"
                     placeholder="Phone *"
                   />
                 </div>
                 <div className="flex flex-col pb-2">
                   <input
                     type="text"
-                    className="border border-gray-400 p-2"
+                    className="p-2 border border-gray-400"
                     placeholder="Subject"
                   />
                 </div>
@@ -132,7 +132,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <hr className="bg-black" />
-          <div className=" text-center md:flex flex-row justify-center md:mx-10 lg:mx-44 sm:space-x-4 text-sm my-4 ">
+          <div className="flex-row justify-center my-4 text-sm text-center md:flex md:mx-10 lg:mx-44 sm:space-x-4">
             <Link to="/" className="underline">
               Privacy Policy
             </Link>
