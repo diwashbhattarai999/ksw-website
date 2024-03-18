@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Footer, NavBar } from '../components';
+import { NavBar } from '../components';
 import SeoPackagesVector from '../components/Pricing/SeoPackagesVector';
 import SocialMediaPackages from '../components/Pricing/SocialMediaPackages';
 import SeoPackages from '../components/Pricing/SeoPackages';
@@ -60,9 +60,9 @@ const Pricing = () => {
                 </p>
               </div>
 
-              <div className="flex gap-4">
+              <div className="flex gap-2 md:gap-4 text-xs">
                 <button
-                  className={`py-3 px-6 bg-[#004AAD]  hover:bg-[#004AAD]/70  rounded-md h text-gray-50 font-semibold  ${
+                  className={`md:py-3 md:px-6 bg-[#004AAD]  hover:bg-[#004AAD]/70  rounded-md h text-gray-50 font-semibold  ${
                     selectedCategory === 'SEO' && 'bg-[#004AAD]/70'
                   }`}
                   onClick={() => setSelectedCategory('SEO')}
@@ -70,7 +70,7 @@ const Pricing = () => {
                   SEO Package
                 </button>
                 <button
-                  className={`py-3 px-6 bg-[#004AAD]  hover:bg-[#004AAD]/70 rounded-md h text-gray-50 font-semibold  ${
+                  className={`py-3 md:px-6 bg-[#004AAD]  hover:bg-[#004AAD]/70 rounded-md h text-gray-50 font-semibold  ${
                     selectedCategory === 'SocialMedia' && 'bg-[#004AAD]/70'
                   }`}
                   onClick={() => setSelectedCategory('SocialMedia')}
@@ -78,7 +78,7 @@ const Pricing = () => {
                   Social Media Package
                 </button>
                 <button
-                  className={`py-3 px-6 bg-[#004AAD]  hover:bg-[#004AAD]/70 rounded-md h text-gray-50 font-semibold  ${
+                  className={`py-3 md:px-6 bg-[#004AAD]  hover:bg-[#004AAD]/70 rounded-md h text-gray-50 font-semibold  ${
                     selectedCategory === 'Web' && 'bg-[#004AAD]/70'
                   }`}
                   onClick={() => setSelectedCategory('Web')}
@@ -89,15 +89,13 @@ const Pricing = () => {
             </div>
           </Container>
 
-          <div className="mt-20 mb-40 bg-gray-50">
-            <Container>
+          <div className="md:py-20 md:mt-20 mb-40 bg-gray-50">
+            <Container className="px-0 md:px-4">
               {selectedCategory === 'SEO' && <SeoPackages />}
               {selectedCategory === 'SocialMedia' && <SocialMediaPackages />}
               {selectedCategory === 'Web' && <WebPackages />}
             </Container>
           </div>
-
-          <Footer />
         </div>
       </div>
     </>

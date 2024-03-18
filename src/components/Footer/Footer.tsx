@@ -5,7 +5,7 @@ import './Footer.css';
 const Footer: React.FC = () => {
   return (
     <>
-      <footer>
+      <footer className="mt-10">
         <div
           className="h-auto w-[85%] m-auto flex flex-col sm:m-auto"
           style={{ background: '#FFFFF9' }}
@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
               </Link>
             </div> */}
 
-            <div className="md:w-full sm:w-full">
+            <div className="md:w-full sm:w-full ">
               {/* <h2 className="text-[1.8rem] sm:text-[2rem] font-bold pb-4">
                 Get In Touch
               </h2> */}

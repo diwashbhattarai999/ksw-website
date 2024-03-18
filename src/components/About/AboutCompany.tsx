@@ -6,7 +6,7 @@ import './about.css';
 import Container from '../Container';
 import AboutVector from './AboutVector';
 import Company from '../../assets/company.svg';
-import { Button, Footer, NavBar, WhyChooseUs } from '..';
+import { Button, NavBar, WhyChooseUs } from '..';
 
 const WHAT_SET_US_APART = [
   {
@@ -131,7 +131,7 @@ const AboutCompany: React.FC = () => {
       <WhyChooseUs />
 
       {/* See our teams */}
-      <div className="flex items-center justify-center w-full my-20 text-white ">
+      <div className="flex items-center justify-center w-full my-0 text-white md:my-20">
         <Link
           to="/ourteam"
           onClick={() => {
@@ -237,8 +237,6 @@ const AboutCompany: React.FC = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

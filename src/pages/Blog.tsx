@@ -1,4 +1,4 @@
-import { Footer, NavBar, CardBlog } from '../components';
+import { NavBar, CardBlog } from '../components';
 import img from '../assets/service.jpeg';
 import BlogVector from './BlogVector';
 
@@ -48,12 +48,12 @@ const Service = () => {
   return (
     <>
       <div
-        className="h-[100vh] relative overflow-x-hidden"
+        className="relative overflow-hidden"
         style={{ minHeight: '-webkit-fill-available' }}
       >
         <BlogVector />
         <NavBar />
-        <div className="w-[90%] h-[100vh] m-auto">
+        <div className="w-[90%] h-auto m-auto ">
           {pagesRow.map((ele, index) => (
             <CardBlog
               image={img}
@@ -74,7 +74,6 @@ const Service = () => {
               key={index}
             />
           ))}
-          <Footer />
         </div>
       </div>
     </>

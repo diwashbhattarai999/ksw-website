@@ -1,4 +1,4 @@
-import { Footer, NavBar, Button } from '../components';
+import { NavBar, Button } from '../components';
 import { Link } from 'react-router-dom';
 import { Reward24Regular } from '@fluentui/react-icons';
 import { BiBlock, BiHappy } from 'react-icons/bi';
@@ -13,7 +13,8 @@ export default function Career() {
     >
       <CareerVector />
       <NavBar />
-      <div className="w-[90%] m-auto">
+      <h2>HELLO</h2>
+      <div className="w-[88%] m-auto">
         <div className="flex flex-col pt-10 md:flex-row md:justify-between ">
           <div className="w-full sm:w-full md:w-[60%] lg:w-[60%] md:items-start">
             <div className="w-[100%] lg:w-[60%]">
@@ -56,7 +57,7 @@ export default function Career() {
         <Link to="/#">
           <button
             type="button"
-            className="rounded-md bg-[#004AAD] hover:bg-[#004AAD]/70 px-8 py-2 text-sm font-semibold  text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            className="ml-16 md:ml-0 rounded-md bg-[#004AAD] hover:bg-[#004AAD]/70 px-8 py-2 text-sm font-semibold  text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
           >
             We'r Hiring
           </button>
@@ -78,7 +79,7 @@ export default function Career() {
           <Link to="/#">
             <Button
               width="w-56"
-              textColor="text-black"
+              textColor="text-white"
               hoverEffect="hover:bg-yellow-300"
               buttonName="COME JOIN US"
               props="font-semibold w-[195px] rounded-md"
@@ -151,7 +152,7 @@ export default function Career() {
         </div>
       </div>
 
-      <div className="flex flex-wrap items-start justify-center mt-8 md:ml-20">
+      <div className="flex flex-wrap md:flex-nowrap items-start justify-center mt-8 md:ml-20">
         <div className="flex flex-col items-center mb-20 sm:items-start sm:mr-20 sm:mx-0 ">
           {/* Fourth Icon */}
           <div className="flex items-center justify-center mb-4 rounded-full">
@@ -178,8 +179,6 @@ export default function Career() {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }
