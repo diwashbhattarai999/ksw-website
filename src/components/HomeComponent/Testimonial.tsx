@@ -10,55 +10,55 @@ const Testimonial: React.FC = () => {
     </svg>
     `;
 
-  const ButtonGroup = ({
-    next,
-    previous,
-  }: {
-    next?: () => void;
-    previous?: () => void;
-  }) => {
-    return (
-      <div className="absolute inset-y-0 left-0 right-0 flex items-center justify-between">
-        <button onClick={previous} className="text-3xl text-black">
-          &lt;
-        </button>
-        <button onClick={next} className="text-3xl text-black">
-          &gt;
-        </button>
-      </div>
-    );
-  };
-
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide: 1, // optional, default to 1.
+      items: 1,
     },
     tablet: {
       breakpoint: { max: 1024, min: 600 },
-      items: 3,
-      slidesToSlide: 3, // optional, default to 1.
+      items: 1,
     },
     mobile: {
       breakpoint: { max: 600, min: 200 },
       items: 1,
-      slidesToSlide: 1, // optional, default to 1.
     },
   };
   const sliderImageUrl = [
     {
-      url: 'data:image/jpeg;base64,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',
-      description: 'Hello world',
+      url: '/testimonialPictures/Dolma.jpg',
+      post: 'Founder - Tryinn7',
+      testimonial:
+        'Choosing KSW TechZone was a game-changer. Their digital marketing mojo is real! Grateful to have them on our side!',
+      name: 'Dolma Lama',
     },
     {
-      url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRvbwooYLVyPME3XwqUXENDXhbgMx3oUsN_g&usqp=CAU',
+      url: '/testimonialPictures/Bhupen.jpg',
+      post: 'CEO – The Lady Hub, Dalima’s Collection',
+      testimonial:
+        "Our sales skyrocketed thanks to KSW TechZone! Grateful for the impact they've had on our bottom line!",
+      name: 'Bhupen Kunwar',
     },
     {
-      url: 'data:image/jpeg;base64,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',
+      url: '/testimonialPictures/Dipak.jpg',
+      post: 'Founder- Zaira’s Ethnic Ware, The Gears Wizard, Clocksy',
+      testimonial:
+        "KSW TechZone's digital marketing is like having a personal cheerleader for your brand. Big thanks to the team for making us stand out in the online crowd!",
+      name: 'Dipak Rana',
     },
     {
-      url: 'data:image/jpeg;base64,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',
+      url: '/testimonialPictures/Jeff.jpg',
+      post: 'CEO– Malika Wardrobe',
+      testimonial:
+        "KSW TechZone transformed our online game! They're our secret weapon for digital success!",
+      name: 'Jeff Mahat',
+    },
+    {
+      url: '/testimonialPictures/Khakendra.jpg',
+      post: 'Founder- Maharani Trending Shop, Precious Collections',
+      testimonial:
+        "KSW TechZone = Digital Rockstars! It's like having a winning playbook for online success!",
+      name: 'Khakendra Kunwar',
     },
   ];
 
@@ -83,23 +83,22 @@ const Testimonial: React.FC = () => {
         }}
       >
         <div className="w-[100%] lg:w-[50%] m-auto">
-          <div className="w-[50%] sm:w-[60%]  m-auto">
+          <div className="w-4/5 sm:w-[60%]  m-auto">
             <Carousel
               swipeable={false}
               draggable={false}
               responsive={responsive}
               ssr={true}
               infinite={true}
-              autoPlaySpeed={1000}
+              autoPlay={true}
+              autoPlaySpeed={2000}
               keyBoardControl={true}
               customTransition="all .5"
               transitionDuration={500}
-              arrows={false}
               containerClass="carousel-container"
               removeArrowOnDeviceType={['tablet', 'mobile']}
               dotListClass="custom-dot-list-style"
               itemClass="carousel-item-padding-40-px"
-              customButtonGroup={<ButtonGroup />}
             >
               {sliderImageUrl.map((imageUrl, index) => {
                 return (
@@ -107,26 +106,27 @@ const Testimonial: React.FC = () => {
                     <img
                       src={imageUrl.url}
                       alt="image"
-                      className="lg:px-4 p-5 rounded-full "
+                      className="h-36 sm:h-44 lg:h-52 object-cover rounded-full aspect-square m-auto"
                     />
+                    <div className="flex flex-col items-center justify-center p-4">
+                      <h3 className="font-bold">{imageUrl.name}</h3>
+                      <h5 className="font-semibold text-center">
+                        {imageUrl.post}
+                      </h5>
+                      <p className="w-48 text-center text-xs">
+                        {imageUrl.testimonial}
+                      </p>
+                      <Link to="/contact" className="mt-10">
+                        <button className="py-2 px-3 bg-[#004AAD] rounded-md font-medium text-white hover:bg-[rgb(0,50,120)]">
+                          Contact us
+                        </button>
+                      </Link>
+                    </div>
                     {console.log(index)}
                   </>
                 );
               })}
             </Carousel>
-            <div className="flex flex-col items-center justify-center p-4">
-              <h3 className="font-bold">K. E. BRICK</h3>
-              <p className="w-48 text-center text-[11px]">
-                Working with KSW TechZone was a game-changer for our business.
-                Their dedication to delivering top-notch solutions is
-                unparalleled.
-              </p>
-              <Link to="/contact" className="mt-10">
-                <button className="py-2 px-3 bg-[#004AAD] rounded-md font-semibold text-white hover:bg-[rgb(0,50,120)]">
-                  Contact us
-                </button>
-              </Link>
-            </div>
           </div>
         </div>
         <div className=" w-full lg:block lg:w-[50%]">

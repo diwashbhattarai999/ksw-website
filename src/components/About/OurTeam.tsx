@@ -24,7 +24,7 @@ export default function OurTeam() {
       role: 'Cyber Security Expert',
     },
     {
-      img: CEO,
+      img: '/picture/mina.jpg',
       name: 'Mina Singh',
       role: 'Digital Marketing',
     },
@@ -60,11 +60,7 @@ export default function OurTeam() {
       name: 'Gopal Pokhrel',
       role: ' Frontend Developer',
     },
-    {
-      img: '/picture/mibek.jpg',
-      name: 'Mibek Shrestha',
-      role: ' Frontend Developer',
-    },
+
     {
       img: '/picture/prabin.jpg',
       name: 'Prabin Ghimire',
@@ -74,16 +70,6 @@ export default function OurTeam() {
       img: '/picture/sagar.jpg',
       name: 'Sagar Maharjan',
       role: ' UI/UX ',
-    },
-    {
-      img: '/picture/sanjay.jpg',
-      name: 'Sanjay Kumar Singh',
-      role: ' Frontend Developer',
-    },
-    {
-      img: '/picture/sushovit.png',
-      name: 'Sushovit Shah',
-      role: ' Frontend Developer',
     },
   ];
   return (

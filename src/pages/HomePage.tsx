@@ -12,7 +12,7 @@ function HomePage() {
   return (
     <>
       <div
-        className="h-[100vh] relative overflow-hidden bg-[#dff0f2]"
+        className="h-screen relative overflow-hidden bg-[#dff0f2]"
         style={{ minHeight: '-webkit-fill-available' }}
       >
         <VectorAnimatedImage />
@@ -20,6 +20,18 @@ function HomePage() {
         <NavBar />
 
         <FirstTestTube />
+        <div className="w-4/5 m-auto sm:w-1/2 lg:w-1/3 z-50 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:top-1/3 xl:top-1/3 lg:-translate-x-0 lg:translate-y-0 lg:left-48 ">
+          <h3 className="font-semibold text-base sm:text-lg lg:text-2xl xl:text-4xl text-center md:text-left">
+            <span className="font-bold">KSW TechZone</span> - Empowering Your
+            Digital Presence
+          </h3>
+          <p className="text-xs sm:text-sm lg:text-base xl:text-lg text-justify">
+            At KSW TechZone, we transcend boundaries, turning your digital
+            dreams into reality. As a leading IT Services and Software
+            Development company based in Nepal, we specialize in a diverse range
+            of services that elevate your online presence.
+          </p>
+        </div>
       </div>
       <WeProvides />
       <Testimonial />

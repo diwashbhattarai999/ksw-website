@@ -71,7 +71,7 @@ const Card: React.FC<CardProps> = ({
           <div className="w-full sm:w-full md:w-[60%] lg:w-[50%] md:items-start">
             <div className="w-[100%] m-auto text-justify">
               <div className="mb-4 md:mb-8">
-                <div className="md:text-[2rem] text-[1.2rem] sm:text-[2rem] font-bold text-center md:text-left">
+                <div className="md:text-[1rem] text-[1.2rem] sm:text-[1rem] font-bold text-center md:text-left">
                   <p>
                     {title} <span className="text-blue-700">{titleSec}</span>
                   </p>

@@ -1,5 +1,14 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { PiTiktokLogoLight } from 'react-icons/pi';
+import { AiOutlineLinkedin } from 'react-icons/ai';
+import { VscGithub } from 'react-icons/vsc';
+import { FaChalkboard, FaNode, FaReact } from 'react-icons/fa';
+import { GiConversation } from 'react-icons/gi';
+import { FaArrowUpRightDots } from 'react-icons/fa6';
+import { ImPinterest2 } from 'react-icons/im';
+import { SlSocialYoutube } from 'react-icons/sl';
+import { TiSocialFlickr } from 'react-icons/ti';
 
 export default function WeProvides() {
   const svgBackground = `<svg width="303" height="363" viewBox="0 0 303 363" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,21 +106,23 @@ export default function WeProvides() {
             <div>
               <div className="w-16 h-16 bg-blue-300 rounded-full absolute left-[40%] p-3">
                 <Link to="#">
-                  <img src="/public/weProvidesIcon/global.png" alt="" />
+                  <img src="/weProvidesIcon/global.png" alt="" />
                 </Link>
               </div>
             </div>
             <div>
               <div className="absolute left-0 w-16 h-16 p-3 bg-gray-300 rounded-full top-24">
                 <Link to="#">
-                  <img src="/public/weProvidesIcon/react.png" alt="" />
+                  {/* <img src="/public/weProvidesIcon/react.png" alt="" /> */}
+                  <FaReact className="text-4xl ml-[3px] " />
                 </Link>
               </div>
             </div>
             <div>
               <div className="absolute w-16 h-16 p-3 bg-blue-300 rounded-full left-32 top-28">
                 <Link to="#">
-                  <img src="/public/weProvidesIcon/react.png" alt="" />
+                  {/* <img src="/public/weProvidesIcon/react.png" alt="" /> */}
+                  <FaNode className="text-4xl ml-[3px] " />
                 </Link>
               </div>
             </div>
@@ -130,33 +141,119 @@ export default function WeProvides() {
               Web Devlopment
             </h1>
             <p className="text-[0.8rem] sm:text-[1rem]">
-              Microglia exhibit a variety of behaviors in different situations
-              and can have beneficial, toxic, or neutral impact on the brain.
-              Our technology finds microglial behaviors that support and restore
-              brain health.
+              Unleash the potential of your business with our cutting-edge web
+              development solutions. Our expert developers craft dynamic and
+              responsive websites that captivate your audience.
             </p>
           </div>
         </div>
 
-        <div className="order-6 md:order-5  ">
+        <div className="order-3 md:pl-8 lg:pl-0">
+          <div className="sm:w-[65vh] sm:h-72 w-[80vw] h-52 md:pl-6  flex justify-center flex-col  sm:items-start small:items-center">
+            <h1 className="text-[1.2rem] sm:text-[1.5rem] font-medium">
+              Digital Marketing & Social Media Handling
+            </h1>
+            <p className="text-[0.8rem] sm:text-[1rem] text-justify">
+              Digital marketing promotes products online through various
+              channels. Social media handling involves managing and leveraging
+              platforms like Facebook, Instagram and others for effective online
+              engagement.
+            </p>
+          </div>
+        </div>
+
+        <div className="order-4">
+          <div className="w-72 h-72  relative">
+            <div className="w-72 h-44 pt-6  border-2  flex justify-around  ">
+              <div>
+                <div className="w-12 h-12 bg-blue-300 rounded-full p-4 ">
+                  <Link to="#">
+                    <img src="/weProvidesIcon/instagram.png" alt="icon" />
+                  </Link>
+                </div>
+              </div>
+              <div>
+                <div className="w-12 h-12 bg-blue-300 rounded-full p-4 ">
+                  <Link to="#">
+                    {/* <img src="/weProvidesIcon/facebook.png" alt="icon" /> */}
+                    <TiSocialFlickr className="text-lg" />
+                  </Link>
+                </div>
+              </div>
+              <div>
+                <div className="w-12 h-12 bg-blue-300 rounded-full p-4 ">
+                  <Link to="#">
+                    <img src="/weProvidesIcon/twitter.png" alt="icon" />
+                  </Link>
+                </div>
+              </div>
+              <div>
+                <div className="w-12 h-12 bg-blue-300 rounded-full p-4 ">
+                  <Link to="#">
+                    {/* <img src="/weProvidesIcon/facebook.png" alt="icon" /> */}
+                    <ImPinterest2 />
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="w-56 h-20  border-2 border-black  flex justify-around items-center absolute top-[6rem] left-[12%] ">
+              <div>
+                <div className="w-12 h-12 bg-blue-300 rounded-full p-4 ">
+                  <Link to="#">
+                    <img src="/weProvidesIcon/facebook.png" alt="icon" />
+                  </Link>
+                </div>
+              </div>
+              <div>
+                <div className="w-12 h-12 bg-blue-300 rounded-full p-4 ">
+                  <Link to="#">
+                    {/* <img src="/weProvidesIcon/facebook.png" alt="icon" /> */}
+                    <PiTiktokLogoLight />
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="w-56 h-20 border-2  flex justify-around items-center absolute left-[12%] ">
+              <div>
+                <div className="w-12 h-12 bg-blue-300 rounded-full p-4">
+                  <Link to="#">
+                    {/* <img src="/weProvidesIcon/facebook.png" alt="icon" /> */}
+                    <AiOutlineLinkedin />
+                  </Link>
+                </div>
+              </div>
+              <div>
+                <div className="w-12 h-12 bg-blue-300 rounded-full p-4 ">
+                  <Link to="#">
+                    {/* <img src="/weProvidesIcon/facebook.png" alt="icon" /> */}
+                    <SlSocialYoutube />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="order-5 md:order-6  ">
           <div className="sm:w-96 sm:h-72 w-[80vw] h-52  flex justify-center  flex-col ">
             <h1 className="text-[1.2rem] sm:text-[1.5rem] font-medium">
-              Reprogramming microglia to treat patients
+              IT Consultant & Training
             </h1>
             <p className="text-[0.8rem] sm:text-[1rem]">
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour,
+              Navigate the complex digital landscape with confidence. Our IT
+              consulting and Training services provide strategic insights,
+              helping you make informed decisions for your business growth.
             </p>
           </div>
         </div>
 
-        <div className="order-5 md:order-6">
+        <div className="order-6 md:order-5">
           <div className="relative w-80 h-60 md:h-72 mt-5">
             <div>
               <div className="w-16 h-16 bg-blue-300 rounded-full absolute left-[40%] p-4">
                 <Link to="#">
-                  <img src="/public/weProvidesIcon/headphone.png" alt="icon" />
+                  {/* <img src="/public/weProvidesIcon/headphone.png" alt="icon" /> */}
+                  <GiConversation className="text-3xl" />
                 </Link>
               </div>
             </div>
@@ -224,21 +321,24 @@ export default function WeProvides() {
             <div>
               <div className="absolute w-16 h-16 p-4 bg-blue-300 rounded-full left-12 top-24">
                 <Link to="#">
-                  <img src="/public/weProvidesIcon/headphone.png" alt="icon" />
+                  {/* <img src="/public/weProvidesIcon/headphone.png" alt="icon" /> */}
+                  <VscGithub className="text-3xl  " />
                 </Link>
               </div>
             </div>
             <div>
               <div className="w-16 h-16 bg-blue-300 rounded-full absolute left-[139px] top-36 p-4">
                 <Link to="#">
-                  <img src="/public/weProvidesIcon/headphone.png" alt="icon" />
+                  {/* <img src="/public/weProvidesIcon/headphone.png" alt="icon" /> */}
+                  <FaChalkboard className="text-3xl" />
                 </Link>
               </div>
             </div>
             <div>
               <div className="absolute w-16 h-16 p-4 bg-blue-300 rounded-full left-52 top-36">
                 <Link to="#">
-                  <img src="/public/weProvidesIcon/headphone.png" alt="icon" />
+                  {/* <img src="/public/weProvidesIcon/headphone.png" alt="icon" /> */}
+                  <FaArrowUpRightDots className="text-3xl" />
                 </Link>
               </div>
             </div>
