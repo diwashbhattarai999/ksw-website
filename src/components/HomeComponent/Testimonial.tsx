@@ -102,7 +102,7 @@ const Testimonial: React.FC = () => {
             >
               {sliderImageUrl.map((imageUrl, index) => {
                 return (
-                  <>
+                  <div key={index}>
                     <img
                       src={imageUrl.url}
                       alt="image"
@@ -122,8 +122,7 @@ const Testimonial: React.FC = () => {
                         </button>
                       </Link>
                     </div>
-                    {console.log(index)}
-                  </>
+                  </div>
                 );
               })}
             </Carousel>

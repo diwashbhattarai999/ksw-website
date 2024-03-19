@@ -261,12 +261,12 @@ export default function WeProvides() {
               <svg viewBox="0 0 852 319" className="absolute top-1 left-16 ">
                 <g opacity="0.2" transform="matrix(1,0,0,1,0,0)">
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    fill-opacity="0"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    fillOpacity="0"
                     stroke="rgb(235, 13, 13)"
-                    stroke-opacity="1"
-                    stroke-width="2"
+                    strokeOpacity="1"
+                    strokeWidth="2"
                     transform="scale(1, 4) rotate(50,281, 5)"
                     d="M281,71.25 C281,71.25 165,334.875 165,334.875"
                   />
@@ -274,12 +274,12 @@ export default function WeProvides() {
                 <g opacity="1" transform="matrix(1,0,0,1,0,0)">
                   <path
                     id="pathLeft"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    fill-opacity="0"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    fillOpacity="0"
                     stroke="rgb(235, 13, 13)"
-                    stroke-opacity="1"
-                    stroke-width="2"
+                    strokeOpacity="1"
+                    strokeWidth="2"
                     transform="scale(1, 4) rotate(50,281, 5)"
                     d={leftSvg}
                   />
@@ -293,12 +293,12 @@ export default function WeProvides() {
               >
                 <g opacity="0.2" transform="matrix(1,0,0,1,0,0)">
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    fill-opacity="0"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    fillOpacity="0"
                     stroke="rgb(235, 13, 13)"
-                    stroke-opacity="1"
-                    stroke-width="6"
+                    strokeOpacity="1"
+                    strokeWidth="6"
                     transform="scale(1, 1) rotate(-45, 281, 5)"
                     d="M281,71.25 C281,71.5 165,400 165,400"
                   />
@@ -306,12 +306,12 @@ export default function WeProvides() {
                 <g opacity="1" transform="matrix(1,0,0,1,0,0)">
                   <path
                     id="pathRight"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    fill-opacity="0"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    fillOpacity="0"
                     stroke="rgb(235, 13, 13)"
-                    stroke-opacity="1"
-                    stroke-width="6"
+                    strokeOpacity="1"
+                    strokeWidth="6"
                     transform="scale(1, 1) rotate(-45, 281, 5)"
                     d={rightSvg}
                   />

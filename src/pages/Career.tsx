@@ -97,11 +97,11 @@ export default function Career() {
   const [selectedDepartment, setSelectedDepartment] = useState('');
   const [selectedLocation, setSelectedLocation] = useState('');
 
-  const handleDepartmentChange = (e) => {
+  const handleDepartmentChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedDepartment(e.target.value);
   };
 
-  const handleLocationChange = (e) => {
+  const handleLocationChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedLocation(e.target.value);
   };
 
