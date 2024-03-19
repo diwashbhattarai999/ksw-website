@@ -66,7 +66,7 @@ const JOB_OPENINGS = [
     location: 'Bhaktapur, Nepal',
   },
 ];
-// Existing code for departments and locations
+
 const DEPARTMENTS = [
   'Engineering',
   'Marketing',
@@ -93,23 +93,18 @@ const LOCATIONS = [
   'Chobhar, Nepal',
 ];
 
-// Define the Career component
 export default function Career() {
-  // State for selected department and location
   const [selectedDepartment, setSelectedDepartment] = useState('');
   const [selectedLocation, setSelectedLocation] = useState('');
 
-  // Function to handle department selection change
   const handleDepartmentChange = (e) => {
     setSelectedDepartment(e.target.value);
   };
 
-  // Function to handle location selection change
   const handleLocationChange = (e) => {
     setSelectedLocation(e.target.value);
   };
 
-  // Filtered job openings based on selected department and location
   const filteredJobOpenings = JOB_OPENINGS.filter((job) => {
     return (
       (!selectedDepartment || job.department === selectedDepartment) &&
@@ -117,7 +112,6 @@ export default function Career() {
     );
   });
 
-  // Return JSX for the Career component
   return (
     <div
       className="relative overflow-hidden overflow-x-hidden"
@@ -173,7 +167,6 @@ export default function Career() {
 
         {/* JOB OPENINGS */}
         <div className="my-10 ">
-          {/* TITLES */}
           <div className="text-left border-y bg-gray-50">
             <Container className="flex py-3 md:py-5 lg:py-12 lg:justify-between max-lg:flex-col max-lg:gap-6">
               <h2 className="text-lg lg:basis-[32rem] text-center lg:text-left ">
@@ -212,7 +205,6 @@ export default function Career() {
             </Container>
           </div>
 
-          {/* Display filtered job openings */}
           <Container>
             <ul className="text-left">
               {filteredJobOpenings.map((job, index) => (
