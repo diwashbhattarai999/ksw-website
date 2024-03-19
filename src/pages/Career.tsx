@@ -1,7 +1,8 @@
+// Import necessary components and assets
 import { NavBar } from '../components';
-
 import career from '../assets/career.png';
 import Container from '../components/Container';
+import { useState } from 'react';
 
 const JOB_OPENINGS = [
   {
@@ -54,6 +55,16 @@ const JOB_OPENINGS = [
     department: 'Operations',
     location: 'Chobhar, Nepal',
   },
+  {
+    position: 'Marketing Manager',
+    department: 'Marketing',
+    location: 'Bhaktapur, Nepal',
+  },
+  {
+    position: 'Operations Manager',
+    department: 'Operations',
+    location: 'Bhaktapur, Nepal',
+  },
 ];
 
 const DEPARTMENTS = [
@@ -83,6 +94,24 @@ const LOCATIONS = [
 ];
 
 export default function Career() {
+  const [selectedDepartment, setSelectedDepartment] = useState('');
+  const [selectedLocation, setSelectedLocation] = useState('');
+
+  const handleDepartmentChange = (e) => {
+    setSelectedDepartment(e.target.value);
+  };
+
+  const handleLocationChange = (e) => {
+    setSelectedLocation(e.target.value);
+  };
+
+  const filteredJobOpenings = JOB_OPENINGS.filter((job) => {
+    return (
+      (!selectedDepartment || job.department === selectedDepartment) &&
+      (!selectedLocation || job.location === selectedLocation)
+    );
+  });
+
   return (
     <div
       className="relative overflow-hidden overflow-x-hidden"
@@ -138,16 +167,18 @@ export default function Career() {
 
         {/* JOB OPENINGS */}
         <div className="my-10 ">
-          {/* TITLES */}
           <div className="text-left border-y bg-gray-50">
             <Container className="flex py-3 md:py-5 lg:py-12 lg:justify-between max-lg:flex-col max-lg:gap-6">
               <h2 className="text-lg lg:basis-[32rem] text-center lg:text-left ">
-                {JOB_OPENINGS.length} Results
+                {filteredJobOpenings.length} Results
               </h2>
-
               <div className="text-center  md:flex items-center justify-between basis-1/2">
                 <div className="basis-2/3 md:basis-1/2">
-                  <select className="p-2 mb-2 cursor-pointer">
+                  <select
+                    className="p-2 mb-2 cursor-pointer"
+                    value={selectedDepartment}
+                    onChange={handleDepartmentChange}
+                  >
                     <option value="">All Departments</option>
                     {DEPARTMENTS.map((department, index) => (
                       <option key={index} value={department}>
@@ -156,9 +187,12 @@ export default function Career() {
                     ))}
                   </select>
                 </div>
-
                 <div className="basis-1/3 md:basis-1/2">
-                  <select className="p-2 mt-2 md:mt-0 md:mb-2  cursor-pointer">
+                  <select
+                    className="p-2 mt-2 md:mt-0 md:mb-2  cursor-pointer"
+                    value={selectedLocation}
+                    onChange={handleLocationChange}
+                  >
                     <option value="">All Locations</option>
                     {LOCATIONS.map((location, index) => (
                       <option key={index} value={location}>
@@ -170,30 +204,28 @@ export default function Career() {
               </div>
             </Container>
           </div>
+
           <Container>
-            {/* JOBS */}
             <ul className="text-left">
-              {JOB_OPENINGS.map((job, index) => {
-                return (
-                  <li
-                    key={index}
-                    className="flex max-md:flex-col px-4 md:px-8 py-6 md:py-12 transition-transform duration-300 bg-white border-b cursor-pointer hover:bg-gray-100 hover:scale-[1.01]"
-                  >
-                    <h2 className="text-lg font-semibold basis-1/2">
-                      {job.position}
+              {filteredJobOpenings.map((job, index) => (
+                <li
+                  key={index}
+                  className="flex max-md:flex-col px-4 md:px-8 py-6 md:py-12 transition-transform duration-300 bg-white border-b cursor-pointer hover:bg-gray-100 hover:scale-[1.01]"
+                >
+                  <h2 className="text-lg font-semibold basis-1/2">
+                    {job.position}
+                  </h2>
+                  <div className="flex md:justify-between md:items-center basis-1/2">
+                    <h2 className="max-md:text-sm md:font-medium md:basis-2/3">
+                      {job.department}
                     </h2>
-                    <div className="flex md:justify-between md:items-center basis-1/2">
-                      <h2 className="max-md:text-sm md:font-medium md:basis-2/3">
-                        {job.department}
-                      </h2>
-                      <div className="mx-1 font-medium md:hidden">/</div>
-                      <h2 className="max-md:text-sm md:font-medium md:basis-1/3">
-                        {job.location}
-                      </h2>
-                    </div>
-                  </li>
-                );
-              })}
+                    <div className="mx-1 font-medium md:hidden">/</div>
+                    <h2 className="max-md:text-sm md:font-medium md:basis-1/3">
+                      {job.location}
+                    </h2>
+                  </div>
+                </li>
+              ))}
             </ul>
           </Container>
         </div>
