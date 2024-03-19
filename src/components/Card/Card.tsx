@@ -35,15 +35,14 @@ const Card: React.FC<CardProps> = ({
                     {description}
                   </p>
                 </div>
-                <div className="text-center md:text-left">
+                <div className="text-center ">
                   <a href="#">
                     {showButton && (
                       <Button
                         width="w-56 md:w-2/3 lg:w-3/5 xl:w-1/2 md:justify-start md:ml-0 justify-center"
                         buttonName="FIND OUT MORE"
                         textColor="text-gray-50"
-                        hoverEffect="hover:text-gray-600"
-                        props="md:text-xl md:font-bold text-sm mr-[-0.65rem]"
+                        props="md:text-xl md:font-bold text-sm "
                       />
                     )}
                   </a>
@@ -81,15 +80,14 @@ const Card: React.FC<CardProps> = ({
                     {description}
                   </p>
                 </div>
-                <div className="text-center md:text-left">
+                <div className="text-center ">
                   <a href="#">
                     {showButton && (
                       <Button
                         width="w-56 md:w-2/3 lg:w-3/5 xl:w-1/2 md:justify-start md:ml-0 justify-center"
                         buttonName="FIND OUT MORE"
                         textColor="text-gray-50"
-                        hoverEffect="hover:text-gray-600"
-                        props="md:text-xl md:font-bold text-sm mr-[-0.65rem] md:justify-start justify-center"
+                        props="md:text-xl md:font-bold text-sm md:justify-start justify-center"
                       />
                     )}
                   </a>

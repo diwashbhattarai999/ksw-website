@@ -34,9 +34,8 @@ const CardBlog: React.FC<CardProps> = ({ image, date, title, description }) => {
             <Button
               width="w-56"
               textColor="text-white"
-              hoverEffect="hover:text-[#003278]"
               buttonName="READ MORE"
-              props="font-semibold w-[195px] rounded-md text-xs"
+              props="md:text-base md:font-bold text-sm w-[195px] rounded-md "
             />
           </Link>
         </div>
