@@ -66,7 +66,6 @@ const TeamCard: React.FC<CardProps> = ({
           ) : (
             ''
           )}
-
           {twitter ? (
             <Link to={github || '/'}>
               <FaTwitter
