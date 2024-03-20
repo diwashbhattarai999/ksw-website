@@ -3,17 +3,18 @@ import career from '../assets/career.png';
 import Container from '../components/Container';
 import { useState } from 'react';
 
-const JOB_OPENINGS = [
-  {
-    position: 'Frontend Developer',
-    department: 'Development',
-    location: 'Lalitpur, Imadol',
-  },
-  {
-    position: 'Marketing Head',
-    department: 'Management',
-    location: 'Lalitpur, Imadol',
-  },
+type JobOpening = {
+  position: string;
+  department: string;
+  location: string;
+};
+
+const JOB_OPENINGS: JobOpening[] = [
+  // {
+  //   position: 'Frontend Developer',
+  //   department: 'Development',
+  //   location: 'Lalitpur, Imadol',
+  // },
 ];
 
 export default function Career() {
@@ -32,6 +33,13 @@ export default function Career() {
       (!selectedLocation || job.location === selectedLocation)
     );
   });
+
+  const uniqueDepartments = Array.from(
+    new Set(JOB_OPENINGS.map((job) => job.department)),
+  );
+  const uniqueLocations = Array.from(
+    new Set(JOB_OPENINGS.map((job) => job.location)),
+  );
 
   return (
     <div
@@ -101,9 +109,9 @@ export default function Career() {
                     onChange={handleDepartmentChange}
                   >
                     <option value="">All Departments</option>
-                    {JOB_OPENINGS.map((department, index) => (
-                      <option key={index} value={department.department}>
-                        {department.department}
+                    {uniqueDepartments.map((department, index) => (
+                      <option key={index} value={department}>
+                        {department}
                       </option>
                     ))}
                   </select>
@@ -115,9 +123,9 @@ export default function Career() {
                     onChange={handleLocationChange}
                   >
                     <option value="">All Locations</option>
-                    {JOB_OPENINGS.map((location, index) => (
-                      <option key={index} value={location.location}>
-                        {location.location}
+                    {uniqueLocations.map((location, index) => (
+                      <option key={index} value={location}>
+                        {location}
                       </option>
                     ))}
                   </select>
