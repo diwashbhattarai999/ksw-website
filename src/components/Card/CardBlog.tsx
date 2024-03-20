@@ -14,7 +14,7 @@ const CardBlog: React.FC<CardProps> = ({ image, date, title, description }) => {
     <div className="w-full lg:my-10 flex flex-col pt-10 md:flex-row">
       <div className="w-full md:w-1/2 flex sm:px-6">
         <img
-          className=" object-contain"
+          className=" object-contain rounded-lg"
           src={image}
           alt="People Working in Office"
         />

@@ -133,7 +133,7 @@ const Footer: React.FC = () => {
           </div>
           <hr className="bg-black" />
 
-          <div className="flex flex-row justify-center mt-2 space-x-2 sm:space-x-4">
+          <div className="flex flex-row justify-center mt-10 space-x-2 sm:space-x-4">
             <Link to="https://www.facebook.com/profile.php?id=100093997620977">
               <FaFacebook
                 className="changeBg"
@@ -150,7 +150,7 @@ const Footer: React.FC = () => {
               <FaLinkedin style={{ fontSize: '30px', color: '#004AAD' }} />
             </Link>
           </div>
-          <div className=" text-center md:flex flex-row justify-center md:mx-10 lg:mx-44 sm:space-x-4 text-sm my-4 pb-[50px]">
+          <div className=" text-center md:flex flex-row justify-center md:mx-10 lg:mx-44 sm:space-x-4 text-sm my-4 pb-[30px]">
             <Link to="/" className="underline">
               Privacy Policy
             </Link>
