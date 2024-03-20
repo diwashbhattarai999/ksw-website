@@ -11,8 +11,8 @@ interface CardProps {
 
 const CardBlog: React.FC<CardProps> = ({ image, date, title, description }) => {
   return (
-    <div className="w-full lg:my-10 flex flex-col pt-10 md:flex-row">
-      <div className="w-full md:w-1/2 flex sm:px-6">
+    <div className="w-full lg:my-10 flex flex-col pt-10 md:flex-row justify-center">
+      <div className="w-full md:w-1/2 xl:w-1/3 flex sm:px-6">
         <img
           className=" object-contain rounded-lg"
           src={image}
