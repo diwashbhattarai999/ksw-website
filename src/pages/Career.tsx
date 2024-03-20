@@ -5,65 +5,15 @@ import Container from '../components/Container';
 import { useState } from 'react';
 
 const JOB_OPENINGS = [
+  // {
+  //   position: 'Software Engineer',
+  //   department: 'Engineering',
+  //   location: 'Kathmandu, Nepal',
+  // },
   {
-    position: 'Software Engineer',
-    department: 'Engineering',
-    location: 'Kathmandu, Nepal',
-  },
-  {
-    position: 'Marketing Manager',
-    department: 'Marketing',
-    location: 'Patan, Nepal',
-  },
-  {
-    position: 'Data Scientist',
-    department: 'Data Science',
-    location: 'Bhaktapur, Nepal',
-  },
-  {
-    position: 'Product Manager',
-    department: 'Product Management',
-    location: 'Lalitpur, Nepal',
-  },
-  {
-    position: 'Graphic Designer',
-    department: 'Design',
-    location: 'Banepa, Nepal',
-  },
-  {
-    position: 'Financial Analyst',
-    department: 'Finance',
-    location: 'Dhulikhel, Nepal',
-  },
-  {
-    position: 'HR Coordinator',
-    department: 'Human Resources',
-    location: 'Nagarkot, Nepal',
-  },
-  {
-    position: 'Sales Representative',
-    department: 'Sales',
-    location: 'Bhaisepati, Nepal',
-  },
-  {
-    position: 'Customer Support Specialist',
-    department: 'Customer Support',
-    location: 'Godawari, Nepal',
-  },
-  {
-    position: 'Operations Manager',
-    department: 'Operations',
-    location: 'Chobhar, Nepal',
-  },
-  {
-    position: 'Marketing Manager',
-    department: 'Marketing',
-    location: 'Bhaktapur, Nepal',
-  },
-  {
-    position: 'Operations Manager',
-    department: 'Operations',
-    location: 'Bhaktapur, Nepal',
+    position: '',
+    department: '',
+    location: '',
   },
 ];
 

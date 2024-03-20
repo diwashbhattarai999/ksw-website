@@ -187,10 +187,10 @@ const Service = () => {
               </p>
             </div>
             <img
-            src={servicesimg}
-            alt="Services"
-            className="max-w-[50vw] md:h-[50vh] lg:h-[500px] hidden sm:block md:absolute top-32 right-0 "
-          />
+              src={servicesimg}
+              alt="Services"
+              className="max-w-[50vw] md:h-[50vh] lg:h-[500px] hidden sm:block md:absolute top-32 right-0 "
+            />
           </div>
         </Container>
         <div className="w-4/5 mt-20 m-auto">

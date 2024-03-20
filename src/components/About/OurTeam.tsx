@@ -20,16 +20,20 @@ export default function OurTeam() {
       img: '/picture/Aneep.jpg',
       name: 'Anip Shah',
       role: ' IOT & Robotics Head',
+      linkedin: 'https://www.linkedin.com/in/anip-shah-ab5029258/',
     },
     {
       img: '/picture/Pranish.jpg',
       name: 'Pranish Shukla',
       role: 'Cyber Security Expert',
+      linkedin: 'https://www.linkedin.com/in/pernishshukla/',
+      github: 'https://twitter.com/errorsec_',
     },
     {
       img: '/picture/mina.jpg',
       name: 'Mina Singh',
       role: 'Digital Marketing',
+      linkedin: 'https://www.linkedin.com/in/mina-kumari-singh-88b744259/',
     },
     {
       img: '/picture/suman.jpg',
