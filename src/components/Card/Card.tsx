@@ -35,7 +35,7 @@ const Card: React.FC<CardProps> = ({
                     {description}
                   </p>
                 </div>
-                <div className="text-center ">
+                {/* <div className="text-center ">
                   <a href="#">
                     {showButton && (
                       <Button
@@ -46,7 +46,7 @@ const Card: React.FC<CardProps> = ({
                       />
                     )}
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ const Card: React.FC<CardProps> = ({
                     {description}
                   </p>
                 </div>
-                <div className="text-center ">
+                {/* <div className="text-center ">
                   <a href="#">
                     {showButton && (
                       <Button
@@ -91,7 +91,7 @@ const Card: React.FC<CardProps> = ({
                       />
                     )}
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
