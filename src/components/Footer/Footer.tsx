@@ -27,96 +27,39 @@ const Footer: React.FC = () => {
               </div>
             </div>
 
-            {/* <div
-              className=" flex flex-col items-start ml-5 border-gradient pl-5 h-[194px]"
-              style={{ color: "#515360" }}
-            >
-              <Link
-                to="/"
-                className={` hover-underline-animation ${
-                  location.pathname === "/" ? "active" : ""
-                }mx-2 mb-2`}
-              >
-                <span>Home</span>
-              </Link>
-              <Link
-                to="/about"
-                className={` hover-underline-animation ${
-                  location.pathname === "/about" ? "active" : ""
-                } mx-2 mb-2`}
-              >
-                <span>About Us</span>
-              </Link>
-              <Link
-                to="/services"
-                className={` hover-underline-animation ${
-                  location.pathname === "/services" ? "active" : ""
-                } mx-2 mb-2`}
-              >
-                <span>Services</span>
-              </Link>
-              <Link
-                to="/career"
-                className={` hover-underline-animation ${
-                  location.pathname === "/career" ? "active" : ""
-                } mx-2 mb-2`}
-              >
-                <span>Careers</span>
-              </Link>
-              <Link
-                to="/blogs"
-                className={` hover-underline-animation ${
-                  location.pathname === "/blogs" ? "active" : ""
-                } mx-2 mb-2`}
-              >
-                <span>Blogs</span>
-              </Link>
-              <Link
-                to="/contact"
-                className={` hover-underline-animation ${
-                  location.pathname === "/contact" ? "active" : ""
-                } mx-2 mb-2`}
-              >
-                <span>Contact Us</span>
-              </Link>
-            </div> */}
-
             <div className="md:w-full sm:w-full ">
-              {/* <h2 className="text-[1.8rem] sm:text-[2rem] font-bold pb-4">
-                Get In Touch
-              </h2> */}
               <form action="">
                 <div className="flex flex-col pb-2">
                   <input
                     type="text"
-                    className="border border-gray-400 p-2 w-[100%]"
+                    className="border border-gray-400 p-2 w-[100%] rounded-md focus:outline-none"
                     placeholder="Full Name *"
                   />
                 </div>
                 <div className="flex flex-col pb-2">
                   <input
                     type="email"
-                    className="border border-gray-400 p-2 w-[100%]"
+                    className="border border-gray-400 p-2 w-[100%] rounded-md focus:outline-none"
                     placeholder="Email *"
                   />
                 </div>
                 <div className="flex flex-col pb-2">
                   <input
                     type="tel"
-                    className="p-2 border border-gray-400"
+                    className="p-2 border border-gray-400 rounded-md focus:outline-none"
                     placeholder="Phone *"
                   />
                 </div>
                 <div className="flex flex-col pb-2">
                   <input
                     type="text"
-                    className="p-2 border border-gray-400"
+                    className="p-2 border border-gray-400 rounded-md focus:outline-none"
                     placeholder="Subject"
                   />
                 </div>
                 <div className="">
                   <textarea
-                    className="border border-gray-400 p-2 w-[100%]"
+                    className="border border-gray-400 p-2 w-[100%] rounded-md focus:outline-none"
                     placeholder="Message"
                   />
                 </div>
