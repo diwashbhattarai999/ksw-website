@@ -123,7 +123,16 @@ export default function NavBar() {
         <div className="items-center justify-between hidden h-16 my-8 md:flex md:flex-row">
           <div>
             <Link to="/" className={`text-xl font-bold text-gray-800`}>
-              <img className="w-[14rem]" src={Logotext} alt="Logo" />
+              <img
+                className="w-[14rem] md:hidden lg:block"
+                src={Logotext}
+                alt="Logo"
+              />
+              <img
+                className="w-24 hidden md:block lg:hidden"
+                src="/Logo.png"
+                alt="Logo"
+              />
             </Link>
           </div>
           <div className="flex flex-wrap justify-center font-medium text-sm md:flex-nowrap md:justify-between">
