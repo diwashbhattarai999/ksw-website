@@ -83,13 +83,13 @@ const Footer: React.FC = () => {
                 style={{ fontSize: '30px', color: '#004AAD' }}
               />
             </Link>
-            <Link to="/twitter">
+            <Link to="https://twitter.com/">
               <FaTwitter style={{ fontSize: '30px', color: '#004AAD' }} />
             </Link>
-            <Link to="/instagram">
+            <Link to="https://www.instagram.com/kswtechzone?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
               <FaInstagram style={{ fontSize: '30px', color: '#004AAD' }} />
             </Link>
-            <Link to="/linkedin">
+            <Link to="https://www.linkedin.com/company/kswtechzone">
               <FaLinkedin style={{ fontSize: '30px', color: '#004AAD' }} />
             </Link>
           </div>

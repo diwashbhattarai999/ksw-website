@@ -10,11 +10,16 @@ type JobOpening = {
 };
 
 const JOB_OPENINGS: JobOpening[] = [
-  // {
-  //   position: 'Frontend Developer',
-  //   department: 'Development',
-  //   location: 'Lalitpur, Imadol',
-  // },
+  {
+    position: 'Backend Developer',
+    department: 'Development',
+    location: 'Lalitpur, Imadol',
+  },
+  {
+    position: 'Quality Assurance',
+    department: 'Management',
+    location: 'Lalitpur, Imadol',
+  },
 ];
 
 export default function Career() {
