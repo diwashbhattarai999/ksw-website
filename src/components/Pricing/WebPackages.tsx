@@ -55,15 +55,15 @@ const plans: PricingPlan[] = [
     icon3: <BiCheck />,
   },
   {
-    name: 'CSV Import Of Product',
-    icon1: <BiX />,
-    icon2: <BiX />,
+    name: 'Logo Design',
+    icon1: <BiCheck />,
+    icon2: <BiCheck />,
     icon3: <BiCheck />,
   },
   {
-    name: 'Advance Product Offer',
-    icon1: <BiX />,
-    icon2: <BiX />,
+    name: 'Newsletter Subscription',
+    icon1: <BiCheck />,
+    icon2: <BiCheck />,
     icon3: <BiCheck />,
   },
   {
@@ -84,6 +84,20 @@ const plans: PricingPlan[] = [
     icon2: <BiCheck />,
     icon3: <BiCheck />,
   },
+
+  {
+    name: 'Logo Design',
+    icon1: <BiX />,
+    icon2: <BiCheck />,
+    icon3: <BiCheck />,
+  },
+  {
+    name: 'Custom Website',
+    icon1: <BiX />,
+    icon2: <BiCheck />,
+    icon3: <BiCheck />,
+  },
+
   {
     name: 'Single Vendor/Multi Vendor',
     icon1: <BiX />,
@@ -97,27 +111,15 @@ const plans: PricingPlan[] = [
     icon3: <BiCheck />,
   },
   {
-    name: 'Logo Design',
-    icon1: <BiCheck />,
-    icon2: <BiCheck />,
-    icon3: <BiCheck />,
-  },
-  {
-    name: 'Logo Design',
+    name: 'CSV Import Of Product',
     icon1: <BiX />,
-    icon2: <BiCheck />,
+    icon2: <BiX />,
     icon3: <BiCheck />,
   },
   {
-    name: 'Custom Website',
+    name: 'Advance Product Offer',
     icon1: <BiX />,
-    icon2: <BiCheck />,
-    icon3: <BiCheck />,
-  },
-  {
-    name: 'Newsletter Subscription',
-    icon1: <BiCheck />,
-    icon2: <BiCheck />,
+    icon2: <BiX />,
     icon3: <BiCheck />,
   },
 ];
@@ -162,7 +164,10 @@ const WebPackages: React.FC = () => {
           ))}
         </div>
 
-        <Link to="/#" className="flex items-center justify-center w-full mt-4">
+        <Link
+          to="/contact"
+          className="flex items-center justify-center w-full mt-4"
+        >
           <button
             type="button"
             className=" rounded-md w-52 bg-[#004AAD] hover:bg-[rgb(0,50,120)] p-2 sm:px-6 sm:py-4 text-xs sm:text-base font-bold text-white"
