@@ -57,7 +57,10 @@ const Pricing = () => {
               <div className="text-[#5a5a5a] pl-4">
                 <p className="z-10 m-5 text-sm sm:text-md">
                   Choose plans from our simple, transparent pricing. &nbsp;
-                  <Link to="https://drive.google.com/drive/folders/1p35CxvmnisR7KGSu6nMDNi0ZUr3vyhav?usp=sharing" className="underline hover:text-[rgb(0,50,120)]">
+                  <Link
+                    to="https://drive.google.com/drive/folders/1p35CxvmnisR7KGSu6nMDNi0ZUr3vyhav?usp=sharing"
+                    className="underline hover:text-[rgb(0,50,120)]"
+                  >
                     Download Brouchure
                   </Link>
                 </p>

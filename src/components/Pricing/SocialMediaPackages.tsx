@@ -20,12 +20,12 @@ const plans: PricingPlan[] = [
     month: 'mon',
     description: 'For marketing newbies and small house teams',
     details: [
-      'Social Media Management*1500',
-      '6 Graphical Banners*500=3000',
-      '1 GIF/Video (10 Secs Or Less)*800',
-      'Platforms: Facebook, Instagram*1000',
-      '1 Free Festive Post*500=500',
-      'Direct Advertisement*500',
+      'Social Media Management',
+      '6 Graphical Banners',
+      '1 GIF/Video (10 Secs Or Less)',
+      'Platforms: Facebook, Instagram',
+      '1 Free Festive Post',
+      'Direct Advertisement',
     ],
   },
   {
