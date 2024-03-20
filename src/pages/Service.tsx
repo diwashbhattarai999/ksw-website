@@ -1,6 +1,5 @@
 import { NavBar, Card } from '../components';
 import web from '../assets/ServiceImage/web.png';
-import services from '../assets/ServiceImage/Services.svg';
 import Mobile from '../assets/ServiceImage/Mobile.png';
 import SoftwareDevelopement from '../assets/ServiceImage/SoftwareDevelopment.png';
 import ContentMarketing from '../assets/ServiceImage/ContentMarketing.png';
@@ -15,7 +14,7 @@ import Reputation from '../assets/ServiceImage/Reputation.png';
 import SocialMediaManagement from '../assets/ServiceImage/GraphicDesign.png';
 import Maintence from '../assets/ServiceImage/Maintenance.png';
 import ITConsulting from '../assets/ServiceImage/ITConsulting.png';
-
+import servicesimg from '../assets/Services.png';
 import ServiceVector from './ServiceVector';
 import Container from '../components/Container';
 
@@ -187,12 +186,11 @@ const Service = () => {
                 to Boost Every Aspect
               </p>
             </div>
-
             <img
-              src={services}
-              alt="Services"
-              className="max-w-[50vw] md:h-[50vh] lg:h-[500px] hidden sm:block md:absolute top-32 right-0 "
-            />
+            src={servicesimg}
+            alt="Services"
+            className="max-w-[50vw] md:h-[50vh] lg:h-[500px] hidden sm:block md:absolute top-32 right-0 "
+          />
           </div>
         </Container>
         <div className="w-4/5 mt-20 m-auto">
