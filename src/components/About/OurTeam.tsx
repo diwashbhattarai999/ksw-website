@@ -38,7 +38,7 @@ export default function OurTeam() {
       linkedin: 'https://www.linkedin.com/in/mina-kumari-singh-88b744259/',
     },
     {
-      img: '/picture/suman.jpg',
+      img: '/picture/suman.png',
       name: 'Suman Sharma',
       role: ' Backend Developer, Project Manager',
       facebook: 'https://www.facebook.com/suman7802',
@@ -64,7 +64,7 @@ export default function OurTeam() {
       github: 'https://github.com/ghimirepraveen',
     },
     {
-      img: '/picture/sagar.jpg',
+      img: '/picture/sagar.png',
       name: 'Sagar Maharjan',
       role: ' UI/UX ',
       facebook: 'https://www.facebook.com/sagar.maharjan.3150',
