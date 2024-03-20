@@ -9,6 +9,7 @@ export default function OurTeam() {
     facebook?: string;
     linkedin?: string;
     github?: string;
+    twitter?: string;
   }
   const leader: TeamMember[] = [
     {
@@ -38,10 +39,11 @@ export default function OurTeam() {
     {
       img: '/picture/suman.jpg',
       name: 'Suman Sharma',
-      role: ' Backend Developer, Project M',
+      role: ' Backend Developer, Project Manager',
       facebook: 'https://www.facebook.com/suman7802',
       linkedin: 'https://www.linkedin.com/in/suman-sharma-502785228',
       github: 'https://github.com/suman7802',
+      twitter: "https://github.com/suman7802'",
     },
   ];
   const team: TeamMember[] = [
@@ -134,6 +136,7 @@ export default function OurTeam() {
               facebook={item.facebook}
               linkedin={item.linkedin}
               github={item.github}
+              twitter={item.twitter}
             />
           ))}
         </div>
@@ -152,6 +155,7 @@ export default function OurTeam() {
               facebook={item.facebook}
               linkedin={item.linkedin}
               github={item.github}
+              twitter={item.twitter}
             />
           ))}
         </div>

@@ -1,59 +1,30 @@
-// Import necessary components and assets
 import { NavBar } from '../components';
 import career from '../assets/career.png';
 import Container from '../components/Container';
 import { useState } from 'react';
 
 const JOB_OPENINGS = [
-  // {
-  //   position: 'Software Engineer',
-  //   department: 'Engineering',
-  //   location: 'Kathmandu, Nepal',
-  // },
   {
-    position: '',
-    department: '',
-    location: '',
+    position: 'Frontend Developer',
+    department: 'Development',
+    location: 'Lalitpur, Imadol',
   },
-];
-
-const DEPARTMENTS = [
-  'Engineering',
-  'Marketing',
-  'Data Science',
-  'Product Management',
-  'Design',
-  'Finance',
-  'Human Resources',
-  'Sales',
-  'Customer Support',
-  'Operations',
-];
-
-const LOCATIONS = [
-  'Kathmandu, Nepal',
-  'Patan, Nepal',
-  'Bhaktapur, Nepal',
-  'Lalitpur, Nepal',
-  'Banepa, Nepal',
-  'Dhulikhel, Nepal',
-  'Nagarkot, Nepal',
-  'Bhaisepati, Nepal',
-  'Godawari, Nepal',
-  'Chobhar, Nepal',
+  {
+    position: 'Marketing Head',
+    department: 'Management',
+    location: 'Lalitpur, Imadol',
+  },
 ];
 
 export default function Career() {
   const [selectedDepartment, setSelectedDepartment] = useState('');
   const [selectedLocation, setSelectedLocation] = useState('');
 
-  const handleDepartmentChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  const handleDepartmentChange = (e: React.ChangeEvent<HTMLSelectElement>) =>
     setSelectedDepartment(e.target.value);
-  };
 
-  const handleLocationChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  const handleLocationChange = (e: React.ChangeEvent<HTMLSelectElement>) =>
     setSelectedLocation(e.target.value);
-  };
 
   const filteredJobOpenings = JOB_OPENINGS.filter((job) => {
     return (
@@ -130,9 +101,9 @@ export default function Career() {
                     onChange={handleDepartmentChange}
                   >
                     <option value="">All Departments</option>
-                    {DEPARTMENTS.map((department, index) => (
-                      <option key={index} value={department}>
-                        {department}
+                    {JOB_OPENINGS.map((department, index) => (
+                      <option key={index} value={department.department}>
+                        {department.department}
                       </option>
                     ))}
                   </select>
@@ -144,9 +115,9 @@ export default function Career() {
                     onChange={handleLocationChange}
                   >
                     <option value="">All Locations</option>
-                    {LOCATIONS.map((location, index) => (
-                      <option key={index} value={location}>
-                        {location}
+                    {JOB_OPENINGS.map((location, index) => (
+                      <option key={index} value={location.location}>
+                        {location.location}
                       </option>
                     ))}
                   </select>

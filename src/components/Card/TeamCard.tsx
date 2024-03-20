@@ -1,4 +1,4 @@
-import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 interface CardProps {
@@ -8,6 +8,7 @@ interface CardProps {
   facebook?: string;
   linkedin?: string;
   github?: string;
+  twitter?: string;
 }
 
 const TeamCard: React.FC<CardProps> = ({
@@ -17,6 +18,7 @@ const TeamCard: React.FC<CardProps> = ({
   facebook,
   linkedin,
   github,
+  twitter,
 }) => {
   return (
     <>
@@ -57,6 +59,17 @@ const TeamCard: React.FC<CardProps> = ({
           {github ? (
             <Link to={github || '/'}>
               <FaGithub
+                className="changeBg"
+                style={{ fontSize: '20px', color: '#004AAD' }}
+              />
+            </Link>
+          ) : (
+            ''
+          )}
+
+          {twitter ? (
+            <Link to={github || '/'}>
+              <FaTwitter
                 className="changeBg"
                 style={{ fontSize: '20px', color: '#004AAD' }}
               />
