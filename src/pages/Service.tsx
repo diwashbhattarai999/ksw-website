@@ -1,5 +1,6 @@
 import { NavBar, Card } from '../components';
 import web from '../assets/ServiceImage/web.png';
+import services from '../assets/ServiceImage/Services.svg';
 import Mobile from '../assets/ServiceImage/Mobile.png';
 import SoftwareDevelopement from '../assets/ServiceImage/SoftwareDevelopment.png';
 import ContentMarketing from '../assets/ServiceImage/ContentMarketing.png';
@@ -16,6 +17,7 @@ import Maintence from '../assets/ServiceImage/Maintenance.png';
 import ITConsulting from '../assets/ServiceImage/ITConsulting.png';
 
 import ServiceVector from './ServiceVector';
+import Container from '../components/Container';
 
 interface ServiceProps {
   title: string;
@@ -173,6 +175,26 @@ const Service = () => {
       >
         <ServiceVector />
         <NavBar />
+        <Container className="md:mb-10">
+          <div className="flex items-center justify-between min-h-screen relative">
+            <div className="z-20 w-full">
+              <h1 className="mb-4 md:w-2/3 lg:-mt-32 text-[2.8rem] md:text-[3.4rem] font-bold max-w-[900px] leading-tight">
+                Elevate Your
+                <span className="text-[#004AAD]"> Business Digitally</span>
+              </h1>
+              <p className="text-[#040404] text-2xl font-semibold">
+                Diverse Digital Solutions Tailored <br className="md" />
+                to Boost Every Aspect
+              </p>
+            </div>
+
+            <img
+              src={services}
+              alt="Services"
+              className="max-w-[50vw] md:h-[50vh] lg:h-[500px] hidden sm:block md:absolute top-32 right-0 "
+            />
+          </div>
+        </Container>
         <div className="w-4/5 mt-20 m-auto">
           {services.map((ele, index) => (
             <Card

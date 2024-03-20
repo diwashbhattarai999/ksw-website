@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../Button';
 
 interface CardProps {
   title: string;
@@ -16,10 +15,9 @@ const Card: React.FC<CardProps> = ({
   description,
   showImageFirst = false,
   img,
-  showButton = true,
 }) => {
   return (
-    <div className="flex flex-col pt-10 md:flex-row md:justify-between m-auto">
+    <div className="flex flex-col pt-10 md:flex-row md:justify-between items-center m-auto">
       {showImageFirst ? (
         <>
           <div className="w-full sm:w-full md:w-[60%] lg:w-[60%] md:items-start">
@@ -70,7 +68,7 @@ const Card: React.FC<CardProps> = ({
           <div className="w-full sm:w-full md:w-[60%] lg:w-[50%] md:items-start">
             <div className="w-[100%] m-auto text-justify">
               <div className="mb-4 md:mb-8">
-                <div className="md:text-[1rem] text-[1.2rem] sm:text-[1rem] font-bold text-center md:text-left">
+                <div className="md:text-[2rem] text-[1.2rem] sm:text-[2rem] font-bold text-center md:text-left">
                   <p>
                     {title} <span className="text-blue-700">{titleSec}</span>
                   </p>
