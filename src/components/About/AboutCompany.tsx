@@ -107,7 +107,6 @@ const AboutCompany: React.FC = () => {
           <h2 className="mb-10 text-[1.2rem] sm:text-[2rem] font-bold text-center">
             What Sets Us <span className="text-blue-700">Apart</span>
           </h2>
-
           <ul className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
             {WHAT_SET_US_APART.map((w) => {
               return (

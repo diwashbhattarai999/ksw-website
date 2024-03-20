@@ -52,7 +52,7 @@ export default function Our() {
                   <div className="grid_content-wrapper">
                     <div className="text-2xl flex items-center">
                       Hourly Place
-                      <Link to="" className="p-2">
+                      <Link to="https://hourlyplace.com" className="p-2">
                         <IoIosLink />
                       </Link>
                     </div>
@@ -73,7 +73,7 @@ export default function Our() {
                   <div className="grid_content-wrapper">
                     <div className="text-2xl flex items-center">
                       The hostel Nepal
-                      <Link to="" className="p-2">
+                      <Link to="https://thn.kswtechzone.com.np/" className="p-2">
                         <IoIosLink />
                       </Link>
                     </div>
@@ -114,7 +114,7 @@ export default function Our() {
                   <div className="grid_content-wrapper">
                     <div className="text-2xl flex items-center">
                       KSW Blogs
-                      <Link to="" className="p-2">
+                      <Link to="https://blog.kswtechzone.com.np/" className="p-2">
                         <IoIosLink />
                       </Link>
                     </div>

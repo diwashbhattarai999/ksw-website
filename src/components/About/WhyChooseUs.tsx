@@ -150,10 +150,12 @@ export default function WhyChooseUs() {
       {/* why to chose us components  */}
       <Container>
         <div className="py-8 mt-4 text-center md:mt-2 ">
-          <h2 className="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl ">
+          <h2 className="text-2xl mb-5 font-bold sm:text-3xl md:text-4xl lg:text-5xl ">
             Why to <span className="text-blue-700">Choose US?</span>
           </h2>
-
+          <h1 className="font-light text-xl sm:text-2xl text-center px-3 sm:w-1/2 sm:m-auto">
+            We Achieve Our Client's Satisfaction Through Our Good Works
+          </h1>
           <Slider {...settings}>
             {CARDS.map((card, index) => {
               return (
