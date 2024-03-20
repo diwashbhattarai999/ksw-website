@@ -1,13 +1,23 @@
-import { FaFacebook, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 interface CardProps {
   image: string;
   name: string;
   role: string;
+  facebook?: string;
+  linkedin?: string;
+  github?: string;
 }
 
-const TeamCard: React.FC<CardProps> = ({ image, name, role }) => {
+const TeamCard: React.FC<CardProps> = ({
+  image,
+  name,
+  role,
+  facebook,
+  linkedin,
+  github,
+}) => {
   return (
     <>
       <div className=" flex flex-col items-center h-80 z-50">
@@ -18,20 +28,42 @@ const TeamCard: React.FC<CardProps> = ({ image, name, role }) => {
             className="w-[10rem] h-[10rem] rounded-full object-cover shadow-lg shadow-gray-600 "
           />
         </div>
-        <div className=" text-center w-full m-auto">
-          <h1 className="text-2xl font-bold">{name}</h1>
-          <p className="font-medium">{role}</p>
+        <div className=" text-center w-full my-5 ">
+          <h1 className="text-2xl font-light">{name}</h1>
+          <p className="font-extralight">{role}</p>
         </div>
-        <div className="flex gap-2 ">
-          <Link to="">
-            <FaFacebook
-              className="changeBg"
-              style={{ fontSize: '30px', color: '#004AAD' }}
-            />
-          </Link>
-          <Link to="">
-            <FaLinkedin style={{ fontSize: '30px', color: '#004AAD' }} />
-          </Link>
+        <div className="flex gap-4">
+          {facebook ? (
+            <Link to={facebook || '/'}>
+              <FaFacebook
+                className="changeBg"
+                style={{ fontSize: '20px', color: '#004AAD' }}
+              />
+            </Link>
+          ) : (
+            ''
+          )}
+
+          {linkedin ? (
+            <Link to={linkedin || '/'}>
+              <FaLinkedin
+                className="changeBg"
+                style={{ fontSize: '20px', color: '#004AAD' }}
+              />
+            </Link>
+          ) : (
+            ''
+          )}
+          {github ? (
+            <Link to={github || '/'}>
+              <FaGithub
+                className="changeBg"
+                style={{ fontSize: '20px', color: '#004AAD' }}
+              />
+            </Link>
+          ) : (
+            ''
+          )}
         </div>
       </div>
     </>

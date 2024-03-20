@@ -6,6 +6,9 @@ export default function OurTeam() {
     img: string;
     name: string;
     role: string;
+    facebook?: string;
+    linkedin?: string;
+    github?: string;
   }
   const leader: TeamMember[] = [
     {
@@ -31,7 +34,10 @@ export default function OurTeam() {
     {
       img: '/picture/suman.jpg',
       name: 'Suman Sharma',
-      role: ' Backend Developer, Project Manager',
+      role: ' Backend Developer, Project M',
+      facebook: 'https://www.facebook.com/suman7802',
+      linkedin: 'https://www.linkedin.com/in/suman-sharma-502785228',
+      github: 'https://github.com/suman7802',
     },
   ];
   const team: TeamMember[] = [
@@ -74,13 +80,13 @@ export default function OurTeam() {
   ];
   return (
     <>
-      <div className="z-50 mt-16 md:mt-20 lg:mt-28 xl:mt-36">
-        <h1 className="font-semibold text-[0.8rem] sm:text-[1rem] text-center px-3 sm:w-1/2 sm:m-auto">
-          KSW TechZone: A diverse team with varied expertise collaborating to
-          explore innovative solutions through unique approaches.
+      <div className="z-50 mt-16 md:mt-20 lg:mt-28 xl:mt-56">
+        <h1 className="font-light text-xl sm:text-2xl text-center px-3 sm:w-1/2 sm:m-auto">
+          A diverse team with varied expertise collaborating to explore
+          innovative solutions through unique approaches.
         </h1>
 
-        <div className="flex flex-col items-center w-4/5 m-auto gap-8 px-4 mt-16 md:flex-row md:justify-between md:items-center lg:justify-center">
+        <div className="flex flex-col items-center w-4/5 m-auto gap-8 px-4 mt-20 md:flex-row md:justify-between md:items-center lg:justify-center">
           <div className=" w-full lg:w-3/5 m-auto">
             <h1 className="font-bold text-[1.2rem] sm:text-[2rem]s sm:text-center md:text-left">
               Sanjay Kumar Singh
@@ -89,26 +95,26 @@ export default function OurTeam() {
               CEO, IT & Business Consultant
             </p>
 
-            <div className="w-full my-4 border-2 border-black border-dashed"></div>
+            <div className="w-full h-[1px] bg-gray-500 my-3" />
 
-            <p className="mt-6">
+            <p className="">
               Since 2022, we've been on a mission to enhance human access to
               services through innovative platforms. Delivering diverse services
               with top- notch IT solutions, our journey is dedicated to making a
               positive impact.
             </p>
           </div>
-          <div className=" w-full h-fit sm:w-[40%] border-red-900 grid place-items-center">
+          <div className=" w-full h-fit sm:w-[40%] grid place-items-center">
             <img
               src={CEO}
-              alt=""
-              className="w-[20rem] h-[19rem] rounded-md border-red-300 object-contain"
+              alt="ksw ceo"
+              className="h-[20rem] rounded-2xl object-contain shadow-lg shadow-gray-400"
             />
           </div>
         </div>
 
         <div>
-          <p className="p-4 md:w-4/5 md:m-auto lg:mt-24 text-xl font-medium text-center">
+          <p className="p-4 md:w-4/5 md:m-auto lg:mt-24 font-light text-2xl text-center">
             Cheers to our amazing team for pushing boundaries and contributing
             to Nepal's tech landscape!
           </p>
@@ -121,6 +127,9 @@ export default function OurTeam() {
               name={item.name}
               role={item.role}
               key={index}
+              facebook={item.facebook}
+              linkedin={item.linkedin}
+              github={item.github}
             />
           ))}
         </div>
@@ -136,6 +145,9 @@ export default function OurTeam() {
               name={item.name}
               role={item.role}
               key={index}
+              facebook={item.facebook}
+              linkedin={item.linkedin}
+              github={item.github}
             />
           ))}
         </div>
